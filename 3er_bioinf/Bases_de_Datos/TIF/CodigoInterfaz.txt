@@ -1,0 +1,103 @@
+<html>
+<body>
+<form name="Opciones" action="index.php" method="POST">
+      Enter user:<input name="Usuario" type="text">
+      <p>Select movie genre:<select name="genero">
+		<?php
+		$db = new mysqli("localhost","root","","movielens");
+		$sql = "SELECT DISTINCT genre FROM movies2directors";
+		$q = $db->query($sql);
+		echo "<option name=\"\"></option>";
+		while ($r=$q->fetch_assoc()){
+		echo "<option name=\"$r[genre]\">$r[genre]</option>";
+		}
+		?>
+		</select>
+      <p><input type= "submit" name="buscar" value="Recommend" type="button"></p>
+    </form>
+<?php
+/*
+Autor: Salim Nasim
+Fecha: 10/11/2021
+*/
+
+error_reporting(0);
+
+//Realizo la conexión con la base de datos.
+$db = new mysqli("localhost","root","","movielens");
+
+//Ejecuto si se presiona el botón
+$accion = $_POST['buscar'];
+if($accion=='Recommend')
+{
+	//Cargo las variables por POST
+	$user = $_POST['Usuario'];
+	$genero = $_POST['genero'];
+	
+	//Muestro el encabezado
+	echo "Top 10 recommendations";
+	if(!empty($user)) echo" for $user";
+	if(!empty($genero)) echo" of $genero";
+	echo"<br>";
+	
+	//Genero la consulta sql en base a los datos que tengo o no
+	$consulta;
+
+	if(empty($user))
+	{
+		if(empty($genero))
+		$consulta= "SELECT movieid
+					FROM avg_rating_movies
+					ORDER BY avg_rating DESC
+					LIMIT 0,10";
+		else
+			$consulta= "SELECT movieid
+						FROM avg_rating_movies INNER JOIN movies2directors USING(movieid)
+						WHERE genre LIKE '$genero'
+						ORDER BY avg_rating DESC
+						LIMIT 0,10";
+	}
+	else if(empty($genero))
+	{
+		$consulta= "SELECT movieid
+					FROM avg_rating_movies
+					WHERE movieid NOT IN
+					(
+						SELECT movieid
+						FROM u2base
+						WHERE userid=$user
+					)
+					ORDER BY avg_rating DESC
+					LIMIT 0,10";
+	}
+		else
+			$consulta= "SELECT movieid
+						FROM avg_rating_movies INNER JOIN movies2directors USING(movieid)
+						WHERE genre LIKE '$genero'
+						AND movieid NOT IN
+						(
+						SELECT movieid
+						FROM u2base
+						WHERE userid=$user
+						)
+						ORDER BY avg_rating DESC
+						LIMIT 0,10";
+
+	//Ejecuto la consulta SQL
+	$q = $db->query($consulta);
+	
+	//Creo un array asociativo con las tuplas y lo recorro con un while
+	while($r=$q->fetch_assoc()) 
+	{
+		//Asigno cada columna a una variable
+		$name   = $r['movieid'];
+      
+		//Muestro los valores
+		echo "$name<br>";
+	}
+}
+
+?>
+<br>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto SEMA Salim Taleb Nasim A.: Fichero Fuente CasosDePrueba/Caso1/carta.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Proyecto SEMA Salim Taleb Nasim A.
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('carta_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">carta.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="carta_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef CARTA_H</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define CARTA_H</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include&lt;string&gt;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="triangulo_8h.html">triangulo.h</a>&quot;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pixel_8h.html">pixel.h</a>&quot;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="carta_8h.html#a460a9c036d422332074121ca1ff49e6c">   32</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="carta_8h.html#a460a9c036d422332074121ca1ff49e6c">figuras</a> {<a class="code" href="carta_8h.html#a460a9c036d422332074121ca1ff49e6ca687d62fb5b4a889dbc21091e8fbfc5cc">FIG_TRIANGULO</a> = 1, <a class="code" href="carta_8h.html#a460a9c036d422332074121ca1ff49e6cadee9c46e587c7df86f41bbd1d577e3bd">FIG_CUADRADO</a> = 2,<a class="code" href="carta_8h.html#a460a9c036d422332074121ca1ff49e6caf47bb49555b088ca9921236da602dad4">FIG_ESPIRAL</a> =3,<a class="code" href="carta_8h.html#a460a9c036d422332074121ca1ff49e6cada9bd7f3a3d68520e56a65c33dca9322">FIG_ESTRELLA</a>=4, <a class="code" href="carta_8h.html#a460a9c036d422332074121ca1ff49e6ca77806763a6358b58bec2a89d6ae71713">FIG_CIRCULO</a>=5};</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_carta.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_carta.html">Carta</a></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_carta.html">Carta</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">id</span>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_carta.html">Carta</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">id</span>, <span class="keywordtype">char</span> pTipoDeFigura, <a class="code" href="class_pixel.html">Pixel</a> pColor);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    ~<a class="code" href="class_carta.html">Carta</a>();</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> dibujar();</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> setColorFondo(<span class="keyword">const</span> <a class="code" href="class_pixel.html">Pixel</a> color);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> setFigura(<span class="keywordtype">char</span> pTipoDeFigura, <a class="code" href="class_pixel.html">Pixel</a> color);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">bool</span> getVisible() <span class="keyword">const</span>;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> setVisible(<span class="keywordtype">bool</span> value);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> getEstaEmparejada() <span class="keyword">const</span>;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> setEstaEmparejada(<span class="keywordtype">bool</span> value);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">unsigned</span> getId() <span class="keyword">const</span>;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_carta.html#ac60f331203247301427031ea53363ddc">  108</a></span>&#160;    <a class="code" href="class_figura.html">Figura</a>* <a class="code" href="class_carta.html#ac60f331203247301427031ea53363ddc">figura</a>;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div><div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="class_carta.html#a510ee69dfaf4904b3ffc542d0c1c11e4">  113</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_carta.html#a510ee69dfaf4904b3ffc542d0c1c11e4">visible</a>;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_carta.html#a93231d3da0a575673947e1a87c2008cd">  118</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_carta.html#a93231d3da0a575673947e1a87c2008cd">estaEmparejada</a>;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_carta.html#ac52a9654b15193566f6ecb5ca83371d6">  123</a></span>&#160;    <span class="keywordtype">unsigned</span> <a class="code" href="class_carta.html#ac52a9654b15193566f6ecb5ca83371d6">id</a>;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div><div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_carta.html#a1407efdb39ce633599dedffa7681761a">  128</a></span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> <a class="code" href="class_carta.html#a1407efdb39ce633599dedffa7681761a">colorDorso</a>;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif // CARTA_H</span></div><div class="ttc" id="class_carta_html_ac52a9654b15193566f6ecb5ca83371d6"><div class="ttname"><a href="class_carta.html#ac52a9654b15193566f6ecb5ca83371d6">Carta::id</a></div><div class="ttdeci">unsigned id</div><div class="ttdoc">id ID de la carta, generalmente para determinar si emparejarla o no. </div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00123">carta.h:123</a></div></div>
+<div class="ttc" id="class_figura_html"><div class="ttname"><a href="class_figura.html">Figura</a></div><div class="ttdoc">Clase abstracta que se encarga de generalizar metodos y atributos para las clases derivadas...</div><div class="ttdef"><b>Definition:</b> <a href="figura_8h_source.html#l00023">figura.h:23</a></div></div>
+<div class="ttc" id="carta_8h_html_a460a9c036d422332074121ca1ff49e6c"><div class="ttname"><a href="carta_8h.html#a460a9c036d422332074121ca1ff49e6c">figuras</a></div><div class="ttdeci">figuras</div><div class="ttdoc">Le asigna a cada tipo de figura un numero como parametro para utilizar a la hora de seleccionarlo...</div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00032">carta.h:32</a></div></div>
+<div class="ttc" id="carta_8h_html_a460a9c036d422332074121ca1ff49e6cadee9c46e587c7df86f41bbd1d577e3bd"><div class="ttname"><a href="carta_8h.html#a460a9c036d422332074121ca1ff49e6cadee9c46e587c7df86f41bbd1d577e3bd">FIG_CUADRADO</a></div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00032">carta.h:32</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
+<div class="ttc" id="carta_8h_html_a460a9c036d422332074121ca1ff49e6caf47bb49555b088ca9921236da602dad4"><div class="ttname"><a href="carta_8h.html#a460a9c036d422332074121ca1ff49e6caf47bb49555b088ca9921236da602dad4">FIG_ESPIRAL</a></div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00032">carta.h:32</a></div></div>
+<div class="ttc" id="class_carta_html_ac60f331203247301427031ea53363ddc"><div class="ttname"><a href="class_carta.html#ac60f331203247301427031ea53363ddc">Carta::figura</a></div><div class="ttdeci">Figura * figura</div><div class="ttdoc">figura Puntero a la figura que se va a graficar. </div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00108">carta.h:108</a></div></div>
+<div class="ttc" id="class_carta_html_a510ee69dfaf4904b3ffc542d0c1c11e4"><div class="ttname"><a href="class_carta.html#a510ee69dfaf4904b3ffc542d0c1c11e4">Carta::visible</a></div><div class="ttdeci">bool visible</div><div class="ttdoc">visible Booleano que dice si la carta esta o no visible. </div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00113">carta.h:113</a></div></div>
+<div class="ttc" id="pixel_8h_html"><div class="ttname"><a href="pixel_8h.html">pixel.h</a></div></div>
+<div class="ttc" id="triangulo_8h_html"><div class="ttname"><a href="triangulo_8h.html">triangulo.h</a></div></div>
+<div class="ttc" id="carta_8h_html_a460a9c036d422332074121ca1ff49e6ca687d62fb5b4a889dbc21091e8fbfc5cc"><div class="ttname"><a href="carta_8h.html#a460a9c036d422332074121ca1ff49e6ca687d62fb5b4a889dbc21091e8fbfc5cc">FIG_TRIANGULO</a></div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00032">carta.h:32</a></div></div>
+<div class="ttc" id="class_carta_html_a93231d3da0a575673947e1a87c2008cd"><div class="ttname"><a href="class_carta.html#a93231d3da0a575673947e1a87c2008cd">Carta::estaEmparejada</a></div><div class="ttdeci">bool estaEmparejada</div><div class="ttdoc">estaEmparejada Booleano que dice si la carta esta o no emparejada. </div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00118">carta.h:118</a></div></div>
+<div class="ttc" id="class_carta_html_a1407efdb39ce633599dedffa7681761a"><div class="ttname"><a href="class_carta.html#a1407efdb39ce633599dedffa7681761a">Carta::colorDorso</a></div><div class="ttdeci">Pixel colorDorso</div><div class="ttdoc">colorDorso Objeto Pixel que determina el color del dorso de la carta. </div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00128">carta.h:128</a></div></div>
+<div class="ttc" id="class_carta_html"><div class="ttname"><a href="class_carta.html">Carta</a></div><div class="ttdoc">Clase que manipula cartas con figuras que se dibujan a si mismas. </div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00034">carta.h:34</a></div></div>
+<div class="ttc" id="carta_8h_html_a460a9c036d422332074121ca1ff49e6cada9bd7f3a3d68520e56a65c33dca9322"><div class="ttname"><a href="carta_8h.html#a460a9c036d422332074121ca1ff49e6cada9bd7f3a3d68520e56a65c33dca9322">FIG_ESTRELLA</a></div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00032">carta.h:32</a></div></div>
+<div class="ttc" id="class_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Clase que se encarga de simplificar la asignacion de colores. </div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00019">pixel.h:19</a></div></div>
+<div class="ttc" id="carta_8h_html_a460a9c036d422332074121ca1ff49e6ca77806763a6358b58bec2a89d6ae71713"><div class="ttname"><a href="carta_8h.html#a460a9c036d422332074121ca1ff49e6ca77806763a6358b58bec2a89d6ae71713">FIG_CIRCULO</a></div><div class="ttdef"><b>Definition:</b> <a href="carta_8h_source.html#l00032">carta.h:32</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_976087990f5b576a29d893eb8795d10a.html">CasosDePrueba</a></li><li class="navelem"><a class="el" href="dir_1c99a6dcd2f349132d4454a08ec39939.html">Caso1</a></li><li class="navelem"><a class="el" href="carta_8h.html">carta.h</a></li>
+    <li class="footer">Generado el Lunes, 8 de Junio de 2020 09:50:13 para Proyecto SEMA Salim Taleb Nasim A. por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

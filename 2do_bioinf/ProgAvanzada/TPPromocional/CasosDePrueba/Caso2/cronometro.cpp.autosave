@@ -1,0 +1,52 @@
+#include "cronometro.h"
+
+Cronometro::Cronometro()
+{
+    tiempo=0;
+}
+
+bool Cronometro::EstaIniciado()
+{
+    return cronometro.isValid();
+}
+
+void Cronometro::IniciarCronometro()
+{
+    cronometro.start();
+}
+
+void Cronometro::MostrarTiempo()
+{
+    if(cronometro.isValid())
+    {
+        if(tiempo!=0)
+            std::cout<<"Tiempo transcurrido: "<<tiempo<<" segundos"<<std::endl;
+        else
+            std::cout<<"Tiempo transcurrido: "<<cronometro.elapsed()/1000.000<<" segundos"<<std::endl;
+    }
+    else
+        std::cout<<"No se ha iniciado el cronometro"<<std::endl;
+}
+
+void Cronometro::PararCronometro()
+{
+    tiempo=cronometro.elapsed()/1000.000;
+}
+
+float Cronometro::ObtenerTiempo()
+{
+    float retorno=0;
+    if(cronometro.isValid())
+    {
+        if(tiempo!=0)
+            retorno=tiempo;
+        else
+            retorno=cronometro.elapsed()/1000.000;
+    }
+    return retorno;
+}
+
+float Cronometro::ObtenerTiempoYReiniciar()
+{
+    
+}

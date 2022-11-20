@@ -1,0 +1,639 @@
+MODEL 1
+REMARK VINA RESULT:      -7.4      0.000      0.000
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   LYS A  3       28.792 -20.401   7.852  0.00  0.00    -0.301 N 
+ATOM      2  H   LYS A  3       28.365 -20.565   8.761  0.00  0.00    +0.150 HD
+ATOM      3  C   HIS A  2       27.933 -20.318   6.776  0.00  0.00    +0.239 C 
+ATOM      4  O   HIS A  2       28.368 -20.002   5.667  0.00  0.00    -0.273 OA
+ENDROOT
+BRANCH   1   5
+ATOM      5  CA  LYS A  3       30.209 -19.992   7.825  0.00  0.00    +0.182 C 
+BRANCH   5   6
+ATOM      6  C   LYS A  3       31.042 -20.767   8.906  0.00  0.00    +0.325 C 
+ATOM      7  O   LYS A  3       32.181 -20.528   9.220  0.00  0.00    -0.249 OA
+BRANCH   6   8
+ATOM      8  OXT LYS A  3       30.348 -21.817   9.441  0.00  0.00    -0.479 OA
+ATOM      9  HXT LYS A  3       29.703 -21.544  10.125  0.00  0.00    +0.295 HD
+ENDBRANCH   6   8
+ENDBRANCH   5   6
+BRANCH   5  10
+ATOM     10  CB  LYS A  3       30.349 -18.469   8.037  0.00  0.00    +0.034 C 
+BRANCH  10  11
+ATOM     11  CG  LYS A  3       29.900 -17.983   9.433  0.00  0.00    +0.003 C 
+BRANCH  11  12
+ATOM     12  CD  LYS A  3       30.823 -16.882   9.990  0.00  0.00    +0.015 C 
+BRANCH  12  13
+ATOM     13  CE  LYS A  3       32.281 -16.969   9.514  0.00  0.00    +0.077 C 
+BRANCH  13  14
+ATOM     14  NZ  LYS A  3       32.782 -15.687   9.028  0.00  0.00    -0.330 NA
+ATOM     15  HZ1 LYS A  3       32.110 -14.954   9.258  0.00  0.00    +0.118 HD
+ATOM     16  HZ2 LYS A  3       32.827 -15.708   8.008  0.00  0.00    +0.118 HD
+ENDBRANCH  13  14
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   5  10
+ENDBRANCH   1   5
+BRANCH   3  17
+ATOM     17  CA  HIS A  2       26.485 -20.877   7.000  0.00  0.00    +0.200 C 
+BRANCH  17  18
+ATOM     18  N   HIS A  2       25.785 -20.978   5.703  0.00  0.00    -0.241 NA
+ATOM     19  C   GLY A  1       24.549 -20.628   5.591  0.00  0.00    +0.197 C 
+BRANCH  19  20
+ATOM     20  O   GLY A  1       23.738 -20.241   6.600  0.00  0.00    -0.495 OA
+ATOM     21  H   GLY A  1       23.946 -20.633   7.457  0.00  0.00    +0.293 HD
+ENDBRANCH  19  20
+BRANCH  19  22
+ATOM     22  CA  GLY A  1       23.786 -20.542   4.275  0.00  0.00    +0.174 C 
+BRANCH  22  23
+ATOM     23  N   GLY A  1       23.840 -21.806   3.535  0.00  0.00    -0.322 NA
+ATOM     24  H1  GLY A  1       23.968 -22.569   4.196  0.00  0.00    +0.119 HD
+ATOM     25  H2  GLY A  1       24.664 -21.790   2.933  0.00  0.00    +0.119 HD
+ENDBRANCH  22  23
+ENDBRANCH  19  22
+ENDBRANCH  17  18
+BRANCH  17  26
+ATOM     26  CB  HIS A  2       26.481 -22.212   7.790  0.00  0.00    +0.091 C 
+BRANCH  26  27
+ATOM     27  CG  HIS A  2       25.563 -23.268   7.225  0.00  0.00    +0.038 A 
+ATOM     28  ND1 HIS A  2       24.189 -23.179   7.298  0.00  0.00    -0.348 N 
+ATOM     29  HD1 HIS A  2       23.653 -22.464   7.772  0.00  0.00    +0.167 HD
+ATOM     30  CE1 HIS A  2       23.664 -24.169   6.518  0.00  0.00    +0.196 A 
+ATOM     31  NE2 HIS A  2       24.598 -24.991   6.105  0.00  0.00    -0.244 NA
+ATOM     32  CD2 HIS A  2       25.776 -24.472   6.582  0.00  0.00    +0.133 A 
+ENDBRANCH  26  27
+ENDBRANCH  17  26
+ENDBRANCH   3  17
+TORSDOF 15
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -7.3      1.780      2.444
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   LYS A  3       27.361 -20.255   6.868  0.00  0.00    -0.301 N 
+ATOM      2  H   LYS A  3       27.194 -20.560   5.912  0.00  0.00    +0.150 HD
+ATOM      3  C   HIS A  2       26.409 -20.610   7.801  0.00  0.00    +0.239 C 
+ATOM      4  O   HIS A  2       26.605 -20.380   8.996  0.00  0.00    -0.273 OA
+ENDROOT
+BRANCH   1   5
+ATOM      5  CA  LYS A  3       28.702 -19.736   7.198  0.00  0.00    +0.182 C 
+BRANCH   5   6
+ATOM      6  C   LYS A  3       29.300 -18.915   6.002  0.00  0.00    +0.325 C 
+ATOM      7  O   LYS A  3       30.379 -18.375   5.989  0.00  0.00    -0.249 OA
+BRANCH   6   8
+ATOM      8  OXT LYS A  3       28.429 -18.818   4.952  0.00  0.00    -0.479 OA
+ATOM      9  HXT LYS A  3       28.828 -19.071   4.095  0.00  0.00    +0.295 HD
+ENDBRANCH   6   8
+ENDBRANCH   5   6
+BRANCH   5  10
+ATOM     10  CB  LYS A  3       29.659 -20.884   7.587  0.00  0.00    +0.034 C 
+BRANCH  10  11
+ATOM     11  CG  LYS A  3       30.818 -20.452   8.512  0.00  0.00    +0.003 C 
+BRANCH  11  12
+ATOM     12  CD  LYS A  3       30.531 -19.111   9.215  0.00  0.00    +0.015 C 
+BRANCH  12  13
+ATOM     13  CE  LYS A  3       31.766 -18.223   9.431  0.00  0.00    +0.077 C 
+BRANCH  13  14
+ATOM     14  NZ  LYS A  3       32.139 -17.490   8.226  0.00  0.00    -0.330 NA
+ATOM     15  HZ1 LYS A  3       31.939 -18.065   7.407  0.00  0.00    +0.118 HD
+ATOM     16  HZ2 LYS A  3       33.149 -17.344   8.219  0.00  0.00    +0.118 HD
+ENDBRANCH  13  14
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   5  10
+ENDBRANCH   1   5
+BRANCH   3  17
+ATOM     17  CA  HIS A  2       25.021 -21.070   7.234  0.00  0.00    +0.200 C 
+BRANCH  17  18
+ATOM     18  N   HIS A  2       25.034 -20.981   5.759  0.00  0.00    -0.241 NA
+ATOM     19  C   GLY A  1       24.089 -20.375   5.126  0.00  0.00    +0.197 C 
+BRANCH  19  20
+ATOM     20  O   GLY A  1       22.970 -19.854   5.677  0.00  0.00    -0.495 OA
+ATOM     21  H   GLY A  1       23.128 -19.179   6.348  0.00  0.00    +0.293 HD
+ENDBRANCH  19  20
+BRANCH  19  22
+ATOM     22  CA  GLY A  1       24.088 -20.089   3.629  0.00  0.00    +0.174 C 
+BRANCH  22  23
+ATOM     23  N   GLY A  1       25.363 -19.516   3.188  0.00  0.00    -0.322 NA
+ATOM     24  H1  GLY A  1       25.665 -18.822   3.868  0.00  0.00    +0.119 HD
+ATOM     25  H2  GLY A  1       25.206 -19.024   2.308  0.00  0.00    +0.119 HD
+ENDBRANCH  22  23
+ENDBRANCH  19  22
+ENDBRANCH  17  18
+BRANCH  17  26
+ATOM     26  CB  HIS A  2       24.606 -22.473   7.748  0.00  0.00    +0.091 C 
+BRANCH  26  27
+ATOM     27  CG  HIS A  2       24.980 -23.609   6.828  0.00  0.00    +0.038 A 
+ATOM     28  ND1 HIS A  2       24.299 -23.880   5.661  0.00  0.00    -0.348 N 
+ATOM     29  HD1 HIS A  2       23.466 -23.415   5.325  0.00  0.00    +0.167 HD
+ATOM     30  CE1 HIS A  2       25.011 -24.818   4.970  0.00  0.00    +0.196 A 
+ATOM     31  NE2 HIS A  2       25.992 -25.297   5.696  0.00  0.00    -0.244 NA
+ATOM     32  CD2 HIS A  2       25.951 -24.592   6.873  0.00  0.00    +0.133 A 
+ENDBRANCH  26  27
+ENDBRANCH  17  26
+ENDBRANCH   3  17
+TORSDOF 15
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -7.2      2.350      7.240
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   LYS A  3       25.792 -21.044   7.131  0.00  0.00    -0.301 N 
+ATOM      2  H   LYS A  3       26.123 -20.924   6.177  0.00  0.00    +0.150 HD
+ATOM      3  C   HIS A  2       26.560 -20.471   8.124  0.00  0.00    +0.239 C 
+ATOM      4  O   HIS A  2       26.158 -20.474   9.289  0.00  0.00    -0.273 OA
+ENDROOT
+BRANCH   1   5
+ATOM      5  CA  LYS A  3       24.420 -21.551   7.323  0.00  0.00    +0.182 C 
+BRANCH   5   6
+ATOM      6  C   LYS A  3       24.200 -22.894   6.542  0.00  0.00    +0.325 C 
+ATOM      7  O   LYS A  3       23.351 -23.717   6.783  0.00  0.00    -0.249 OA
+BRANCH   6   8
+ATOM      8  OXT LYS A  3       25.131 -23.081   5.557  0.00  0.00    -0.479 OA
+ATOM      9  HXT LYS A  3       24.747 -23.070   4.657  0.00  0.00    +0.295 HD
+ENDBRANCH   6   8
+ENDBRANCH   5   6
+BRANCH   5  10
+ATOM     10  CB  LYS A  3       23.377 -20.502   6.881  0.00  0.00    +0.034 C 
+BRANCH  10  11
+ATOM     11  CG  LYS A  3       22.895 -20.668   5.423  0.00  0.00    +0.003 C 
+BRANCH  11  12
+ATOM     12  CD  LYS A  3       23.528 -19.625   4.480  0.00  0.00    +0.015 C 
+BRANCH  12  13
+ATOM     13  CE  LYS A  3       24.639 -20.174   3.573  0.00  0.00    +0.077 C 
+BRANCH  13  14
+ATOM     14  NZ  LYS A  3       25.920 -20.276   4.265  0.00  0.00    -0.330 NA
+ATOM     15  HZ1 LYS A  3       26.220 -21.251   4.275  0.00  0.00    +0.118 HD
+ATOM     16  HZ2 LYS A  3       25.795 -20.016   5.244  0.00  0.00    +0.118 HD
+ENDBRANCH  13  14
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   5  10
+ENDBRANCH   1   5
+BRANCH   3  17
+ATOM     17  CA  HIS A  2       28.021 -20.067   7.724  0.00  0.00    +0.200 C 
+BRANCH  17  18
+ATOM     18  N   HIS A  2       28.636 -19.282   8.814  0.00  0.00    -0.241 NA
+ATOM     19  C   GLY A  1       29.516 -18.375   8.560  0.00  0.00    +0.197 C 
+BRANCH  19  20
+ATOM     20  O   GLY A  1       30.044 -18.098   7.347  0.00  0.00    -0.495 OA
+ATOM     21  H   GLY A  1       29.415 -18.132   6.617  0.00  0.00    +0.293 HD
+ENDBRANCH  19  20
+BRANCH  19  22
+ATOM     22  CA  GLY A  1       30.090 -17.407   9.588  0.00  0.00    +0.174 C 
+BRANCH  22  23
+ATOM     23  N   GLY A  1       30.596 -18.112  10.770  0.00  0.00    -0.322 NA
+ATOM     24  H1  GLY A  1       31.249 -17.505  11.260  0.00  0.00    +0.119 HD
+ATOM     25  H2  GLY A  1       31.122 -18.927  10.456  0.00  0.00    +0.119 HD
+ENDBRANCH  22  23
+ENDBRANCH  19  22
+ENDBRANCH  17  18
+BRANCH  17  26
+ATOM     26  CB  HIS A  2       28.880 -21.288   7.304  0.00  0.00    +0.091 C 
+BRANCH  26  27
+ATOM     27  CG  HIS A  2       30.167 -21.440   8.077  0.00  0.00    +0.038 A 
+ATOM     28  ND1 HIS A  2       31.302 -20.712   7.788  0.00  0.00    -0.348 N 
+ATOM     29  HD1 HIS A  2       31.426 -20.065   7.021  0.00  0.00    +0.167 HD
+ATOM     30  CE1 HIS A  2       32.203 -20.928   8.791  0.00  0.00    +0.196 A 
+ATOM     31  NE2 HIS A  2       31.798 -21.880   9.595  0.00  0.00    -0.244 NA
+ATOM     32  CD2 HIS A  2       30.558 -22.244   9.132  0.00  0.00    +0.133 A 
+ENDBRANCH  26  27
+ENDBRANCH  17  26
+ENDBRANCH   3  17
+TORSDOF 15
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -7.1      1.720      3.224
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   LYS A  3       28.581 -21.212   7.052  0.00  0.00    -0.301 N 
+ATOM      2  H   LYS A  3       28.671 -21.938   6.345  0.00  0.00    +0.150 HD
+ATOM      3  C   HIS A  2       27.355 -21.114   7.678  0.00  0.00    +0.239 C 
+ATOM      4  O   HIS A  2       27.212 -20.341   8.627  0.00  0.00    -0.273 OA
+ENDROOT
+BRANCH   1   5
+ATOM      5  CA  LYS A  3       29.816 -20.557   7.524  0.00  0.00    +0.182 C 
+BRANCH   5   6
+ATOM      6  C   LYS A  3       30.565 -21.452   8.572  0.00  0.00    +0.325 C 
+ATOM      7  O   LYS A  3       30.079 -21.921   9.572  0.00  0.00    -0.249 OA
+BRANCH   6   8
+ATOM      8  OXT LYS A  3       31.888 -21.615   8.265  0.00  0.00    -0.479 OA
+ATOM      9  HXT LYS A  3       32.484 -21.436   9.020  0.00  0.00    +0.295 HD
+ENDBRANCH   6   8
+ENDBRANCH   5   6
+BRANCH   5  10
+ATOM     10  CB  LYS A  3       29.509 -19.171   8.130  0.00  0.00    +0.034 C 
+BRANCH  10  11
+ATOM     11  CG  LYS A  3       30.766 -18.341   8.475  0.00  0.00    +0.003 C 
+BRANCH  11  12
+ATOM     12  CD  LYS A  3       30.498 -17.321   9.598  0.00  0.00    +0.015 C 
+BRANCH  12  13
+ATOM     13  CE  LYS A  3       31.720 -16.487  10.010  0.00  0.00    +0.077 C 
+BRANCH  13  14
+ATOM     14  NZ  LYS A  3       32.595 -16.191   8.881  0.00  0.00    -0.330 NA
+ATOM     15  HZ1 LYS A  3       32.154 -16.516   8.019  0.00  0.00    +0.118 HD
+ATOM     16  HZ2 LYS A  3       33.455 -16.734   8.970  0.00  0.00    +0.118 HD
+ENDBRANCH  13  14
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   5  10
+ENDBRANCH   1   5
+BRANCH   3  17
+ATOM     17  CA  HIS A  2       26.155 -21.830   6.967  0.00  0.00    +0.200 C 
+BRANCH  17  18
+ATOM     18  N   HIS A  2       26.142 -23.261   7.335  0.00  0.00    -0.241 NA
+ATOM     19  C   GLY A  1       25.759 -24.157   6.491  0.00  0.00    +0.197 C 
+BRANCH  19  20
+ATOM     20  O   GLY A  1       25.251 -23.924   5.261  0.00  0.00    -0.495 OA
+ATOM     21  H   GLY A  1       25.017 -23.003   5.090  0.00  0.00    +0.293 HD
+ENDBRANCH  19  20
+BRANCH  19  22
+ATOM     22  CA  GLY A  1       25.858 -25.661   6.713  0.00  0.00    +0.174 C 
+BRANCH  22  23
+ATOM     23  N   GLY A  1       26.670 -26.307   5.678  0.00  0.00    -0.322 NA
+ATOM     24  H1  GLY A  1       27.519 -26.672   6.105  0.00  0.00    +0.119 HD
+ATOM     25  H2  GLY A  1       26.955 -25.597   5.004  0.00  0.00    +0.119 HD
+ENDBRANCH  22  23
+ENDBRANCH  19  22
+ENDBRANCH  17  18
+BRANCH  17  26
+ATOM     26  CB  HIS A  2       24.800 -21.127   7.240  0.00  0.00    +0.091 C 
+BRANCH  26  27
+ATOM     27  CG  HIS A  2       24.127 -20.573   6.008  0.00  0.00    +0.038 A 
+ATOM     28  ND1 HIS A  2       22.826 -20.113   6.011  0.00  0.00    -0.348 N 
+ATOM     29  HD1 HIS A  2       22.174 -20.148   6.783  0.00  0.00    +0.167 HD
+ATOM     30  CE1 HIS A  2       22.600 -19.493   4.816  0.00  0.00    +0.196 A 
+ATOM     31  NE2 HIS A  2       23.596 -19.687   3.986  0.00  0.00    -0.244 NA
+ATOM     32  CD2 HIS A  2       24.528 -20.402   4.697  0.00  0.00    +0.133 A 
+ENDBRANCH  26  27
+ENDBRANCH  17  26
+ENDBRANCH   3  17
+TORSDOF 15
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -7.1      2.001      3.893
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   LYS A  3       27.742 -20.818   6.727  0.00  0.00    -0.301 N 
+ATOM      2  H   LYS A  3       27.758 -21.070   5.742  0.00  0.00    +0.150 HD
+ATOM      3  C   HIS A  2       26.895 -21.549   7.535  0.00  0.00    +0.239 C 
+ATOM      4  O   HIS A  2       26.914 -21.379   8.756  0.00  0.00    -0.273 OA
+ENDROOT
+BRANCH   1   5
+ATOM      5  CA  LYS A  3       28.805 -19.922   7.223  0.00  0.00    +0.182 C 
+BRANCH   5   6
+ATOM      6  C   LYS A  3       29.272 -18.927   6.104  0.00  0.00    +0.325 C 
+ATOM      7  O   LYS A  3       30.183 -18.141   6.197  0.00  0.00    -0.249 OA
+BRANCH   6   8
+ATOM      8  OXT LYS A  3       28.487 -18.996   4.987  0.00  0.00    -0.479 OA
+ATOM      9  HXT LYS A  3       27.859 -18.249   4.909  0.00  0.00    +0.295 HD
+ENDBRANCH   6   8
+ENDBRANCH   5   6
+BRANCH   5  10
+ATOM     10  CB  LYS A  3       30.009 -20.733   7.751  0.00  0.00    +0.034 C 
+BRANCH  10  11
+ATOM     11  CG  LYS A  3       31.197 -19.864   8.218  0.00  0.00    +0.003 C 
+BRANCH  11  12
+ATOM     12  CD  LYS A  3       30.850 -19.029   9.466  0.00  0.00    +0.015 C 
+BRANCH  12  13
+ATOM     13  CE  LYS A  3       31.602 -17.694   9.572  0.00  0.00    +0.077 C 
+BRANCH  13  14
+ATOM     14  NZ  LYS A  3       32.250 -17.321   8.319  0.00  0.00    -0.330 NA
+ATOM     15  HZ1 LYS A  3       32.320 -18.144   7.719  0.00  0.00    +0.118 HD
+ATOM     16  HZ2 LYS A  3       33.212 -17.038   8.508  0.00  0.00    +0.118 HD
+ENDBRANCH  13  14
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   5  10
+ENDBRANCH   1   5
+BRANCH   3  17
+ATOM     17  CA  HIS A  2       25.786 -22.381   6.803  0.00  0.00    +0.200 C 
+BRANCH  17  18
+ATOM     18  N   HIS A  2       25.896 -23.802   7.189  0.00  0.00    -0.241 NA
+ATOM     19  C   GLY A  1       25.721 -24.738   6.320  0.00  0.00    +0.197 C 
+BRANCH  19  20
+ATOM     20  O   GLY A  1       25.335 -24.568   5.036  0.00  0.00    -0.495 OA
+ATOM     21  H   GLY A  1       25.304 -25.379   4.514  0.00  0.00    +0.293 HD
+ENDBRANCH  19  20
+BRANCH  19  22
+ATOM     22  CA  GLY A  1       25.967 -26.220   6.575  0.00  0.00    +0.174 C 
+BRANCH  22  23
+ATOM     23  N   GLY A  1       26.992 -26.760   5.676  0.00  0.00    -0.322 NA
+ATOM     24  H1  GLY A  1       26.566 -26.959   4.774  0.00  0.00    +0.119 HD
+ATOM     25  H2  GLY A  1       27.316 -27.649   6.057  0.00  0.00    +0.119 HD
+ENDBRANCH  22  23
+ENDBRANCH  19  22
+ENDBRANCH  17  18
+BRANCH  17  26
+ATOM     26  CB  HIS A  2       24.365 -21.804   7.032  0.00  0.00    +0.091 C 
+BRANCH  26  27
+ATOM     27  CG  HIS A  2       23.908 -20.833   5.971  0.00  0.00    +0.038 A 
+ATOM     28  ND1 HIS A  2       24.675 -20.515   4.870  0.00  0.00    -0.348 N 
+ATOM     29  HD1 HIS A  2       25.618 -20.827   4.679  0.00  0.00    +0.167 HD
+ATOM     30  CE1 HIS A  2       23.897 -19.789   4.014  0.00  0.00    +0.196 A 
+ATOM     31  NE2 HIS A  2       22.755 -19.466   4.572  0.00  0.00    -0.244 NA
+ATOM     32  CD2 HIS A  2       22.772 -20.064   5.807  0.00  0.00    +0.133 A 
+ENDBRANCH  26  27
+ENDBRANCH  17  26
+ENDBRANCH   3  17
+TORSDOF 15
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -6.8      2.656      6.867
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   LYS A  3       25.852 -23.377   6.448  0.00  0.00    -0.301 N 
+ATOM      2  H   LYS A  3       25.768 -23.007   5.504  0.00  0.00    +0.150 HD
+ATOM      3  C   HIS A  2       26.291 -22.496   7.415  0.00  0.00    +0.239 C 
+ATOM      4  O   HIS A  2       26.301 -22.840   8.598  0.00  0.00    -0.273 OA
+ENDROOT
+BRANCH   1   5
+ATOM      5  CA  LYS A  3       25.237 -24.688   6.728  0.00  0.00    +0.182 C 
+BRANCH   5   6
+ATOM      6  C   LYS A  3       25.933 -25.826   5.902  0.00  0.00    +0.325 C 
+ATOM      7  O   LYS A  3       25.902 -25.944   4.702  0.00  0.00    -0.249 OA
+BRANCH   6   8
+ATOM      8  OXT LYS A  3       26.558 -26.741   6.704  0.00  0.00    -0.479 OA
+ATOM      9  HXT LYS A  3       27.504 -26.864   6.484  0.00  0.00    +0.295 HD
+ENDBRANCH   6   8
+ENDBRANCH   5   6
+BRANCH   5  10
+ATOM     10  CB  LYS A  3       23.722 -24.663   6.428  0.00  0.00    +0.034 C 
+BRANCH  10  11
+ATOM     11  CG  LYS A  3       22.997 -23.403   6.950  0.00  0.00    +0.003 C 
+BRANCH  11  12
+ATOM     12  CD  LYS A  3       22.721 -22.384   5.827  0.00  0.00    +0.015 C 
+BRANCH  12  13
+ATOM     13  CE  LYS A  3       22.881 -20.914   6.242  0.00  0.00    +0.077 C 
+BRANCH  13  14
+ATOM     14  NZ  LYS A  3       23.369 -20.775   7.610  0.00  0.00    -0.330 NA
+ATOM     15  HZ1 LYS A  3       24.371 -20.970   7.632  0.00  0.00    +0.118 HD
+ATOM     16  HZ2 LYS A  3       22.938 -21.491   8.197  0.00  0.00    +0.118 HD
+ENDBRANCH  13  14
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   5  10
+ENDBRANCH   1   5
+BRANCH   3  17
+ATOM     17  CA  HIS A  2       26.983 -21.187   6.897  0.00  0.00    +0.200 C 
+BRANCH  17  18
+ATOM     18  N   HIS A  2       26.039 -20.428   6.052  0.00  0.00    -0.241 NA
+ATOM     19  C   GLY A  1       26.436 -19.857   4.967  0.00  0.00    +0.197 C 
+BRANCH  19  20
+ATOM     20  O   GLY A  1       27.712 -19.790   4.526  0.00  0.00    -0.495 OA
+ATOM     21  H   GLY A  1       28.304 -19.271   5.084  0.00  0.00    +0.293 HD
+ENDBRANCH  19  20
+BRANCH  19  22
+ATOM     22  CA  GLY A  1       25.520 -19.191   3.948  0.00  0.00    +0.174 C 
+BRANCH  22  23
+ATOM     23  N   GLY A  1       26.184 -18.070   3.276  0.00  0.00    -0.322 NA
+ATOM     24  H1  GLY A  1       27.081 -17.901   3.726  0.00  0.00    +0.119 HD
+ATOM     25  H2  GLY A  1       25.618 -17.233   3.413  0.00  0.00    +0.119 HD
+ENDBRANCH  22  23
+ENDBRANCH  19  22
+ENDBRANCH  17  18
+BRANCH  17  26
+ATOM     26  CB  HIS A  2       27.577 -20.336   8.049  0.00  0.00    +0.091 C 
+BRANCH  26  27
+ATOM     27  CG  HIS A  2       28.939 -19.755   7.757  0.00  0.00    +0.038 A 
+ATOM     28  ND1 HIS A  2       29.764 -20.249   6.769  0.00  0.00    -0.348 N 
+ATOM     29  HD1 HIS A  2       29.596 -21.061   6.190  0.00  0.00    +0.167 HD
+ATOM     30  CE1 HIS A  2       30.808 -19.380   6.625  0.00  0.00    +0.196 A 
+ATOM     31  NE2 HIS A  2       30.804 -18.474   7.571  0.00  0.00    -0.244 NA
+ATOM     32  CD2 HIS A  2       29.677 -18.727   8.313  0.00  0.00    +0.133 A 
+ENDBRANCH  26  27
+ENDBRANCH  17  26
+ENDBRANCH   3  17
+TORSDOF 15
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -6.8      2.665      3.664
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   LYS A  3       27.022 -21.653   6.587  0.00  0.00    -0.301 N 
+ATOM      2  H   LYS A  3       27.122 -22.132   5.695  0.00  0.00    +0.150 HD
+ATOM      3  C   HIS A  2       26.300 -22.313   7.561  0.00  0.00    +0.239 C 
+ATOM      4  O   HIS A  2       26.240 -21.849   8.701  0.00  0.00    -0.273 OA
+ENDROOT
+BRANCH   1   5
+ATOM      5  CA  LYS A  3       27.875 -20.475   6.833  0.00  0.00    +0.182 C 
+BRANCH   5   6
+ATOM      6  C   LYS A  3       28.004 -19.592   5.543  0.00  0.00    +0.325 C 
+ATOM      7  O   LYS A  3       28.825 -18.727   5.362  0.00  0.00    -0.249 OA
+BRANCH   6   8
+ATOM      8  OXT LYS A  3       27.027 -19.866   4.626  0.00  0.00    -0.479 OA
+ATOM      9  HXT LYS A  3       26.310 -19.200   4.614  0.00  0.00    +0.295 HD
+ENDBRANCH   6   8
+ENDBRANCH   5   6
+BRANCH   5  10
+ATOM     10  CB  LYS A  3       29.274 -20.900   7.329  0.00  0.00    +0.034 C 
+BRANCH  10  11
+ATOM     11  CG  LYS A  3       30.014 -19.810   8.137  0.00  0.00    +0.003 C 
+BRANCH  11  12
+ATOM     12  CD  LYS A  3       31.188 -20.388   8.951  0.00  0.00    +0.015 C 
+BRANCH  12  13
+ATOM     13  CE  LYS A  3       31.105 -21.900   9.211  0.00  0.00    +0.077 C 
+BRANCH  13  14
+ATOM     14  NZ  LYS A  3       32.183 -22.634   8.557  0.00  0.00    -0.330 NA
+ATOM     15  HZ1 LYS A  3       32.808 -21.973   8.094  0.00  0.00    +0.118 HD
+ATOM     16  HZ2 LYS A  3       31.793 -23.212   7.811  0.00  0.00    +0.118 HD
+ENDBRANCH  13  14
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   5  10
+ENDBRANCH   1   5
+BRANCH   3  17
+ATOM     17  CA  HIS A  2       25.398 -23.499   7.070  0.00  0.00    +0.200 C 
+BRANCH  17  18
+ATOM     18  N   HIS A  2       24.363 -22.987   6.148  0.00  0.00    -0.241 NA
+ATOM     19  C   GLY A  1       23.477 -22.143   6.554  0.00  0.00    +0.197 C 
+BRANCH  19  20
+ATOM     20  O   GLY A  1       23.314 -21.710   7.824  0.00  0.00    -0.495 OA
+ATOM     21  H   GLY A  1       23.913 -22.111   8.465  0.00  0.00    +0.293 HD
+ENDBRANCH  19  20
+BRANCH  19  22
+ATOM     22  CA  GLY A  1       22.472 -21.436   5.652  0.00  0.00    +0.174 C 
+BRANCH  22  23
+ATOM     23  N   GLY A  1       22.700 -19.988   5.622  0.00  0.00    -0.322 NA
+ATOM     24  H1  GLY A  1       21.861 -19.530   5.273  0.00  0.00    +0.119 HD
+ATOM     25  H2  GLY A  1       23.447 -19.795   4.955  0.00  0.00    +0.119 HD
+ENDBRANCH  22  23
+ENDBRANCH  19  22
+ENDBRANCH  17  18
+BRANCH  17  26
+ATOM     26  CB  HIS A  2       26.226 -24.659   6.459  0.00  0.00    +0.091 C 
+BRANCH  26  27
+ATOM     27  CG  HIS A  2       25.574 -26.016   6.570  0.00  0.00    +0.038 A 
+ATOM     28  ND1 HIS A  2       24.353 -26.306   5.999  0.00  0.00    -0.348 N 
+ATOM     29  HD1 HIS A  2       23.744 -25.662   5.513  0.00  0.00    +0.167 HD
+ATOM     30  CE1 HIS A  2       24.154 -27.653   6.102  0.00  0.00    +0.196 A 
+ATOM     31  NE2 HIS A  2       25.068 -28.211   6.858  0.00  0.00    -0.244 NA
+ATOM     32  CD2 HIS A  2       25.926 -27.195   7.200  0.00  0.00    +0.133 A 
+ENDBRANCH  26  27
+ENDBRANCH  17  26
+ENDBRANCH   3  17
+TORSDOF 15
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -6.8      1.939      3.157
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   LYS A  3       29.323 -20.102   7.089  0.00  0.00    -0.301 N 
+ATOM      2  H   LYS A  3       28.785 -20.734   7.677  0.00  0.00    +0.150 HD
+ATOM      3  C   HIS A  2       28.660 -19.554   6.010  0.00  0.00    +0.239 C 
+ATOM      4  O   HIS A  2       29.212 -18.690   5.326  0.00  0.00    -0.273 OA
+ENDROOT
+BRANCH   1   5
+ATOM      5  CA  LYS A  3       30.623 -19.629   7.601  0.00  0.00    +0.182 C 
+BRANCH   5   6
+ATOM      6  C   LYS A  3       31.148 -20.555   8.753  0.00  0.00    +0.325 C 
+ATOM      7  O   LYS A  3       32.224 -20.467   9.291  0.00  0.00    -0.249 OA
+BRANCH   6   8
+ATOM      8  OXT LYS A  3       30.259 -21.545   9.068  0.00  0.00    -0.479 OA
+ATOM      9  HXT LYS A  3       29.635 -21.292   9.778  0.00  0.00    +0.295 HD
+ENDBRANCH   6   8
+ENDBRANCH   5   6
+BRANCH   5  10
+ATOM     10  CB  LYS A  3       30.524 -18.169   8.094  0.00  0.00    +0.034 C 
+BRANCH  10  11
+ATOM     11  CG  LYS A  3       30.023 -18.028   9.549  0.00  0.00    +0.003 C 
+BRANCH  11  12
+ATOM     12  CD  LYS A  3       30.443 -16.686  10.180  0.00  0.00    +0.015 C 
+BRANCH  12  13
+ATOM     13  CE  LYS A  3       31.605 -16.784  11.180  0.00  0.00    +0.077 C 
+BRANCH  13  14
+ATOM     14  NZ  LYS A  3       32.714 -17.579  10.663  0.00  0.00    -0.330 NA
+ATOM     15  HZ1 LYS A  3       32.592 -18.552  10.949  0.00  0.00    +0.118 HD
+ATOM     16  HZ2 LYS A  3       33.583 -17.272  11.103  0.00  0.00    +0.118 HD
+ENDBRANCH  13  14
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   5  10
+ENDBRANCH   1   5
+BRANCH   3  17
+ATOM     17  CA  HIS A  2       27.325 -20.259   5.586  0.00  0.00    +0.200 C 
+BRANCH  17  18
+ATOM     18  N   HIS A  2       26.479 -20.475   6.778  0.00  0.00    -0.241 NA
+ATOM     19  C   GLY A  1       26.146 -21.665   7.144  0.00  0.00    +0.197 C 
+BRANCH  19  20
+ATOM     20  O   GLY A  1       26.420 -22.808   6.477  0.00  0.00    -0.495 OA
+ATOM     21  H   GLY A  1       26.034 -23.603   6.865  0.00  0.00    +0.293 HD
+ENDBRANCH  19  20
+BRANCH  19  22
+ATOM     22  CA  GLY A  1       25.415 -22.005   8.438  0.00  0.00    +0.174 C 
+BRANCH  22  23
+ATOM     23  N   GLY A  1       25.713 -21.036   9.497  0.00  0.00    -0.322 NA
+ATOM     24  H1  GLY A  1       26.607 -21.275   9.920  0.00  0.00    +0.119 HD
+ATOM     25  H2  GLY A  1       25.003 -21.126  10.223  0.00  0.00    +0.119 HD
+ENDBRANCH  22  23
+ENDBRANCH  19  22
+ENDBRANCH  17  18
+BRANCH  17  26
+ATOM     26  CB  HIS A  2       26.586 -19.498   4.455  0.00  0.00    +0.091 C 
+BRANCH  26  27
+ATOM     27  CG  HIS A  2       25.122 -19.838   4.327  0.00  0.00    +0.038 A 
+ATOM     28  ND1 HIS A  2       24.648 -21.132   4.394  0.00  0.00    -0.348 N 
+ATOM     29  HD1 HIS A  2       25.201 -21.975   4.468  0.00  0.00    +0.167 HD
+ATOM     30  CE1 HIS A  2       23.285 -21.074   4.458  0.00  0.00    +0.196 A 
+ATOM     31  NE2 HIS A  2       22.853 -19.854   4.249  0.00  0.00    -0.244 NA
+ATOM     32  CD2 HIS A  2       23.982 -19.086   4.114  0.00  0.00    +0.133 A 
+ENDBRANCH  26  27
+ENDBRANCH  17  26
+ENDBRANCH   3  17
+TORSDOF 15
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -6.7      2.778      6.028
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   LYS A  3       25.945 -20.633   5.296  0.00  0.00    -0.301 N 
+ATOM      2  H   LYS A  3       26.677 -21.035   4.715  0.00  0.00    +0.150 HD
+ATOM      3  C   HIS A  2       26.022 -20.896   6.648  0.00  0.00    +0.239 C 
+ATOM      4  O   HIS A  2       25.240 -20.344   7.426  0.00  0.00    -0.273 OA
+ENDROOT
+BRANCH   1   5
+ATOM      5  CA  LYS A  3       25.074 -19.608   4.691  0.00  0.00    +0.182 C 
+BRANCH   5   6
+ATOM      6  C   LYS A  3       23.688 -20.215   4.278  0.00  0.00    +0.325 C 
+ATOM      7  O   LYS A  3       22.635 -19.627   4.276  0.00  0.00    -0.249 OA
+BRANCH   6   8
+ATOM      8  OXT LYS A  3       23.777 -21.542   3.959  0.00  0.00    -0.479 OA
+ATOM      9  HXT LYS A  3       24.473 -22.014   4.460  0.00  0.00    +0.295 HD
+ENDBRANCH   6   8
+ENDBRANCH   5   6
+BRANCH   5  10
+ATOM     10  CB  LYS A  3       25.755 -18.956   3.468  0.00  0.00    +0.034 C 
+BRANCH  10  11
+ATOM     11  CG  LYS A  3       25.469 -17.445   3.319  0.00  0.00    +0.003 C 
+BRANCH  11  12
+ATOM     12  CD  LYS A  3       26.754 -16.598   3.416  0.00  0.00    +0.015 C 
+BRANCH  12  13
+ATOM     13  CE  LYS A  3       26.520 -15.080   3.433  0.00  0.00    +0.077 C 
+BRANCH  13  14
+ATOM     14  NZ  LYS A  3       26.611 -14.491   2.102  0.00  0.00    -0.330 NA
+ATOM     15  HZ1 LYS A  3       26.930 -15.200   1.441  0.00  0.00    +0.118 HD
+ATOM     16  HZ2 LYS A  3       27.334 -13.770   2.101  0.00  0.00    +0.118 HD
+ENDBRANCH  13  14
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   5  10
+ENDBRANCH   1   5
+BRANCH   3  17
+ATOM     17  CA  HIS A  2       26.958 -22.081   7.072  0.00  0.00    +0.200 C 
+BRANCH  17  18
+ATOM     18  N   HIS A  2       28.029 -21.576   7.955  0.00  0.00    -0.241 NA
+ATOM     19  C   GLY A  1       29.043 -20.945   7.471  0.00  0.00    +0.197 C 
+BRANCH  19  20
+ATOM     20  O   GLY A  1       29.307 -20.755   6.159  0.00  0.00    -0.495 OA
+ATOM     21  H   GLY A  1       28.871 -19.988   5.767  0.00  0.00    +0.293 HD
+ENDBRANCH  19  20
+BRANCH  19  22
+ATOM     22  CA  GLY A  1       30.114 -20.249   8.302  0.00  0.00    +0.174 C 
+BRANCH  22  23
+ATOM     23  N   GLY A  1       31.406 -20.229   7.610  0.00  0.00    -0.322 NA
+ATOM     24  H1  GLY A  1       31.275 -19.839   6.679  0.00  0.00    +0.119 HD
+ATOM     25  H2  GLY A  1       31.720 -21.192   7.490  0.00  0.00    +0.119 HD
+ENDBRANCH  22  23
+ENDBRANCH  19  22
+ENDBRANCH  17  18
+BRANCH  17  26
+ATOM     26  CB  HIS A  2       26.172 -23.263   7.695  0.00  0.00    +0.091 C 
+BRANCH  26  27
+ATOM     27  CG  HIS A  2       25.769 -24.333   6.709  0.00  0.00    +0.038 A 
+ATOM     28  ND1 HIS A  2       25.147 -24.048   5.512  0.00  0.00    -0.348 N 
+ATOM     29  HD1 HIS A  2       24.841 -23.140   5.191  0.00  0.00    +0.167 HD
+ATOM     30  CE1 HIS A  2       25.116 -25.197   4.775  0.00  0.00    +0.196 A 
+ATOM     31  NE2 HIS A  2       25.502 -26.228   5.487  0.00  0.00    -0.244 NA
+ATOM     32  CD2 HIS A  2       25.861 -25.712   6.708  0.00  0.00    +0.133 A 
+ENDBRANCH  26  27
+ENDBRANCH  17  26
+ENDBRANCH   3  17
+TORSDOF 15
+ENDMDL

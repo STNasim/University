@@ -1,0 +1,248 @@
+MODEL 1
+REMARK VINA RESULT:       1.3      0.000      0.000
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   LIG    1       25.986 -17.625   3.975  0.00  0.00    +0.144 C 
+ATOM      2  C   LIG    1       25.971 -18.823   4.665  0.00  0.00    +0.014 C 
+ENDROOT
+BRANCH   2   3
+ATOM      3  C   LIG    1       24.646 -19.576   4.668  0.00  0.00    -0.016 A 
+ATOM      4  C   LIG    1       23.753 -19.551   5.751  0.00  0.00    +0.012 A 
+ATOM      5  C   LIG    1       22.518 -20.228   5.682  0.00  0.00    +0.046 A 
+ATOM      6  C   LIG    1       22.165 -20.963   4.546  0.00  0.00    +0.120 A 
+ATOM      7  C   LIG    1       23.071 -21.030   3.491  0.00  0.00    +0.046 A 
+ATOM      8  C   LIG    1       24.295 -20.344   3.548  0.00  0.00    +0.012 A 
+BRANCH   6   9
+ATOM      9  O   LIG    1       20.933 -21.565   4.574  0.00  0.00    -0.495 OA
+ATOM     10  C   LIG    1       19.827 -20.769   4.147  0.00  0.00    +0.277 C 
+ENDBRANCH   6   9
+ENDBRANCH   2   3
+BRANCH   2  11
+ATOM     11  C   LIG    1       27.147 -19.485   5.395  0.00  0.00    -0.016 A 
+ATOM     12  C   LIG    1       28.445 -18.957   5.465  0.00  0.00    +0.008 A 
+ATOM     13  C   LIG    1       29.474 -19.585   6.193  0.00  0.00    +0.001 A 
+ATOM     14  C   LIG    1       29.263 -20.818   6.796  0.00  0.00    +0.000 A 
+ATOM     15  C   LIG    1       28.018 -21.418   6.671  0.00  0.00    +0.001 A 
+ATOM     16  C   LIG    1       26.977 -20.756   5.994  0.00  0.00    +0.008 A 
+ENDBRANCH   2  11
+BRANCH   1  17
+ATOM     17  C   LIG    1       27.178 -16.760   3.780  0.00  0.00    +0.350 C 
+ATOM     18  O   LIG    1       28.168 -16.795   4.466  0.00  0.00    -0.244 OA
+BRANCH  17  19
+ATOM     19  O   LIG    1       26.966 -15.867   2.762  0.00  0.00    -0.460 OA
+BRANCH  19  20
+ATOM     20  C   LIG    1       27.015 -14.455   3.012  0.00  0.00    +0.236 C 
+BRANCH  20  21
+ATOM     21  C   LIG    1       25.781 -13.898   3.740  0.00  0.00    +0.026 C 
+BRANCH  21  22
+ATOM     22  C   LIG    1       24.953 -12.948   2.846  0.00  0.00    +0.003 C 
+ATOM     23  C   LIG    1       23.903 -12.058   3.489  0.00  0.00    +0.004 C 
+ENDBRANCH  21  22
+BRANCH  21  24
+ATOM     24  C   LIG    1       26.141 -13.224   5.098  0.00  0.00    +0.007 C 
+BRANCH  24  25
+ATOM     25  C   LIG    1       27.559 -13.427   5.687  0.00  0.00    +0.000 C 
+BRANCH  25  27
+ATOM     26  C   LIG    1       29.339 -12.570   4.022  0.00  0.00    +0.004 C 
+ATOM     27  C   LIG    1       28.539 -12.329   5.281  0.00  0.00    -0.003 C 
+ENDBRANCH  25  27
+ENDBRANCH  24  25
+ENDBRANCH  21  24
+ENDBRANCH  20  21
+ENDBRANCH  19  20
+ENDBRANCH  17  19
+ENDBRANCH   1  17
+BRANCH   1  28
+ATOM     28  C   LIG    1       24.805 -17.095   3.426  0.00  0.00    +0.107 C 
+ATOM     29  N   LIG    1       23.839 -16.660   2.976  0.00  0.00    -0.191 NA
+ENDBRANCH   1  28
+TORSDOF 12
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:       1.5      0.778      2.283
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   LIG    1       26.261 -17.892   3.958  0.00  0.00    +0.144 C 
+ATOM      2  C   LIG    1       26.172 -19.020   4.752  0.00  0.00    +0.014 C 
+ENDROOT
+BRANCH   2   3
+ATOM      3  C   LIG    1       24.807 -19.698   4.800  0.00  0.00    -0.016 A 
+ATOM      4  C   LIG    1       24.265 -20.249   5.972  0.00  0.00    +0.012 A 
+ATOM      5  C   LIG    1       22.978 -20.823   5.969  0.00  0.00    +0.046 A 
+ATOM      6  C   LIG    1       22.220 -20.882   4.795  0.00  0.00    +0.120 A 
+ATOM      7  C   LIG    1       22.776 -20.381   3.620  0.00  0.00    +0.046 A 
+ATOM      8  C   LIG    1       24.052 -19.794   3.622  0.00  0.00    +0.012 A 
+BRANCH   6   9
+ATOM      9  O   LIG    1       20.974 -21.441   4.907  0.00  0.00    -0.495 OA
+ATOM     10  C   LIG    1       19.996 -21.006   3.962  0.00  0.00    +0.277 C 
+ENDBRANCH   6   9
+ENDBRANCH   2   3
+BRANCH   2  11
+ATOM     11  C   LIG    1       27.300 -19.675   5.559  0.00  0.00    -0.016 A 
+ATOM     12  C   LIG    1       27.302 -21.009   5.994  0.00  0.00    +0.008 A 
+ATOM     13  C   LIG    1       28.390 -21.572   6.690  0.00  0.00    +0.001 A 
+ATOM     14  C   LIG    1       29.474 -20.787   7.061  0.00  0.00    +0.000 A 
+ATOM     15  C   LIG    1       29.466 -19.439   6.731  0.00  0.00    +0.001 A 
+ATOM     16  C   LIG    1       28.404 -18.899   5.982  0.00  0.00    +0.008 A 
+ENDBRANCH   2  11
+BRANCH   1  17
+ATOM     17  C   LIG    1       27.500 -17.113   3.707  0.00  0.00    +0.350 C 
+ATOM     18  O   LIG    1       28.602 -17.446   4.065  0.00  0.00    -0.244 OA
+BRANCH  17  19
+ATOM     19  O   LIG    1       27.210 -15.929   3.081  0.00  0.00    -0.460 OA
+BRANCH  19  20
+ATOM     20  C   LIG    1       27.146 -14.707   3.830  0.00  0.00    +0.236 C 
+BRANCH  20  21
+ATOM     21  C   LIG    1       27.573 -13.459   3.041  0.00  0.00    +0.026 C 
+BRANCH  21  22
+ATOM     22  C   LIG    1       28.745 -12.711   3.717  0.00  0.00    +0.003 C 
+ATOM     23  C   LIG    1       28.667 -12.411   5.204  0.00  0.00    +0.004 C 
+ENDBRANCH  21  22
+BRANCH  21  24
+ATOM     24  C   LIG    1       26.381 -12.497   2.753  0.00  0.00    +0.007 C 
+BRANCH  24  25
+ATOM     25  C   LIG    1       25.068 -13.078   2.173  0.00  0.00    +0.000 C 
+BRANCH  25  27
+ATOM     26  C   LIG    1       24.202 -12.700   4.577  0.00  0.00    +0.004 C 
+ATOM     27  C   LIG    1       23.879 -12.930   3.119  0.00  0.00    -0.003 C 
+ENDBRANCH  25  27
+ENDBRANCH  24  25
+ENDBRANCH  21  24
+ENDBRANCH  20  21
+ENDBRANCH  19  20
+ENDBRANCH  17  19
+ENDBRANCH   1  17
+BRANCH   1  28
+ATOM     28  C   LIG    1       25.118 -17.352   3.342  0.00  0.00    +0.107 C 
+ATOM     29  N   LIG    1       24.182 -16.909   2.839  0.00  0.00    -0.191 NA
+ENDBRANCH   1  28
+TORSDOF 12
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:       3.5      1.696      6.111
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   LIG    1       25.161 -19.451   3.841  0.00  0.00    +0.144 C 
+ATOM      2  C   LIG    1       26.310 -18.911   4.388  0.00  0.00    +0.014 C 
+ENDROOT
+BRANCH   2   3
+ATOM      3  C   LIG    1       26.582 -17.447   4.060  0.00  0.00    -0.016 A 
+ATOM      4  C   LIG    1       25.658 -16.627   3.393  0.00  0.00    +0.012 A 
+ATOM      5  C   LIG    1       25.942 -15.266   3.156  0.00  0.00    +0.046 A 
+ATOM      6  C   LIG    1       27.160 -14.708   3.555  0.00  0.00    +0.120 A 
+ATOM      7  C   LIG    1       28.099 -15.532   4.171  0.00  0.00    +0.046 A 
+ATOM      8  C   LIG    1       27.814 -16.883   4.424  0.00  0.00    +0.012 A 
+BRANCH   6   9
+ATOM      9  O   LIG    1       27.327 -13.372   3.295  0.00  0.00    -0.495 OA
+ATOM     10  C   LIG    1       28.572 -12.798   3.695  0.00  0.00    +0.277 C 
+ENDBRANCH   6   9
+ENDBRANCH   2   3
+BRANCH   2  11
+ATOM     11  C   LIG    1       27.314 -19.613   5.310  0.00  0.00    -0.016 A 
+ATOM     12  C   LIG    1       28.607 -19.144   5.590  0.00  0.00    +0.008 A 
+ATOM     13  C   LIG    1       29.470 -19.806   6.485  0.00  0.00    +0.001 A 
+ATOM     14  C   LIG    1       29.102 -21.017   7.056  0.00  0.00    +0.000 A 
+ATOM     15  C   LIG    1       27.868 -21.561   6.731  0.00  0.00    +0.001 A 
+ATOM     16  C   LIG    1       26.987 -20.864   5.884  0.00  0.00    +0.008 A 
+ENDBRANCH   2  11
+BRANCH   1  17
+ATOM     17  C   LIG    1       24.660 -20.829   4.080  0.00  0.00    +0.350 C 
+ATOM     18  O   LIG    1       24.259 -21.569   3.218  0.00  0.00    -0.244 OA
+BRANCH  17  19
+ATOM     19  O   LIG    1       24.646 -21.114   5.420  0.00  0.00    -0.460 OA
+BRANCH  19  20
+ATOM     20  C   LIG    1       23.843 -20.336   6.320  0.00  0.00    +0.236 C 
+BRANCH  20  21
+ATOM     21  C   LIG    1       22.356 -20.262   5.938  0.00  0.00    +0.026 C 
+BRANCH  21  22
+ATOM     22  C   LIG    1       21.858 -21.564   5.269  0.00  0.00    +0.003 C 
+ATOM     23  C   LIG    1       20.793 -21.478   4.190  0.00  0.00    +0.004 C 
+ENDBRANCH  21  22
+BRANCH  21  24
+ATOM     24  C   LIG    1       22.024 -19.016   5.063  0.00  0.00    +0.007 C 
+BRANCH  24  25
+ATOM     25  C   LIG    1       22.457 -17.614   5.556  0.00  0.00    +0.000 C 
+BRANCH  25  27
+ATOM     26  C   LIG    1       22.657 -15.121   4.908  0.00  0.00    +0.004 C 
+ATOM     27  C   LIG    1       22.272 -16.525   4.502  0.00  0.00    -0.003 C 
+ENDBRANCH  25  27
+ENDBRANCH  24  25
+ENDBRANCH  21  24
+ENDBRANCH  20  21
+ENDBRANCH  19  20
+ENDBRANCH  17  19
+ENDBRANCH   1  17
+BRANCH   1  28
+ATOM     28  C   LIG    1       24.376 -18.712   2.938  0.00  0.00    +0.107 C 
+ATOM     29  N   LIG    1       23.733 -18.107   2.199  0.00  0.00    -0.191 NA
+ENDBRANCH   1  28
+TORSDOF 12
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:       4.0      1.829      4.376
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   LIG    1       27.149 -17.802   4.457  0.00  0.00    +0.144 C 
+ATOM      2  C   LIG    1       25.928 -17.411   3.940  0.00  0.00    +0.014 C 
+ENDROOT
+BRANCH   2   3
+ATOM      3  C   LIG    1       24.848 -18.487   3.890  0.00  0.00    -0.016 A 
+ATOM      4  C   LIG    1       25.049 -19.747   3.305  0.00  0.00    +0.012 A 
+ATOM      5  C   LIG    1       24.030 -20.721   3.328  0.00  0.00    +0.046 A 
+ATOM      6  C   LIG    1       22.788 -20.449   3.910  0.00  0.00    +0.120 A 
+ATOM      7  C   LIG    1       22.570 -19.182   4.447  0.00  0.00    +0.046 A 
+ATOM      8  C   LIG    1       23.587 -18.213   4.440  0.00  0.00    +0.012 A 
+BRANCH   6   9
+ATOM      9  O   LIG    1       21.877 -21.472   3.898  0.00  0.00    -0.495 OA
+ATOM     10  C   LIG    1       21.008 -21.562   5.029  0.00  0.00    +0.277 C 
+ENDBRANCH   6   9
+ENDBRANCH   2   3
+BRANCH   2  11
+ATOM     11  C   LIG    1       25.538 -16.013   3.445  0.00  0.00    -0.016 A 
+ATOM     12  C   LIG    1       24.331 -15.365   3.748  0.00  0.00    +0.008 A 
+ATOM     13  C   LIG    1       24.046 -14.058   3.306  0.00  0.00    +0.001 A 
+ATOM     14  C   LIG    1       24.923 -13.392   2.460  0.00  0.00    +0.000 A 
+ATOM     15  C   LIG    1       26.085 -14.037   2.061  0.00  0.00    +0.001 A 
+ATOM     16  C   LIG    1       26.391 -15.318   2.556  0.00  0.00    +0.008 A 
+ENDBRANCH   2  11
+BRANCH   1  17
+ATOM     17  C   LIG    1       28.320 -16.912   4.665  0.00  0.00    +0.350 C 
+ATOM     18  O   LIG    1       29.405 -17.284   5.033  0.00  0.00    -0.244 OA
+BRANCH  17  19
+ATOM     19  O   LIG    1       27.975 -15.601   4.456  0.00  0.00    -0.460 OA
+BRANCH  19  20
+ATOM     20  C   LIG    1       27.681 -14.742   5.566  0.00  0.00    +0.236 C 
+BRANCH  20  21
+ATOM     21  C   LIG    1       27.127 -13.363   5.169  0.00  0.00    +0.026 C 
+BRANCH  21  22
+ATOM     22  C   LIG    1       28.248 -12.317   4.974  0.00  0.00    +0.003 C 
+ATOM     23  C   LIG    1       29.127 -12.401   3.738  0.00  0.00    +0.004 C 
+ENDBRANCH  21  22
+BRANCH  21  24
+ATOM     24  C   LIG    1       26.040 -12.848   6.160  0.00  0.00    +0.007 C 
+BRANCH  24  25
+ATOM     25  C   LIG    1       25.398 -11.460   5.917  0.00  0.00    +0.000 C 
+BRANCH  25  27
+ATOM     26  C   LIG    1       22.815 -11.447   5.937  0.00  0.00    +0.004 C 
+ATOM     27  C   LIG    1       24.091 -11.535   5.132  0.00  0.00    -0.003 C 
+ENDBRANCH  25  27
+ENDBRANCH  24  25
+ENDBRANCH  21  24
+ENDBRANCH  20  21
+ENDBRANCH  19  20
+ENDBRANCH  17  19
+ENDBRANCH   1  17
+BRANCH   1  28
+ATOM     28  C   LIG    1       27.394 -19.146   4.791  0.00  0.00    +0.107 C 
+ATOM     29  N   LIG    1       27.593 -20.246   5.066  0.00  0.00    -0.191 NA
+ENDBRANCH   1  28
+TORSDOF 12
+ENDMDL

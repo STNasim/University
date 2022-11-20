@@ -1,0 +1,414 @@
+MODEL 1
+REMARK VINA RESULT:      -7.0      0.000      0.000
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  HIS A  1       30.290 -20.869   8.250  0.00  0.00    +0.188 C 
+ENDROOT
+BRANCH   1   3
+ATOM      2  C   UNK A  0       31.008 -18.497   8.509  0.00  0.00    +0.215 C 
+ATOM      3  N   HIS A  1       30.179 -19.529   8.848  0.00  0.00    -0.302 N 
+ATOM      4  H   HIS A  1       29.323 -19.373   9.378  0.00  0.00    +0.149 HD
+ATOM      5  O   UNK A  0       31.955 -18.646   7.747  0.00  0.00    -0.276 OA
+BRANCH   2   6
+ATOM      6  C   UNK A  0       30.717 -17.143   9.142  0.00  0.00    +0.110 C 
+BRANCH   6   7
+ATOM      7  C   UNK A  0       31.890 -16.476   9.855  0.00  0.00    +0.087 C 
+BRANCH   7   8
+ATOM      8  N   UNK A  0       32.823 -15.837   8.934  0.00  0.00    -0.330 NA
+ATOM      9  H   UNK A  0       33.664 -16.406   8.842  0.00  0.00    +0.118 HD
+ATOM     10  H   UNK A  0       32.414 -15.786   8.002  0.00  0.00    +0.118 HD
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   2   6
+ENDBRANCH   1   3
+BRANCH   1  11
+ATOM     11  C   HIS A  1       31.123 -21.848   9.105  0.00  0.00    +0.326 C 
+ATOM     12  O   HIS A  1       30.839 -22.141  10.251  0.00  0.00    -0.249 OA
+BRANCH  11  13
+ATOM     13  OXT HIS A  1       32.271 -22.284   8.522  0.00  0.00    -0.479 OA
+ATOM     14  HXT HIS A  1       32.803 -21.536   8.179  0.00  0.00    +0.295 HD
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+BRANCH   1  15
+ATOM     15  CB  HIS A  1       28.882 -21.424   7.966  0.00  0.00    +0.090 C 
+BRANCH  15  16
+ATOM     16  CG  HIS A  1       28.189 -20.769   6.811  0.00  0.00    +0.061 A 
+ATOM     17  ND1 HIS A  1       26.822 -20.893   6.643  0.00  0.00    -0.241 NA
+ATOM     18  CE1 HIS A  1       26.547 -20.232   5.540  0.00  0.00    +0.196 A 
+ATOM     19  NE2 HIS A  1       27.667 -19.672   4.995  0.00  0.00    -0.351 N 
+ATOM     20  HE2 HIS A  1       27.705 -19.130   4.142  0.00  0.00    +0.166 HD
+ATOM     21  CD2 HIS A  1       28.721 -19.990   5.806  0.00  0.00    +0.107 A 
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 8
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -6.9      1.873      5.706
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  HIS A  1       30.098 -18.871   8.700  0.00  0.00    +0.188 C 
+ENDROOT
+BRANCH   1   3
+ATOM      2  C   UNK A  0       28.447 -20.538   7.863  0.00  0.00    +0.215 C 
+ATOM      3  N   HIS A  1       28.949 -19.267   7.872  0.00  0.00    -0.302 N 
+ATOM      4  H   HIS A  1       28.435 -18.488   7.463  0.00  0.00    +0.149 HD
+ATOM      5  O   UNK A  0       28.978 -21.452   8.480  0.00  0.00    -0.276 OA
+BRANCH   2   6
+ATOM      6  C   UNK A  0       27.198 -20.779   7.026  0.00  0.00    +0.110 C 
+BRANCH   6   7
+ATOM      7  C   UNK A  0       25.869 -20.690   7.772  0.00  0.00    +0.087 C 
+BRANCH   7   8
+ATOM      8  N   UNK A  0       26.037 -20.536   9.212  0.00  0.00    -0.330 NA
+ATOM      9  H   UNK A  0       25.469 -19.758   9.547  0.00  0.00    +0.118 HD
+ATOM     10  H   UNK A  0       25.692 -21.366   9.695  0.00  0.00    +0.118 HD
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   2   6
+ENDBRANCH   1   3
+BRANCH   1  11
+ATOM     11  C   HIS A  1       31.415 -19.559   8.282  0.00  0.00    +0.326 C 
+ATOM     12  O   HIS A  1       31.873 -19.497   7.157  0.00  0.00    -0.249 OA
+BRANCH  11  13
+ATOM     13  OXT HIS A  1       31.981 -20.343   9.238  0.00  0.00    -0.479 OA
+ATOM     14  HXT HIS A  1       31.490 -20.284  10.084  0.00  0.00    +0.295 HD
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+BRANCH   1  15
+ATOM     15  CB  HIS A  1       30.236 -17.337   8.691  0.00  0.00    +0.090 C 
+BRANCH  15  16
+ATOM     16  CG  HIS A  1       31.007 -16.786   9.851  0.00  0.00    +0.061 A 
+ATOM     17  ND1 HIS A  1       30.460 -16.769  11.121  0.00  0.00    -0.241 NA
+ATOM     18  CE1 HIS A  1       31.372 -16.207  11.884  0.00  0.00    +0.196 A 
+ATOM     19  NE2 HIS A  1       32.489 -15.875  11.172  0.00  0.00    -0.351 N 
+ATOM     20  HE2 HIS A  1       33.315 -15.420  11.540  0.00  0.00    +0.166 HD
+ATOM     21  CD2 HIS A  1       32.279 -16.256   9.875  0.00  0.00    +0.107 A 
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 8
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -6.8      1.647      5.272
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  HIS A  1       30.590 -20.438   8.695  0.00  0.00    +0.188 C 
+ENDROOT
+BRANCH   1   3
+ATOM      2  C   UNK A  0       28.475 -20.250   7.391  0.00  0.00    +0.215 C 
+ATOM      3  N   HIS A  1       29.812 -20.529   7.450  0.00  0.00    -0.302 N 
+ATOM      4  H   HIS A  1       30.375 -20.618   6.606  0.00  0.00    +0.149 HD
+ATOM      5  O   UNK A  0       27.819 -19.991   8.392  0.00  0.00    -0.276 OA
+BRANCH   2   6
+ATOM      6  C   UNK A  0       27.821 -20.299   6.016  0.00  0.00    +0.110 C 
+BRANCH   6   7
+ATOM      7  C   UNK A  0       26.311 -20.520   6.005  0.00  0.00    +0.087 C 
+BRANCH   7   8
+ATOM      8  N   UNK A  0       25.756 -20.570   4.658  0.00  0.00    -0.330 NA
+ATOM      9  H   UNK A  0       25.938 -21.482   4.240  0.00  0.00    +0.118 HD
+ATOM     10  H   UNK A  0       24.740 -20.475   4.695  0.00  0.00    +0.118 HD
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   2   6
+ENDBRANCH   1   3
+BRANCH   1  11
+ATOM     11  C   HIS A  1       31.189 -21.790   9.137  0.00  0.00    +0.326 C 
+ATOM     12  O   HIS A  1       30.840 -22.377  10.144  0.00  0.00    -0.249 OA
+BRANCH  11  13
+ATOM     13  OXT HIS A  1       32.225 -22.234   8.377  0.00  0.00    -0.479 OA
+ATOM     14  HXT HIS A  1       32.558 -23.098   8.697  0.00  0.00    +0.295 HD
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+BRANCH   1  15
+ATOM     15  CB  HIS A  1       31.679 -19.360   8.544  0.00  0.00    +0.090 C 
+BRANCH  15  16
+ATOM     16  CG  HIS A  1       31.563 -18.234   9.525  0.00  0.00    +0.061 A 
+ATOM     17  ND1 HIS A  1       30.785 -18.361  10.661  0.00  0.00    -0.241 NA
+ATOM     18  CE1 HIS A  1       30.881 -17.204  11.279  0.00  0.00    +0.196 A 
+ATOM     19  NE2 HIS A  1       31.697 -16.340  10.606  0.00  0.00    -0.351 N 
+ATOM     20  HE2 HIS A  1       31.910 -15.390  10.881  0.00  0.00    +0.166 HD
+ATOM     21  CD2 HIS A  1       32.155 -16.990   9.494  0.00  0.00    +0.107 A 
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 8
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -6.6      5.361      7.114
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  HIS A  1       24.865 -23.887   5.974  0.00  0.00    +0.188 C 
+ENDROOT
+BRANCH   1   3
+ATOM      2  C   UNK A  0       24.027 -21.772   4.958  0.00  0.00    +0.215 C 
+ATOM      3  N   HIS A  1       24.889 -22.833   4.949  0.00  0.00    -0.302 N 
+ATOM      4  H   HIS A  1       25.714 -22.844   4.351  0.00  0.00    +0.149 HD
+ATOM      5  O   UNK A  0       23.120 -21.678   5.775  0.00  0.00    -0.276 OA
+BRANCH   2   6
+ATOM      6  C   UNK A  0       24.228 -20.711   3.884  0.00  0.00    +0.110 C 
+BRANCH   6   7
+ATOM      7  C   UNK A  0       25.287 -19.654   4.184  0.00  0.00    +0.087 C 
+BRANCH   7   8
+ATOM      8  N   UNK A  0       26.611 -20.225   4.407  0.00  0.00    -0.330 NA
+ATOM      9  H   UNK A  0       26.664 -21.153   3.988  0.00  0.00    +0.118 HD
+ATOM     10  H   UNK A  0       27.318 -19.661   3.936  0.00  0.00    +0.118 HD
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   2   6
+ENDBRANCH   1   3
+BRANCH   1  11
+ATOM     11  C   HIS A  1       24.814 -25.312   5.381  0.00  0.00    +0.326 C 
+ATOM     12  O   HIS A  1       25.751 -25.828   4.801  0.00  0.00    -0.249 OA
+BRANCH  11  13
+ATOM     13  OXT HIS A  1       23.599 -25.919   5.452  0.00  0.00    -0.479 OA
+ATOM     14  HXT HIS A  1       23.034 -25.506   6.137  0.00  0.00    +0.295 HD
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+BRANCH   1  15
+ATOM     15  CB  HIS A  1       26.068 -23.713   6.919  0.00  0.00    +0.090 C 
+BRANCH  15  16
+ATOM     16  CG  HIS A  1       26.143 -22.366   7.571  0.00  0.00    +0.061 A 
+ATOM     17  ND1 HIS A  1       27.078 -21.433   7.161  0.00  0.00    -0.241 NA
+ATOM     18  CE1 HIS A  1       26.892 -20.391   7.942  0.00  0.00    +0.196 A 
+ATOM     19  NE2 HIS A  1       25.872 -20.599   8.826  0.00  0.00    -0.351 N 
+ATOM     20  HE2 HIS A  1       25.556 -19.947   9.532  0.00  0.00    +0.166 HD
+ATOM     21  CD2 HIS A  1       25.371 -21.849   8.588  0.00  0.00    +0.107 A 
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 8
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -6.5      5.229      6.916
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  HIS A  1       24.889 -23.194   6.871  0.00  0.00    +0.188 C 
+ENDROOT
+BRANCH   1   3
+ATOM      2  C   UNK A  0       26.418 -21.520   7.903  0.00  0.00    +0.215 C 
+ATOM      3  N   HIS A  1       25.783 -22.029   6.804  0.00  0.00    -0.302 N 
+ATOM      4  H   HIS A  1       26.049 -21.754   5.861  0.00  0.00    +0.149 HD
+ATOM      5  O   UNK A  0       26.213 -21.950   9.031  0.00  0.00    -0.276 OA
+BRANCH   2   6
+ATOM      6  C   UNK A  0       27.384 -20.366   7.667  0.00  0.00    +0.110 C 
+BRANCH   6   7
+ATOM      7  C   UNK A  0       28.271 -20.484   6.431  0.00  0.00    +0.087 C 
+BRANCH   7   8
+ATOM      8  N   UNK A  0       27.598 -20.063   5.208  0.00  0.00    -0.330 NA
+ATOM      9  H   UNK A  0       27.865 -20.673   4.436  0.00  0.00    +0.118 HD
+ATOM     10  H   UNK A  0       26.589 -20.165   5.312  0.00  0.00    +0.118 HD
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   2   6
+ENDBRANCH   1   3
+BRANCH   1  11
+ATOM     11  C   HIS A  1       23.406 -22.813   7.071  0.00  0.00    +0.326 C 
+ATOM     12  O   HIS A  1       23.049 -21.810   7.659  0.00  0.00    -0.249 OA
+BRANCH  11  13
+ATOM     13  OXT HIS A  1       22.512 -23.741   6.636  0.00  0.00    -0.479 OA
+ATOM     14  HXT HIS A  1       21.643 -23.333   6.437  0.00  0.00    +0.295 HD
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+BRANCH   1  15
+ATOM     15  CB  HIS A  1       25.083 -24.065   5.616  0.00  0.00    +0.090 C 
+BRANCH  15  16
+ATOM     16  CG  HIS A  1       25.219 -25.529   5.903  0.00  0.00    +0.061 A 
+ATOM     17  ND1 HIS A  1       24.100 -26.327   6.055  0.00  0.00    -0.241 NA
+ATOM     18  CE1 HIS A  1       24.565 -27.529   6.318  0.00  0.00    +0.196 A 
+ATOM     19  NE2 HIS A  1       25.931 -27.550   6.328  0.00  0.00    -0.351 N 
+ATOM     20  HE2 HIS A  1       26.511 -28.356   6.520  0.00  0.00    +0.166 HD
+ATOM     21  CD2 HIS A  1       26.363 -26.284   6.045  0.00  0.00    +0.107 A 
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 8
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -6.5      4.892      6.782
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  HIS A  1       26.161 -21.879   7.187  0.00  0.00    +0.188 C 
+ENDROOT
+BRANCH   1   3
+ATOM      2  C   UNK A  0       25.409 -20.462   5.280  0.00  0.00    +0.215 C 
+ATOM      3  N   HIS A  1       25.129 -21.349   6.283  0.00  0.00    -0.302 N 
+ATOM      4  H   HIS A  1       24.237 -21.837   6.328  0.00  0.00    +0.149 HD
+ATOM      5  O   UNK A  0       26.526 -19.984   5.127  0.00  0.00    -0.276 OA
+BRANCH   2   6
+ATOM      6  C   UNK A  0       24.256 -20.071   4.365  0.00  0.00    +0.110 C 
+BRANCH   6   7
+ATOM      7  C   UNK A  0       22.875 -20.037   5.013  0.00  0.00    +0.087 C 
+BRANCH   7   8
+ATOM      8  N   UNK A  0       22.237 -21.348   5.057  0.00  0.00    -0.330 NA
+ATOM      9  H   UNK A  0       22.935 -22.068   5.243  0.00  0.00    +0.118 HD
+ATOM     10  H   UNK A  0       21.576 -21.389   5.833  0.00  0.00    +0.118 HD
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   2   6
+ENDBRANCH   1   3
+BRANCH   1  11
+ATOM     11  C   HIS A  1       26.522 -20.908   8.332  0.00  0.00    +0.326 C 
+ATOM     12  O   HIS A  1       25.836 -20.765   9.327  0.00  0.00    -0.249 OA
+BRANCH  11  13
+ATOM     13  OXT HIS A  1       27.614 -20.132   8.103  0.00  0.00    -0.479 OA
+ATOM     14  HXT HIS A  1       27.553 -19.677   7.238  0.00  0.00    +0.295 HD
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+BRANCH   1  15
+ATOM     15  CB  HIS A  1       25.716 -23.250   7.729  0.00  0.00    +0.090 C 
+BRANCH  15  16
+ATOM     16  CG  HIS A  1       25.134 -24.158   6.689  0.00  0.00    +0.061 A 
+ATOM     17  ND1 HIS A  1       25.925 -24.675   5.679  0.00  0.00    -0.241 NA
+ATOM     18  CE1 HIS A  1       25.113 -25.396   4.937  0.00  0.00    +0.196 A 
+ATOM     19  NE2 HIS A  1       23.838 -25.384   5.428  0.00  0.00    -0.351 N 
+ATOM     20  HE2 HIS A  1       23.040 -25.854   5.020  0.00  0.00    +0.166 HD
+ATOM     21  CD2 HIS A  1       23.840 -24.613   6.558  0.00  0.00    +0.107 A 
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 8
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -6.5      4.032      6.922
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  HIS A  1       26.555 -21.421   7.185  0.00  0.00    +0.188 C 
+ENDROOT
+BRANCH   1   3
+ATOM      2  C   UNK A  0       25.341 -23.126   5.833  0.00  0.00    +0.215 C 
+ATOM      3  N   HIS A  1       26.216 -22.809   6.834  0.00  0.00    -0.302 N 
+ATOM      4  H   HIS A  1       26.824 -23.511   7.252  0.00  0.00    +0.149 HD
+ATOM      5  O   UNK A  0       24.715 -22.270   5.220  0.00  0.00    -0.276 OA
+BRANCH   2   6
+ATOM      6  C   UNK A  0       25.155 -24.606   5.523  0.00  0.00    +0.110 C 
+BRANCH   6   7
+ATOM      7  C   UNK A  0       23.942 -25.273   6.164  0.00  0.00    +0.087 C 
+BRANCH   7   8
+ATOM      8  N   UNK A  0       22.940 -24.313   6.616  0.00  0.00    -0.330 NA
+ATOM      9  H   UNK A  0       22.036 -24.532   6.198  0.00  0.00    +0.118 HD
+ATOM     10  H   UNK A  0       22.811 -24.393   7.625  0.00  0.00    +0.118 HD
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   2   6
+ENDBRANCH   1   3
+BRANCH   1  11
+ATOM     11  C   HIS A  1       25.604 -20.810   8.236  0.00  0.00    +0.326 C 
+ATOM     12  O   HIS A  1       25.945 -20.556   9.376  0.00  0.00    -0.249 OA
+BRANCH  11  13
+ATOM     13  OXT HIS A  1       24.314 -20.673   7.831  0.00  0.00    -0.479 OA
+ATOM     14  HXT HIS A  1       24.039 -21.419   7.258  0.00  0.00    +0.295 HD
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+BRANCH   1  15
+ATOM     15  CB  HIS A  1       28.023 -21.350   7.643  0.00  0.00    +0.090 C 
+BRANCH  15  16
+ATOM     16  CG  HIS A  1       28.763 -20.150   7.138  0.00  0.00    +0.061 A 
+ATOM     17  ND1 HIS A  1       28.531 -19.658   5.867  0.00  0.00    -0.241 NA
+ATOM     18  CE1 HIS A  1       29.347 -18.635   5.736  0.00  0.00    +0.196 A 
+ATOM     19  NE2 HIS A  1       30.086 -18.432   6.867  0.00  0.00    -0.351 N 
+ATOM     20  HE2 HIS A  1       30.788 -17.716   6.997  0.00  0.00    +0.166 HD
+ATOM     21  CD2 HIS A  1       29.710 -19.380   7.779  0.00  0.00    +0.107 A 
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 8
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -6.4      3.626      4.910
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  HIS A  1       26.305 -21.241   7.051  0.00  0.00    +0.188 C 
+ENDROOT
+BRANCH   1   3
+ATOM      2  C   UNK A  0       28.590 -20.251   7.151  0.00  0.00    +0.215 C 
+ATOM      3  N   HIS A  1       27.330 -20.278   6.620  0.00  0.00    -0.302 N 
+ATOM      4  H   HIS A  1       27.101 -19.771   5.768  0.00  0.00    +0.149 HD
+ATOM      5  O   UNK A  0       28.918 -20.972   8.085  0.00  0.00    -0.276 OA
+BRANCH   2   6
+ATOM      6  C   UNK A  0       29.573 -19.259   6.543  0.00  0.00    +0.110 C 
+BRANCH   6   7
+ATOM      7  C   UNK A  0       30.843 -19.003   7.349  0.00  0.00    +0.087 C 
+BRANCH   7   8
+ATOM      8  N   UNK A  0       31.608 -20.219   7.601  0.00  0.00    -0.330 NA
+ATOM      9  H   UNK A  0       31.192 -21.003   7.099  0.00  0.00    +0.118 HD
+ATOM     10  H   UNK A  0       32.554 -20.119   7.232  0.00  0.00    +0.118 HD
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   2   6
+ENDBRANCH   1   3
+BRANCH   1  11
+ATOM     11  C   HIS A  1       25.483 -20.752   8.263  0.00  0.00    +0.326 C 
+ATOM     12  O   HIS A  1       25.927 -20.701   9.394  0.00  0.00    -0.249 OA
+BRANCH  11  13
+ATOM     13  OXT HIS A  1       24.177 -20.482   7.998  0.00  0.00    -0.479 OA
+ATOM     14  HXT HIS A  1       23.944 -19.563   8.249  0.00  0.00    +0.295 HD
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+BRANCH   1  15
+ATOM     15  CB  HIS A  1       25.398 -21.595   5.859  0.00  0.00    +0.090 C 
+BRANCH  15  16
+ATOM     16  CG  HIS A  1       24.727 -22.929   5.977  0.00  0.00    +0.061 A 
+ATOM     17  ND1 HIS A  1       23.580 -23.080   6.734  0.00  0.00    -0.241 NA
+ATOM     18  CE1 HIS A  1       23.272 -24.355   6.648  0.00  0.00    +0.196 A 
+ATOM     19  NE2 HIS A  1       24.156 -25.034   5.857  0.00  0.00    -0.351 N 
+ATOM     20  HE2 HIS A  1       24.131 -26.025   5.655  0.00  0.00    +0.166 HD
+ATOM     21  CD2 HIS A  1       25.080 -24.132   5.406  0.00  0.00    +0.107 A 
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 8
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -6.4      4.028      5.375
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  HIS A  1       26.138 -22.160   7.137  0.00  0.00    +0.188 C 
+ENDROOT
+BRANCH   1   3
+ATOM      2  C   UNK A  0       28.320 -20.957   7.147  0.00  0.00    +0.215 C 
+ATOM      3  N   HIS A  1       27.102 -21.200   6.578  0.00  0.00    -0.302 N 
+ATOM      4  H   HIS A  1       26.881 -20.882   5.636  0.00  0.00    +0.149 HD
+ATOM      5  O   UNK A  0       28.652 -21.461   8.213  0.00  0.00    -0.276 OA
+BRANCH   2   6
+ATOM      6  C   UNK A  0       29.250 -20.006   6.406  0.00  0.00    +0.110 C 
+BRANCH   6   7
+ATOM      7  C   UNK A  0       30.355 -19.369   7.244  0.00  0.00    +0.087 C 
+BRANCH   7   8
+ATOM      8  N   UNK A  0       31.412 -20.310   7.598  0.00  0.00    -0.330 NA
+ATOM      9  H   UNK A  0       32.293 -19.813   7.725  0.00  0.00    +0.118 HD
+ATOM     10  H   UNK A  0       31.203 -20.747   8.496  0.00  0.00    +0.118 HD
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   2   6
+ENDBRANCH   1   3
+BRANCH   1  11
+ATOM     11  C   HIS A  1       25.236 -21.548   8.231  0.00  0.00    +0.326 C 
+ATOM     12  O   HIS A  1       24.046 -21.347   8.080  0.00  0.00    -0.249 OA
+BRANCH  11  13
+ATOM     13  OXT HIS A  1       25.891 -21.141   9.351  0.00  0.00    -0.479 OA
+ATOM     14  HXT HIS A  1       25.473 -20.343   9.738  0.00  0.00    +0.295 HD
+ENDBRANCH  11  13
+ENDBRANCH   1  11
+BRANCH   1  15
+ATOM     15  CB  HIS A  1       25.304 -22.776   5.999  0.00  0.00    +0.090 C 
+BRANCH  15  16
+ATOM     16  CG  HIS A  1       25.122 -24.259   6.109  0.00  0.00    +0.061 A 
+ATOM     17  ND1 HIS A  1       26.205 -25.114   6.018  0.00  0.00    -0.241 NA
+ATOM     18  CE1 HIS A  1       25.702 -26.324   6.127  0.00  0.00    +0.196 A 
+ATOM     19  NE2 HIS A  1       24.347 -26.292   6.302  0.00  0.00    -0.351 N 
+ATOM     20  HE2 HIS A  1       23.742 -27.098   6.396  0.00  0.00    +0.166 HD
+ATOM     21  CD2 HIS A  1       23.965 -24.979   6.311  0.00  0.00    +0.107 A 
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 8
+ENDMDL

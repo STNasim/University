@@ -1,0 +1,1577 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en"><head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to Nasim."></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Creator" content="Nasim" />
+<meta name="DC:Creator" content="Juan" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>
+
+</title>
+
+<!-- Made with executable version 6.3 Release 0 Build 5 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style type="text/css">
+
+
+/* This is the CSS stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 6.3 Release 0 Build 5 */
+
+
+/* Hack to hide a nested Quicktime player from IE, which can't handle it. */
+* html object.MediaPlayerNotForIE {
+	display: none;
+}
+
+body{
+	font-family: Geneva,Arial,sans-serif;
+	background-color: #C0C0C0;
+	color: #000000;
+ 
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: small;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+table,div,span,td{
+	font-size: 100%;
+	color: #000000;
+}
+
+div.Titles{
+	padding: 0.5em;;
+	text-align: center;
+	color: #000000;
+}
+
+button{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 100%;
+	display: inline;
+}
+
+.ExerciseTitle{
+	font-size: 140%;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	font-size: 120%;
+	color: #000000;
+}
+
+div.StdDiv{
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: 100%;
+	color: #000000;
+	padding: 0.5em;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #000000;
+	margin-bottom: 1px;
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", Geneva,Arial,sans-serif;
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #000000;
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: #000000;
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: #000000;
+}
+
+.LeftItem{
+	font-size: 100%;
+	color: #000000;
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: 100%;
+	color: #000000;
+}
+
+span.CorrectMark{
+
+}
+
+input, textarea{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 120%;
+}
+
+select{
+	font-size: 100%;
+}
+
+div.Feedback {
+	background-color: #C0C0C0;
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+}
+
+
+
+
+div.ExerciseDiv{
+	color: #000000;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: #000000;
+	border-color: #000000;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 90%;
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+
+table.FlashcardTable td.Showing{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	width: 80%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+	display: none; /* initially hidden, shown if needed */
+	margin-bottom: 0.5em;
+}
+
+div.Keypad button{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 120%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: Geneva,Arial,sans-serif;
+}
+
+.QuestionText{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+.Answer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+}
+
+.PartialAnswer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.Highlight{
+	color: #000000;
+	background-color: #ffff00;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #000000;
+	background-color: #FFFFFF;
+
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+.FuncButtonUp {
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+
+	background-color: #000000;
+	color: #FFFFFF;
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+.FuncButtonDown {
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #ffffff;
+	border-bottom-color: #ffffff;
+	background-color: #000000;
+	color: #FFFFFF;
+
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: #000000;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: 100%;
+}
+
+.NavButton {
+	border-style: solid;
+	
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	background-color: #000000;
+	color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+.NavButtonUp {
+	border-style: solid;
+
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	color: #000000;
+	background-color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+.NavButtonDown {
+	border-style: solid;
+
+	border-left-color: #000000;
+	border-top-color: #000000;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #000000;
+	background-color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: #0000FF;
+}
+
+a:visited{
+	color: #0000CC;
+}
+
+a:hover{
+	color: #0000FF;
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 100%;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	background-color: #FFFFFF;
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+
+
+
+function Client(){
+//if not a DOM browser, hopeless
+	this.min = false; if (document.getElementById){this.min = true;};
+
+	this.ua = navigator.userAgent;
+	this.name = navigator.appName;
+	this.ver = navigator.appVersion;  
+
+//Get data about the browser
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+
+//Look for Gecko
+	this.gecko = (this.ua.indexOf('Gecko') > 1);
+	if (this.gecko){
+		this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+//		if (this.geckoVer < 20020000){this.min = false;}
+	}
+	
+//Look for Firebird
+	this.firebird = (this.ua.indexOf('Firebird') > 1);
+	
+//Look for Safari
+	this.safari = (this.ua.indexOf('Safari') > 1);
+	if (this.safari){
+		this.gecko = false;
+	}
+	
+//Look for IE
+	this.ie = (this.ua.indexOf('MSIE') > 0);
+	if (this.ie){
+		this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer < 5.5){this.min = false;}
+	}
+	
+//Look for Opera
+	this.opera = (this.ua.indexOf('Opera') > 0);
+	if (this.opera){
+		this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera')+6, this.ua.length));
+		if (this.operaVer < 7.04){this.min = false;}
+	}
+	if (this.min == false){
+//		alert('Your browser may not be able to handle this page.');
+	}
+	
+//Special case for the horrible ie5mac
+	this.ie5mac = (this.ie&&this.mac&&(this.ieVer<6));
+}
+
+var C = new Client();
+
+//for (prop in C){
+//	alert(prop + ': ' + C[prop]);
+//}
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+//[strNavBarJS]
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}
+
+function NavBtnDown(Btn){
+	Btn.className = 'NavButtonDown';
+}
+//[/strNavBarJS]
+
+function FuncBtnOver(Btn){
+	if (Btn.className != 'FuncButtonDown'){Btn.className = 'FuncButtonUp';}
+}
+
+function FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+
+function FuncBtnDown(Btn){
+	Btn.className = 'FuncButtonDown';
+}
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+				//get Mac FireFox to manipulate display, to force screen redraw
+				if (C.mac && C.gecko) {Els[i].style.display = '';}
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+				if (C.mac && C.gecko) {Els[i].style.display = 'none';}
+			}
+		} 
+		else {
+			// tagName is either input or select (that is, Form Elements)
+			// ie6 has a problem with Form elements, so manipulate those
+			if (C.ie) {
+				if (C.ieVer < 7) {
+					if (Show == true){
+						Els[i].style.visibility = 'visible';
+					}
+					else{
+						Els[i].style.visibility = 'hidden';
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	if (Finished == true){
+		Finish();
+	}
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].clientWidth;
+	this.H = document.getElementsByTagName('body')[0].clientHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	if (C.ie) {
+		thisKey = window.event.keyCode;
+	}
+	else {
+		thisKey = e.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (C.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+if (C.ie){
+	document.attachEvent('onkeydown',SuppressBackspace);
+	window.attachEvent('onkeydown',SuppressBackspace);
+}
+else{
+	if (window.addEventListener){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+}
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+//EXTENSION TO ARRAY OBJECT
+function Array_IndexOf(Input){
+	var Result = -1;
+	for (var i=0; i<this.length; i++){
+		if (this[i] == Input){
+			Result = i;
+		}
+	}
+	return Result;
+}
+Array.prototype.indexOf = Array_IndexOf;
+
+//IE HAS RENDERING BUG WITH BOTTOM NAVBAR
+function RemoveBottomNavBarForIE(){
+	if ((C.ie)&&(document.getElementById('Reading') != null)){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+}
+
+
+
+
+//HOTPOTNET-RELATED CODE
+
+var HPNStartTime = (new Date()).getTime();
+var SubmissionTimeout = 30000;
+var Detail = ''; //Global that is used to submit tracking data
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.detail.value = Detail;
+		Frm.submit();
+	}
+}
+
+
+
+
+//JCROSS CORE JAVASCRIPT CODE
+
+var InGap = false;
+var CurrentBox = null;
+var Feedback = '';
+var AcrossCaption = '';
+var DownCaption = '';
+var Correct = 'Correct! Well done.';
+var Incorrect = 'Some of your answers are incorrect. Incorrect squares have been blanked out.'; 
+var GiveHint = 'A correct letter has been added.';
+var YourScoreIs = 'Your score is ';
+var BuiltGrid = '';
+var BuiltExercise = '';
+var Penalties = 0;
+var Score = 0;
+var InTextBox = false;
+var Locked = false;
+var TimeOver = false;
+var CaseSensitive = false; 
+
+var InputStuff = '<form method="post" action="" onsubmit="return false;"><span class="ClueNum">[strClueNum]: </span>';
+InputStuff += '[strClue] <input onfocus="CurrentBox=this;InTextBox=true;" onblur="InTextBox=false;" id="[strBoxId]" type="edit" size="[strEditSize]" maxlength="[strMaxLength]"></input>';
+InputStuff += '<button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="EnterGuess([strParams])">Enter</button>';
+InputStuff += '<button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="ShowHint([strParams])">Hint</button>';
+InputStuff += '</form>';
+
+var CurrBoxElement = null;
+var Finished = false;
+
+function StartUp(){
+	RemoveBottomNavBarForIE();
+//Show a keypad if there is one	(added bugfix for 6.0.4.12)
+	if (document.getElementById('CharacterKeypad') != null){
+		document.getElementById('CharacterKeypad').style.display = 'block';
+	}
+
+	
+	AcrossCaption = document.getElementById('CluesAcrossLabel').innerHTML;
+	DownCaption = document.getElementById('CluesDownLabel').innerHTML;
+
+
+
+
+
+
+}
+
+function GetAnswerLength(Across,x,y){
+	Result = 0;
+	if (Across == false){
+		while ((x<L.length)&&(L[x][y].length > 0)){
+			Result += L[x][y].length;
+			x++;
+		} 
+		return Result;
+	}
+	else{
+		while ((y<L[x].length)&&(L[x][y].length > 0)){
+			Result += L[x][y].length;
+			y++;
+		} 	
+		return Result;
+	}
+}
+
+function GetEditSize(Across,x,y){
+	var Len = GetAnswerLength(Across,x,y);
+	if (IsCJK(L[x][y].charCodeAt(0))){
+		Len *= 2;
+	}
+	return Len;
+}
+
+function ShowClue(ClueNum,x,y){
+	var Result = '';
+	var Temp;
+	var strParams;
+	var Clue = document.getElementById('Clue_A_' + ClueNum);
+	if (Clue != null){
+		Temp = InputStuff.replace(/\[ClueNum\]/g, ClueNum);
+		Temp = Temp.replace(/\[strClueNum\]/g, AcrossCaption + ' ' + ClueNum);
+		strParams = 'true,' + ClueNum + ',' + x + ',' + y + ',\'[strBoxId]\'';
+		Temp = Temp.replace(/\[strParams\]/g, strParams);
+		Temp = Temp.replace(/\[strBoxId\]/g, 'GA_' + ClueNum + '_' + x + '_' + y);
+		Temp = Temp.replace(/\[strEditSize\]/g, GetEditSize(true,x,y));
+		Temp = Temp.replace(/\[strMaxLength\]/g, GetAnswerLength(true,x,y));
+		Temp = Temp.replace(/\[strClue\]/g, Clue.innerHTML, Temp);
+		Result += Temp;
+	}
+	Clue = document.getElementById('Clue_D_' + ClueNum);
+	if (Clue != null){
+		Temp = InputStuff.replace(/\[ClueNum\]/g, ClueNum);
+		Temp = Temp.replace(/\[strClueNum\]/g, DownCaption + ' ' + ClueNum);
+		strParams = 'false,' + ClueNum + ',' + x + ',' + y + ',\'[strBoxId]\'';
+		Temp = Temp.replace(/\[strParams\]/g, strParams);
+		Temp = Temp.replace(/\[strBoxId\]/g, 'GD_' + ClueNum + '_' + x + '_' + y);
+		Temp = Temp.replace(/\[strEditSize\]/g, GetAnswerLength(false,x,y));
+		Temp = Temp.replace(/\[strClue\]/g, Clue.innerHTML, Temp);
+		Result += Temp;
+	}
+	document.getElementById('ClueEntry').innerHTML = Result;
+}
+
+function EnterGuess(Across,ClueNum,x,y,BoxId){
+	if (document.getElementById(BoxId) != null){
+		var Guess = document.getElementById(BoxId).value;
+		var AnsLength = GetAnswerLength(Across,x,y);
+		EnterAnswer(Guess,Across,AnsLength,x,y);
+	}
+}
+
+function SplitStringToPerceivedChars(InString, PC){
+	var Temp = InString.charAt(0);
+	if (InString.length > 1){
+		for (var i=1; i<InString.length; i++){
+			if (IsCombiningDiacritic(InString.charCodeAt(i)) == true){
+				Temp += InString.charAt(i);
+			}
+			else{
+				PC.push(Temp);
+				Temp = InString.charAt(i);
+			}
+		}
+	}
+	PC.push(Temp);
+}
+
+function EnterAnswer(Guess,Across,AnsLength,x,y){
+	var PC = new Array();
+	SplitStringToPerceivedChars(Guess, PC);
+	
+	var i=x;
+	var j=y;
+	var Letter = 0;
+	while (Letter < AnsLength){
+		if (Letter < PC.length){
+			G[i][j] = PC[Letter];
+			if (document.getElementById('L_' + i + '_' + j) != null){
+				document.getElementById('L_' + i + '_' + j).innerHTML = PC[Letter];
+			}
+		}
+		if (Across == true){
+			j++;
+		}
+		else{
+			i++;
+		}
+		Letter++;
+	}
+}
+
+function SetGridSquareValue(x,y,Val){
+	var GridId = 'L_' + x + '_' + y;
+	if (document.getElementById(GridId) != null){
+		document.getElementById(GridId).innerHTML = Val;
+	}
+}
+
+function ShowHint(Across,ClueNum,x,y,BoxId){
+	var i=x;
+	var j=y;
+	var LetterFromGuess = '';
+	var LetterFromKey = '';
+	var OutString = '';
+	if (Across==true){
+		while (j<L[i].length){
+			if (L[i][j] != ''){
+				OutString += L[i][j];
+				if (CaseSensitive == true){
+					LetterFromKey = L[i][j];
+					LetterFromGuess = G[i][j];
+				}
+				else {
+					LetterFromKey = L[i][j].toUpperCase();
+					LetterFromGuess = G[i][j].toUpperCase();
+				}
+				if (LetterFromGuess != LetterFromKey){
+//				if (G[i][j] != L[i][j]){
+					G[i][j] = L[i][j];
+					Penalties++;
+					break;
+				}
+			}
+			else{
+				break;
+			}
+		j++;
+		}
+	}
+	else{
+		while (i<L.length){
+			if (L[i][j] != ''){
+				OutString += L[i][j];
+				if (CaseSensitive == true){
+					LetterFromKey = L[i][j];
+					LetterFromGuess = G[i][j];
+				}
+				else {
+					LetterFromKey = L[i][j].toUpperCase();
+					LetterFromGuess = G[i][j].toUpperCase();
+				}
+				if (LetterFromGuess != LetterFromKey){
+//				if (G[i][j] != L[i][j]){
+					G[i][j] = L[i][j];
+					Penalties++;
+					break;
+				}
+			}
+			else{
+				break;
+			}
+		i++;
+		}
+	}
+	if (document.getElementById(BoxId) != null){
+		document.getElementById(BoxId).value = OutString;
+	}
+}
+
+L = new Array();
+L[0] = new Array('','','','','D','','','','','','','','');
+L[1] = new Array('','G','A','B','I','N','E','T','E','','','','');
+L[2] = new Array('','','','','S','','','','','','B','','');
+L[3] = new Array('','','','','I','','F','','M','O','U','S','E');
+L[4] = new Array('','','','','P','','U','','','','S','','');
+L[5] = new Array('P','L','A','C','A','D','E','V','I','D','E','O','');
+L[6] = new Array('L','','','','D','','N','','','','S','','');
+L[7] = new Array('A','','I','','O','','T','','','','','','');
+L[8] = new Array('C','','M','','R','','E','','','','','','');
+L[9] = new Array('A','','P','','','','','','','','','','');
+L[10] = new Array('M','','R','A','M','','C','','','','','','');
+L[11] = new Array('A','','E','','','','P','','','','','','');
+L[12] = new Array('D','I','S','C','O','D','U','R','O','','','','');
+L[13] = new Array('R','','O','','','','','','','','','','');
+L[14] = new Array('E','','R','','','C','','','','','','','');
+L[15] = new Array('','P','A','N','T','A','L','L','A','','','','');
+L[16] = new Array('','U','','','','C','','','','','','','');
+L[17] = new Array('','E','','','','H','','','','','','','');
+L[18] = new Array('','R','','','','E','','','','','','','');
+L[19] = new Array('','T','','','','','','','','','','','');
+L[20] = new Array('','O','','','','','','','','','','','');
+L[21] = new Array('','S','','','','','','','','','','','');
+
+
+CL = new Array();
+CL[0] = new Array(0,0,0,0,1,0,0,0,0,0,0,0,0);
+CL[1] = new Array(0,2,0,0,0,0,0,0,0,0,0,0,0);
+CL[2] = new Array(0,0,0,0,0,0,0,0,0,0,3,0,0);
+CL[3] = new Array(0,0,0,0,0,0,4,0,5,0,0,0,0);
+CL[4] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[5] = new Array(6,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[6] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[7] = new Array(0,0,7,0,0,0,0,0,0,0,0,0,0);
+CL[8] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[9] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[10] = new Array(0,0,8,0,0,0,9,0,0,0,0,0,0);
+CL[11] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[12] = new Array(10,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[13] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[14] = new Array(0,0,0,0,0,11,0,0,0,0,0,0,0);
+CL[15] = new Array(0,12,0,0,0,0,0,0,0,0,0,0,0);
+CL[16] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[17] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[18] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[19] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[20] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+CL[21] = new Array(0,0,0,0,0,0,0,0,0,0,0,0,0);
+
+
+G = new Array();
+G[0] = new Array('','','','','','','','','','','','','');
+G[1] = new Array('','','','','','','','','','','','','');
+G[2] = new Array('','','','','','','','','','','','','');
+G[3] = new Array('','','','','','','','','','','','','');
+G[4] = new Array('','','','','','','','','','','','','');
+G[5] = new Array('','','','','','','','','','','','','');
+G[6] = new Array('','','','','','','','','','','','','');
+G[7] = new Array('','','','','','','','','','','','','');
+G[8] = new Array('','','','','','','','','','','','','');
+G[9] = new Array('','','','','','','','','','','','','');
+G[10] = new Array('','','','','','','','','','','','','');
+G[11] = new Array('','','','','','','','','','','','','');
+G[12] = new Array('','','','','','','','','','','','','');
+G[13] = new Array('','','','','','','','','','','','','');
+G[14] = new Array('','','','','','','','','','','','','');
+G[15] = new Array('','','','','','','','','','','','','');
+G[16] = new Array('','','','','','','','','','','','','');
+G[17] = new Array('','','','','','','','','','','','','');
+G[18] = new Array('','','','','','','','','','','','','');
+G[19] = new Array('','','','','','','','','','','','','');
+G[20] = new Array('','','','','','','','','','','','','');
+G[21] = new Array('','','','','','','','','','','','','');
+
+
+function CheckAnswers(){
+	if (Locked == true){return;}
+
+	var AllCorrect = true;
+	var TotLetters = 0;
+	var CorrectLetters = 0;
+	var LetterFromKey = ''; 
+	var LetterFromGuess = '';
+	
+//Check each letter
+	for (var i=0; i<L.length; i++){
+		for (var j=0; j<L[i].length; j++){
+			if (L[i][j] != ''){
+				TotLetters++;
+				if (CaseSensitive == true) {
+					LetterFromKey = L[i][j];
+					LetterFromGuess = G[i][j];
+				}
+				else {
+					LetterFromKey = L[i][j].toUpperCase();
+					LetterFromGuess = G[i][j].toUpperCase();
+				}
+				if (LetterFromGuess != LetterFromKey){ 
+					G[i][j] = '';
+//Blank that square in the grid
+					SetGridSquareValue(i,j,'');
+					AllCorrect = false;
+				}
+				else{
+					CorrectLetters++;
+				}
+			}
+		}
+	}
+
+	Score = Math.floor(((CorrectLetters-Penalties) * 100)/TotLetters);
+	if (Score < 0){Score = 0;}
+
+//Compile the output
+	var Output = '';
+
+	if (AllCorrect == true){
+		Output = Correct + '<br />';
+	}
+
+	Output += YourScoreIs + ' ' + Score + '%.<br />';
+	if (AllCorrect == false){
+		Output += Incorrect;
+		Penalties++;
+	}
+
+	ShowMessage(Output);
+	WriteToInstructions(Output);
+	
+	if ((AllCorrect == true)||(TimeOver == true)){
+
+
+		TimeOver = true;
+		Locked = true;
+		Finished = true;
+		setTimeout('Finish()', SubmissionTimeout);
+	}
+
+}
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.submit();
+	}
+}
+
+function TypeChars(Chars){
+	if (CurrentBox != null){
+		CurrentBox.value += Chars;
+	}
+}
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle"></h2>
+
+	<h3 class="ExerciseSubtitle">Crossword</h3>
+
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions">Complete the crossword, then click on "Check" to check your answer. If you are stuck, you can click on "Hint" to get a free letter. Click on a number in the grid to see the clue or clues for that number.</div>
+</div>
+
+
+
+<div id="MainDiv" class="StdDiv">
+
+
+
+<div id="ClueEntry">
+
+</div>
+
+<!-- This top button is hidden; uncomment it to reveal it. -->
+<!--
+<button id="CheckButton1" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp;Check&nbsp;</button>
+
+ -->
+ 
+<table class="CrosswordGrid">
+<tbody>
+
+<tr id="Row_0"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(1,0,4)">1</a><span class="NumLetterCellText" id="L_0_4" onclick="ShowClue(1,0,4)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_1"><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(2,1,1)">2</a><span class="NumLetterCellText" id="L_1_1" onclick="ShowClue(2,1,1)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_1_2">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_1_3">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_1_4">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_1_5">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_1_6">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_1_7">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_1_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_2"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_2_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(3,2,10)">3</a><span class="NumLetterCellText" id="L_2_10" onclick="ShowClue(3,2,10)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_3"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_3_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(4,3,6)">4</a><span class="NumLetterCellText" id="L_3_6" onclick="ShowClue(4,3,6)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(5,3,8)">5</a><span class="NumLetterCellText" id="L_3_8" onclick="ShowClue(5,3,8)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_3_9">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_3_10">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_3_11">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_3_12">&nbsp;</span></td></tr><tr id="Row_4"><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_4_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_4_6">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_4_10">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_5"><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(6,5,0)">6</a><span class="NumLetterCellText" id="L_5_0" onclick="ShowClue(6,5,0)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_5_1">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_5_2">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_5_3">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_5_4">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_5_5">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_5_6">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_5_7">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_5_8">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_5_9">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_5_10">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_5_11">&nbsp;</span></td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_6"><td class="LetterOnlyCell"><span id="L_6_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_6_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_6_6">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_6_10">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_7"><td class="LetterOnlyCell"><span id="L_7_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(7,7,2)">7</a><span class="NumLetterCellText" id="L_7_2" onclick="ShowClue(7,7,2)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_7_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_7_6">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_8"><td class="LetterOnlyCell"><span id="L_8_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_8_2">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_8_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_8_6">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_9"><td class="LetterOnlyCell"><span id="L_9_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_9_2">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_10"><td class="LetterOnlyCell"><span id="L_10_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(8,10,2)">8</a><span class="NumLetterCellText" id="L_10_2" onclick="ShowClue(8,10,2)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_10_3">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_10_4">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(9,10,6)">9</a><span class="NumLetterCellText" id="L_10_6" onclick="ShowClue(9,10,6)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_11"><td class="LetterOnlyCell"><span id="L_11_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_11_2">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_11_6">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_12"><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(10,12,0)">10</a><span class="NumLetterCellText" id="L_12_0" onclick="ShowClue(10,12,0)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_1">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_2">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_3">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_4">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_5">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_6">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_7">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_12_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_13"><td class="LetterOnlyCell"><span id="L_13_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_13_2">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_14"><td class="LetterOnlyCell"><span id="L_14_0">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_14_2">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(11,14,5)">11</a><span class="NumLetterCellText" id="L_14_5" onclick="ShowClue(11,14,5)">&nbsp;&nbsp;&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_15"><td class="BlankCell">&nbsp;</td><td class="NumLetterCell"><a href="javascript:void(0);" class="GridNum" onclick="ShowClue(12,15,1)">12</a><span class="NumLetterCellText" id="L_15_1" onclick="ShowClue(12,15,1)">&nbsp;&nbsp;&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_2">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_3">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_4">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_5">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_6">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_7">&nbsp;</span></td><td class="LetterOnlyCell"><span id="L_15_8">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_16"><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_16_1">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_16_5">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_17"><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_17_1">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_17_5">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_18"><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_18_1">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_18_5">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_19"><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_19_1">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_20"><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_20_1">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr><tr id="Row_21"><td class="BlankCell">&nbsp;</td><td class="LetterOnlyCell"><span id="L_21_1">&nbsp;</span></td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td><td class="BlankCell">&nbsp;</td></tr>
+
+</tbody>
+</table>
+
+<button id="CheckButton2" class="FuncButton" onmouseover="FuncBtnOver(this)" onfocus="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onblur="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckAnswers()">&nbsp;Check&nbsp;</button>
+
+<table id="Clues" style="display: none;">
+<tbody>
+<tr>
+<td>
+
+<table class="ClueList">
+<tbody id="CluesAcross">
+<tr><td colspan="2"><h3 class="ExerciseSubtitle" id="CluesAcrossLabel">Across:</h3></td></tr>
+
+<tr><td class="ClueNum">2. </td><td id="Clue_A_2" class="Clue">Estructura donde se encuentran todos los componentes internos.</td></tr><tr><td class="ClueNum">5. </td><td id="Clue_A_5" class="Clue">Dispositivo encargado del movimiento del cursor.</td></tr><tr><td class="ClueNum">6. </td><td id="Clue_A_6" class="Clue">Se encarga del procesamiento gr&#x00E1;fico.</td></tr><tr><td class="ClueNum">8. </td><td id="Clue_A_8" class="Clue">Memoria principal temporal.</td></tr><tr><td class="ClueNum">10. </td><td id="Clue_A_10" class="Clue">Principal dispositivo de almacenamiento permanente.</td></tr><tr><td class="ClueNum">12. </td><td id="Clue_A_12" class="Clue">Dispositivo de salida donde se puede observar la informacion.</td></tr>
+
+</tbody>
+</table>
+
+</td>
+
+<td>
+
+<table class="ClueList">
+<tbody id="CluesDown">
+<tr><td colspan="2"><h3 class="ExerciseSubtitle" id="CluesDownLabel">Down:</h3></td></tr>
+
+<tr><td class="ClueNum">1. </td><td id="Clue_D_1" class="Clue">Se encarga de refrigerar el CPU y/o GPU.</td></tr><tr><td class="ClueNum">3. </td><td id="Clue_D_3" class="Clue">Canales que conectan a los distintos componentes internos.</td></tr><tr><td class="ClueNum">4. </td><td id="Clue_D_4" class="Clue">Dispositivo que se encarga del suministro el&#x00E9;ctrico.</td></tr><tr><td class="ClueNum">6. </td><td id="Clue_D_6" class="Clue">Todos los componentes se conectan a ella.</td></tr><tr><td class="ClueNum">7. </td><td id="Clue_D_7" class="Clue">Dispositivo de salida con formato f&#x00ED;sico.</td></tr><tr><td class="ClueNum">9. </td><td id="Clue_D_9" class="Clue">Abreviatura de la Unidad Central de Procesamiento (Ingles)</td></tr><tr><td class="ClueNum">11. </td><td id="Clue_D_11" class="Clue">Almacenamiento que permite una mayor velocidad de procesamiento.</td></tr><tr><td class="ClueNum">12. </td><td id="Clue_D_12" class="Clue">Donde se conectan los dispositivos externos.</td></tr>
+
+</tbody>
+</table>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>

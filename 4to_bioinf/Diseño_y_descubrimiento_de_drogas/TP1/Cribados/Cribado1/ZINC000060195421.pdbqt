@@ -1,0 +1,59 @@
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   LIG    1        8.108   6.391   5.226  0.00  0.00    +0.239 N 
+ATOM      2  C   LIG    1        6.814   5.953   5.950  0.00  0.00    +0.192 C 
+ATOM      3  C   LIG    1        7.830   7.785   4.694  0.00  0.00    +0.192 C 
+ENDROOT
+BRANCH   1   4
+ATOM      4  C   LIG    1        8.475   5.391   4.104  0.00  0.00    +0.132 C 
+BRANCH   4   5
+ATOM      5  C   LIG    1        7.401   5.173   3.022  0.00  0.00    +0.051 C 
+BRANCH   5   6
+ATOM      6  C   LIG    1        7.881   4.094   2.024  0.00  0.00    +0.005 C 
+BRANCH   6   7
+ATOM      7  C   LIG    1        6.911   3.900   0.849  0.00  0.00    +0.000 C 
+BRANCH   7   8
+ATOM      8  C   LIG    1        7.337   2.818  -0.163  0.00  0.00    -0.000 C 
+BRANCH   8   9
+ATOM      9  C   LIG    1        8.639   3.115  -0.917  0.00  0.00    -0.000 C 
+BRANCH   9  10
+ATOM     10  C   LIG    1        9.003   2.074  -1.994  0.00  0.00    -0.000 C 
+BRANCH  10  11
+ATOM     11  C   LIG    1        8.021   1.998  -3.171  0.00  0.00    -0.000 C 
+BRANCH  11  13
+ATOM     12  C   LIG    1        7.505   0.901  -5.400  0.00  0.00    +0.004 C 
+ATOM     13  C   LIG    1        8.501   1.021  -4.253  0.00  0.00    -0.003 C 
+ENDBRANCH  11  13
+ENDBRANCH  10  11
+ENDBRANCH   9  10
+ENDBRANCH   8   9
+ENDBRANCH   7   8
+ENDBRANCH   6   7
+ENDBRANCH   5   6
+ENDBRANCH   4   5
+ENDBRANCH   1   4
+BRANCH   1  14
+ATOM     14  C   LIG    1        9.252   6.406   6.293  0.00  0.00    +0.132 C 
+BRANCH  14  15
+ATOM     15  C   LIG    1       10.678   6.756   5.795  0.00  0.00    +0.051 C 
+BRANCH  15  16
+ATOM     16  C   LIG    1       11.010   8.206   5.400  0.00  0.00    +0.005 C 
+BRANCH  16  17
+ATOM     17  C   LIG    1       12.511   8.382   5.140  0.00  0.00    +0.000 C 
+BRANCH  17  18
+ATOM     18  C   LIG    1       12.921   9.746   4.562  0.00  0.00    -0.000 C 
+BRANCH  18  19
+ATOM     19  C   LIG    1       14.420   9.698   4.231  0.00  0.00    -0.000 C 
+BRANCH  19  20
+ATOM     20  C   LIG    1       14.979  11.016   3.704  0.00  0.00    -0.003 C 
+ATOM     21  C   LIG    1       16.464  10.885   3.390  0.00  0.00    +0.004 C 
+ENDBRANCH  19  20
+ENDBRANCH  18  19
+ENDBRANCH  17  18
+ENDBRANCH  16  17
+ENDBRANCH  15  16
+ENDBRANCH  14  15
+ENDBRANCH   1  14
+TORSDOF 16

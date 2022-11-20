@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto SEMA Salim Taleb Nasim A.: Fichero Fuente Funcionalidades/manejoDatos.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Proyecto SEMA Salim Taleb Nasim A.
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('manejo_datos_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">manejoDatos.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="manejo_datos_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef MANEJOARCHIVOS_H</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define MANEJOARCHIVOS_H</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_manejo_datos.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_manejo_datos.html">ManejoDatos</a></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_manejo_datos_1_1test.html">   31</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_manejo_datos_1_1test.html">test</a></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_manejo_datos_1_1test.html#a66718a87f594e66ac7a79ade485e379e">   33</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="struct_manejo_datos_1_1test.html#a66718a87f594e66ac7a79ade485e379e">DNI</a>;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_manejo_datos_1_1test.html#afb8357c6e41756ec54258a09cd35c7a6">   34</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="struct_manejo_datos_1_1test.html#afb8357c6e41756ec54258a09cd35c7a6">anio</a>;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_manejo_datos_1_1test.html#ab470f060c1d6859fd26769157b30d574">   35</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="struct_manejo_datos_1_1test.html#ab470f060c1d6859fd26769157b30d574">mes</a>;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_manejo_datos_1_1test.html#a6b5715923eabd4d11d8eba20ed542b31">   36</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="struct_manejo_datos_1_1test.html#a6b5715923eabd4d11d8eba20ed542b31">dia</a>;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_manejo_datos_1_1test.html#a70309837b07f5a765a0ead2811b3bcf7">   37</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="struct_manejo_datos_1_1test.html#a70309837b07f5a765a0ead2811b3bcf7">horas</a>;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_manejo_datos_1_1test.html#a5e279584fc7649212eaf137095902b31">   38</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="struct_manejo_datos_1_1test.html#a5e279584fc7649212eaf137095902b31">minutos</a>;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_manejo_datos_1_1test.html#ae0ae78f408ddc44c361fe4f2a8ff8fce">   39</a></span>&#160;      <span class="keywordtype">char</span> <a class="code" href="struct_manejo_datos_1_1test.html#ae0ae78f408ddc44c361fe4f2a8ff8fce">tipo</a>;</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_manejo_datos_1_1test.html#a1e1fff8d1a431ac5f2387248f79a0f2e">   40</a></span>&#160;      <span class="keywordtype">char</span> <a class="code" href="struct_manejo_datos_1_1test.html#a1e1fff8d1a431ac5f2387248f79a0f2e">nivel</a>;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_manejo_datos_1_1test.html#a4733caa6ed286c52de44f4515ea260f8">   41</a></span>&#160;      <span class="keywordtype">int</span> <a class="code" href="struct_manejo_datos_1_1test.html#a4733caa6ed286c52de44f4515ea260f8">tiempo</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_manejo_datos.html">ManejoDatos</a>();</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> CargarPacientes();</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> AgregarPaciente(<span class="keywordtype">int</span> DNI, <span class="keywordtype">string</span> datos);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> ModificarPaciente(<span class="keywordtype">int</span> DNI, <span class="keywordtype">string</span> datos);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">bool</span> SeleccionarPaciente(<span class="keywordtype">int</span> DNI);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">string</span> CargarDatosPaciente();</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    vector &lt;int&gt; ObtenerDatosPaciente(<span class="keywordtype">char</span> tipo, <span class="keywordtype">char</span> nivel);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> GuardarTest(<span class="keywordtype">char</span> tipo, <span class="keywordtype">char</span> nivel, <span class="keywordtype">int</span> tiempoTest);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_manejo_datos.html#a4d3c7f9e93a6d0722b1bb75dc04bd128">  104</a></span>&#160;    map&lt;int,string&gt; <a class="code" href="class_manejo_datos.html#a4d3c7f9e93a6d0722b1bb75dc04bd128">datosMemoria</a>;</div><div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_manejo_datos.html#a3bb11b3d1ab5ffeb59e7f27d3cc49028">  105</a></span>&#160;    map&lt;int,string&gt;::iterator <a class="code" href="class_manejo_datos.html#a3bb11b3d1ab5ffeb59e7f27d3cc49028">pacienteSeleccionado</a>;</div><div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_manejo_datos.html#a77b6c38eafa9c8b8e8489a3d92016832">  106</a></span>&#160;    vector &lt;test&gt; <a class="code" href="class_manejo_datos.html#a77b6c38eafa9c8b8e8489a3d92016832">datosPaciente</a>;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif // MANEJOARCHIVOS_H</span></div><div class="ttc" id="struct_manejo_datos_1_1test_html_a5e279584fc7649212eaf137095902b31"><div class="ttname"><a href="struct_manejo_datos_1_1test.html#a5e279584fc7649212eaf137095902b31">ManejoDatos::test::minutos</a></div><div class="ttdeci">int minutos</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00038">manejoDatos.h:38</a></div></div>
+<div class="ttc" id="struct_manejo_datos_1_1test_html_afb8357c6e41756ec54258a09cd35c7a6"><div class="ttname"><a href="struct_manejo_datos_1_1test.html#afb8357c6e41756ec54258a09cd35c7a6">ManejoDatos::test::anio</a></div><div class="ttdeci">int anio</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00034">manejoDatos.h:34</a></div></div>
+<div class="ttc" id="class_manejo_datos_html_a77b6c38eafa9c8b8e8489a3d92016832"><div class="ttname"><a href="class_manejo_datos.html#a77b6c38eafa9c8b8e8489a3d92016832">ManejoDatos::datosPaciente</a></div><div class="ttdeci">vector&lt; test &gt; datosPaciente</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00106">manejoDatos.h:106</a></div></div>
+<div class="ttc" id="struct_manejo_datos_1_1test_html_a66718a87f594e66ac7a79ade485e379e"><div class="ttname"><a href="struct_manejo_datos_1_1test.html#a66718a87f594e66ac7a79ade485e379e">ManejoDatos::test::DNI</a></div><div class="ttdeci">int DNI</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00033">manejoDatos.h:33</a></div></div>
+<div class="ttc" id="class_manejo_datos_html_a4d3c7f9e93a6d0722b1bb75dc04bd128"><div class="ttname"><a href="class_manejo_datos.html#a4d3c7f9e93a6d0722b1bb75dc04bd128">ManejoDatos::datosMemoria</a></div><div class="ttdeci">map&lt; int, string &gt; datosMemoria</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00104">manejoDatos.h:104</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
+<div class="ttc" id="struct_manejo_datos_1_1test_html_a4733caa6ed286c52de44f4515ea260f8"><div class="ttname"><a href="struct_manejo_datos_1_1test.html#a4733caa6ed286c52de44f4515ea260f8">ManejoDatos::test::tiempo</a></div><div class="ttdeci">int tiempo</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00041">manejoDatos.h:41</a></div></div>
+<div class="ttc" id="struct_manejo_datos_1_1test_html_a6b5715923eabd4d11d8eba20ed542b31"><div class="ttname"><a href="struct_manejo_datos_1_1test.html#a6b5715923eabd4d11d8eba20ed542b31">ManejoDatos::test::dia</a></div><div class="ttdeci">int dia</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00036">manejoDatos.h:36</a></div></div>
+<div class="ttc" id="struct_manejo_datos_1_1test_html_ab470f060c1d6859fd26769157b30d574"><div class="ttname"><a href="struct_manejo_datos_1_1test.html#ab470f060c1d6859fd26769157b30d574">ManejoDatos::test::mes</a></div><div class="ttdeci">int mes</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00035">manejoDatos.h:35</a></div></div>
+<div class="ttc" id="struct_manejo_datos_1_1test_html"><div class="ttname"><a href="struct_manejo_datos_1_1test.html">ManejoDatos::test</a></div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00031">manejoDatos.h:31</a></div></div>
+<div class="ttc" id="struct_manejo_datos_1_1test_html_ae0ae78f408ddc44c361fe4f2a8ff8fce"><div class="ttname"><a href="struct_manejo_datos_1_1test.html#ae0ae78f408ddc44c361fe4f2a8ff8fce">ManejoDatos::test::tipo</a></div><div class="ttdeci">char tipo</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00039">manejoDatos.h:39</a></div></div>
+<div class="ttc" id="struct_manejo_datos_1_1test_html_a1e1fff8d1a431ac5f2387248f79a0f2e"><div class="ttname"><a href="struct_manejo_datos_1_1test.html#a1e1fff8d1a431ac5f2387248f79a0f2e">ManejoDatos::test::nivel</a></div><div class="ttdeci">char nivel</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00040">manejoDatos.h:40</a></div></div>
+<div class="ttc" id="struct_manejo_datos_1_1test_html_a70309837b07f5a765a0ead2811b3bcf7"><div class="ttname"><a href="struct_manejo_datos_1_1test.html#a70309837b07f5a765a0ead2811b3bcf7">ManejoDatos::test::horas</a></div><div class="ttdeci">int horas</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00037">manejoDatos.h:37</a></div></div>
+<div class="ttc" id="class_manejo_datos_html_a3bb11b3d1ab5ffeb59e7f27d3cc49028"><div class="ttname"><a href="class_manejo_datos.html#a3bb11b3d1ab5ffeb59e7f27d3cc49028">ManejoDatos::pacienteSeleccionado</a></div><div class="ttdeci">map&lt; int, string &gt;::iterator pacienteSeleccionado</div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00105">manejoDatos.h:105</a></div></div>
+<div class="ttc" id="class_manejo_datos_html"><div class="ttname"><a href="class_manejo_datos.html">ManejoDatos</a></div><div class="ttdoc">La clase se encarga de gestionar datos de pacientes. </div><div class="ttdef"><b>Definition:</b> <a href="manejo_datos_8h_source.html#l00029">manejoDatos.h:29</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_52354bfab2fbcf783ef8671bc8fc8220.html">Funcionalidades</a></li><li class="navelem"><a class="el" href="manejo_datos_8h.html">manejoDatos.h</a></li>
+    <li class="footer">Generado el Lunes, 8 de Junio de 2020 09:50:13 para Proyecto SEMA Salim Taleb Nasim A. por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+#ifndef CRONOMETRO_H
+#define CRONOMETRO_H
+#include <QElapsedTimer>
+#include <iostream>
+
+class Cronometro
+{
+public:
+    Cronometro();
+    bool EstaIniciado();
+    void IniciarCronometro();
+    void MostrarTiempo();
+    void PararCronometro();
+    float ObtenerTiempo();
+    float ObtenerTiempoYReiniciar();
+private:
+    float tiempo;
+    QElapsedTimer cronometro;
+};
+
+#endif // CRONOMETRO_H

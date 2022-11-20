@@ -1,0 +1,1018 @@
+log started: Mon Aug 29 18:52:46 2022
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the ff99SB (Hornak & Simmerling) force field
+>> # -----  this file is updated for PDB format 3
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "H"   "H" "sp3" }
+>> 	{ "HO"  "H" "sp3" }
+>> 	{ "HS"  "H" "sp3" }
+>> 	{ "H1"  "H" "sp3" }
+>> 	{ "H2"  "H" "sp3" }
+>> 	{ "H3"  "H" "sp3" }
+>> 	{ "H4"  "H" "sp3" }
+>> 	{ "H5"  "H" "sp3" }
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "HC"  "H" "sp3" }
+>> 	{ "HA"  "H" "sp3" }
+>> 	{ "HP"  "H" "sp3" }
+>> 	{ "OH"  "O" "sp3" }
+>> 	{ "OS"  "O" "sp3" }
+>> 	{ "O"   "O" "sp2" }
+>> 	{ "O2"  "O" "sp2" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "CT"  "C" "sp3" }
+>> 	{ "CH"  "C" "sp3" }
+>> 	{ "C2"  "C" "sp3" }
+>> 	{ "C3"  "C" "sp3" }
+>> 	{ "C"   "C" "sp2" }
+>> 	{ "C*"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CB"  "C" "sp2" }
+>> 	{ "CC"  "C" "sp2" }
+>> 	{ "CN"  "C" "sp2" }
+>> 	{ "CM"  "C" "sp2" }
+>> 	{ "CK"  "C" "sp2" }
+>> 	{ "CQ"  "C" "sp2" }
+>> 	{ "CD"  "C" "sp2" }
+>> 	{ "CE"  "C" "sp2" }
+>> 	{ "CF"  "C" "sp2" }
+>> 	{ "CP"  "C" "sp2" }
+>> 	{ "CI"  "C" "sp2" }
+>> 	{ "CJ"  "C" "sp2" }
+>> 	{ "CW"  "C" "sp2" }
+>> 	{ "CV"  "C" "sp2" }
+>> 	{ "CR"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CY"  "C" "sp2" }
+>> 	{ "C0"  "Ca" "sp2" }
+>> 	{ "MG"  "Mg" "sp3" }
+>> 	{ "N"   "N" "sp2" }
+>> 	{ "NA"  "N" "sp2" }
+>> 	{ "N2"  "N" "sp2" }
+>> 	{ "N*"  "N" "sp2" }
+>> 	{ "NP"  "N" "sp2" }
+>> 	{ "NQ"  "N" "sp2" }
+>> 	{ "NB"  "N" "sp2" }
+>> 	{ "NC"  "N" "sp2" }
+>> 	{ "NT"  "N" "sp3" }
+>> 	{ "N3"  "N" "sp3" }
+>> 	{ "S"   "S" "sp3" }
+>> 	{ "SH"  "S" "sp3" }
+>> 	{ "P"   "P" "sp3" }
+>> 	{ "LP"  ""  "sp3" }
+>> 	{ "F"   "F" "sp3" }
+>> 	{ "CL"  "Cl" "sp3" }
+>> 	{ "BR"  "Br" "sp3" }
+>> 	{ "I"   "I"  "sp3" }
+>> 	{ "FE"  "Fe" "sp3" }
+>> 	{ "EP"  ""  "sp3" }
+>> # glycam
+>> 	{ "OG"  "O" "sp3" }
+>> 	{ "OL"  "O" "sp3" }
+>> 	{ "AC"  "C" "sp3" }
+>> 	{ "EC"  "C" "sp3" }
+>> }
+>> #
+>> #	Load the main parameter set.
+>> #
+>> parm99 = loadamberparams parm99.dat
+Loading parameters: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/parm/parm99.dat
+Reading title:
+PARM99 for DNA,RNA,AA, organic molecules, TIP3P wat. Polariz.& LP incl.02/04/99
+(UNKNOWN ATOM TYPE: HZ)
+(UNKNOWN ATOM TYPE: IM)
+(UNKNOWN ATOM TYPE: Li)
+(UNKNOWN ATOM TYPE: IP)
+(UNKNOWN ATOM TYPE: K)
+(UNKNOWN ATOM TYPE: Rb)
+(UNKNOWN ATOM TYPE: Cs)
+(UNKNOWN ATOM TYPE: Zn)
+(UNKNOWN ATOM TYPE: IB)
+(UNKNOWN ATOM TYPE: LP)
+>> frcmod99SB = loadamberparams frcmod.ff99SB
+Loading parameters: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/parm/frcmod.ff99SB
+Reading force field modification type file (frcmod)
+Reading title:
+Modification/update of parm99.dat (Hornak & Simmerling)
+>> #
+>> #	Load DNA/RNA libraries
+>> #
+>> loadOff all_nucleic94.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/all_nucleic94.lib
+Loading: DA
+Loading: DA3
+Loading: DA5
+Loading: DAN
+Loading: DC
+Loading: DC3
+Loading: DC5
+Loading: DCN
+Loading: DG
+Loading: DG3
+Loading: DG5
+Loading: DGN
+Loading: DT
+Loading: DT3
+Loading: DT5
+Loading: DTN
+Loading: RA
+Loading: RA3
+Loading: RA5
+Loading: RAN
+Loading: RC
+Loading: RC3
+Loading: RC5
+Loading: RCN
+Loading: RG
+Loading: RG3
+Loading: RG5
+Loading: RGN
+Loading: RU
+Loading: RU3
+Loading: RU5
+Loading: RUN
+>> #
+>> #	Load main chain and terminating 
+>> #	amino acid libraries (i.e. ff94 libs)
+>> #
+>> loadOff all_amino94.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/all_amino94.lib
+Loading: ALA
+Loading: ARG
+Loading: ASH
+Loading: ASN
+Loading: ASP
+Loading: CYM
+Loading: CYS
+Loading: CYX
+Loading: GLH
+Loading: GLN
+Loading: GLU
+Loading: GLY
+Loading: HID
+Loading: HIE
+Loading: HIP
+Loading: ILE
+Loading: LEU
+Loading: LYN
+Loading: LYS
+Loading: MET
+Loading: PHE
+Loading: PRO
+Loading: SER
+Loading: THR
+Loading: TRP
+Loading: TYR
+Loading: VAL
+>> loadOff all_aminoct94.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/all_aminoct94.lib
+Loading: CALA
+Loading: CARG
+Loading: CASN
+Loading: CASP
+Loading: CCYS
+Loading: CCYX
+Loading: CGLN
+Loading: CGLU
+Loading: CGLY
+Loading: CHID
+Loading: CHIE
+Loading: CHIP
+Loading: CILE
+Loading: CLEU
+Loading: CLYS
+Loading: CMET
+Loading: CPHE
+Loading: CPRO
+Loading: CSER
+Loading: CTHR
+Loading: CTRP
+Loading: CTYR
+Loading: CVAL
+Loading: NHE
+Loading: NME
+>> loadOff all_aminont94.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/all_aminont94.lib
+Loading: ACE
+Loading: NALA
+Loading: NARG
+Loading: NASN
+Loading: NASP
+Loading: NCYS
+Loading: NCYX
+Loading: NGLN
+Loading: NGLU
+Loading: NGLY
+Loading: NHID
+Loading: NHIE
+Loading: NHIP
+Loading: NILE
+Loading: NLEU
+Loading: NLYS
+Loading: NMET
+Loading: NPHE
+Loading: NPRO
+Loading: NSER
+Loading: NTHR
+Loading: NTRP
+Loading: NTYR
+Loading: NVAL
+>> #
+>> #       Load water and ions
+>> # 
+>> loadOff ions94.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/ions94.lib
+Loading: CIO
+Loading: Cl-
+Loading: Cs+
+Loading: IB
+Loading: K+
+Loading: Li+
+Loading: MG2
+Loading: Na+
+Loading: Rb+
+>> loadOff solvents.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/solvents.lib
+Loading: CHCL3BOX
+Loading: DC4
+Loading: FB3
+Loading: FB3BOX
+Loading: FB4
+Loading: FB4BOX
+Loading: MEOHBOX
+Loading: NMABOX
+Loading: OP3
+Loading: OPC
+Loading: OPC3BOX
+Loading: OPCBOX
+Loading: PL3
+Loading: POL3BOX
+Loading: QSPCFWBOX
+Loading: SPC
+Loading: SPCBOX
+Loading: SPCFWBOX
+Loading: SPF
+Loading: SPG
+Loading: T4E
+Loading: TIP3PBOX
+Loading: TIP3PFBOX
+Loading: TIP4PBOX
+Loading: TIP4PEWBOX
+Loading: TIP5PBOX
+Loading: TP3
+Loading: TP4
+Loading: TP5
+Loading: TPF
+>> HOH = TP3
+>> WAT = TP3
+>> 
+>> #
+>> #	Define the PDB name map for the amino acids and DNA.
+>> #
+>> addPdbResMap {
+>>   { 0 "ALA" "NALA" } { 1 "ALA" "CALA" }
+>>   { 0 "ARG" "NARG" } { 1 "ARG" "CARG" }
+>>   { 0 "ASN" "NASN" } { 1 "ASN" "CASN" }
+>>   { 0 "ASP" "NASP" } { 1 "ASP" "CASP" }
+>>   { 0 "CYS" "NCYS" } { 1 "CYS" "CCYS" }
+>>   { 0 "CYX" "NCYX" } { 1 "CYX" "CCYX" }
+>>   { 0 "GLN" "NGLN" } { 1 "GLN" "CGLN" }
+>>   { 0 "GLU" "NGLU" } { 1 "GLU" "CGLU" }
+>>   { 0 "GLY" "NGLY" } { 1 "GLY" "CGLY" }
+>>   { 0 "HID" "NHID" } { 1 "HID" "CHID" }
+>>   { 0 "HIE" "NHIE" } { 1 "HIE" "CHIE" }
+>>   { 0 "HIP" "NHIP" } { 1 "HIP" "CHIP" }
+>>   { 0 "ILE" "NILE" } { 1 "ILE" "CILE" }
+>>   { 0 "LEU" "NLEU" } { 1 "LEU" "CLEU" }
+>>   { 0 "LYS" "NLYS" } { 1 "LYS" "CLYS" }
+>>   { 0 "MET" "NMET" } { 1 "MET" "CMET" }
+>>   { 0 "PHE" "NPHE" } { 1 "PHE" "CPHE" }
+>>   { 0 "PRO" "NPRO" } { 1 "PRO" "CPRO" }
+>>   { 0 "SER" "NSER" } { 1 "SER" "CSER" }
+>>   { 0 "THR" "NTHR" } { 1 "THR" "CTHR" }
+>>   { 0 "TRP" "NTRP" } { 1 "TRP" "CTRP" }
+>>   { 0 "TYR" "NTYR" } { 1 "TYR" "CTYR" }
+>>   { 0 "VAL" "NVAL" } { 1 "VAL" "CVAL" }
+>>   { 0 "HIS" "NHIS" } { 1 "HIS" "CHIS" }
+>>   { 0 "GUA" "DG5"  } { 1 "GUA" "DG3"  } { "GUA" "DG" }
+>>   { 0 "ADE" "DA5"  } { 1 "ADE" "DA3"  } { "ADE" "DA" }
+>>   { 0 "CYT" "DC5"  } { 1 "CYT" "DC3"  } { "CYT" "DC" }
+>>   { 0 "THY" "DT5"  } { 1 "THY" "DT3"  } { "THY" "DT" }
+>>   { 0 "G" "RG5"  } { 1 "G" "RG3"  } { "G" "RG" } { "GN" "RGN" }
+>>   { 0 "A" "RA5"  } { 1 "A" "RA3"  } { "A" "RA" } { "AN" "RAN" }
+>>   { 0 "C" "RC5"  } { 1 "C" "RC3"  } { "C" "RC" } { "CN" "RCN" }
+>>   { 0 "U" "RU5"  } { 1 "U" "RU3"  } { "U" "RU" } { "UN" "RUN" }
+>>   { 0 "DG" "DG5"  } { 1 "DG" "DG3"  }  
+>>   { 0 "DA" "DA5"  } { 1 "DA" "DA3"  }  
+>>   { 0 "DC" "DC5"  } { 1 "DC" "DC3"  }  
+>>   { 0 "DT" "DT5"  } { 1 "DT" "DT3"  }
+>> 
+>> }
+>> 
+>> addPdbAtomMap {
+>>   { "O5*" "O5'" }
+>>   { "C5*" "C5'" }
+>>   { "C4*" "C4'" }
+>>   { "O4*" "O4'" }
+>>   { "C3*" "C3'" }
+>>   { "O3*" "O3'" }
+>>   { "C2*" "C2'" }
+>>   { "C1*" "C1'" }
+>>   { "C5M" "C7"  }
+>>   { "O2*" "O2'" }
+>>   { "H1*" "H1'" }
+>>   { "H2*1" "H2'1" }
+>>   { "H2*2" "H2'2" }
+>>   { "H2'"  "H2'1" }
+>>   { "H2''" "H2'2" }
+>>   { "H3*" "H3'" }
+>>   { "H4*" "H4'" }
+>>   { "H5*1" "H5'1" }
+>>   { "H5*2" "H5'2" }
+>>   { "H5'"  "H5'1" }
+>>   { "H5''" "H5'2" }
+>>   { "HO2'" "HO'2" }
+>>   { "HO5'" "H5T" }
+>>   { "HO3'" "H3T" }
+>>   { "O1'" "O4'" }
+>>   { "OA"  "O1P" }
+>>   { "OB"  "O2P" }
+>>   { "OP1" "O1P" }
+>>   { "OP2" "O2P" }
+>> }
+>> 
+>> 
+>> #
+>> # assumed that most often proteins use HIE
+>> #
+>> NHIS = NHIE
+>> HIS = HIE
+>> CHIS = CHIE
+> 
+> loadamberprep ZAFF/ZAFF.prep
+
+Error: Could not open file ZAFF/ZAFF.prep: not found
+> loadamberprep ZAFF/ZAFF.prep
+
+Error: Could not open file ZAFF/ZAFF.prep: not found
+> quit
+	Quit
+
+Exiting LEaP: Errors = 6; Warnings = 0; Notes = 0.
+log started: Mon Aug 29 19:00:28 2022
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the ff99SB (Hornak & Simmerling) force field
+>> # -----  this file is updated for PDB format 3
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "H"   "H" "sp3" }
+>> 	{ "HO"  "H" "sp3" }
+>> 	{ "HS"  "H" "sp3" }
+>> 	{ "H1"  "H" "sp3" }
+>> 	{ "H2"  "H" "sp3" }
+>> 	{ "H3"  "H" "sp3" }
+>> 	{ "H4"  "H" "sp3" }
+>> 	{ "H5"  "H" "sp3" }
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "HC"  "H" "sp3" }
+>> 	{ "HA"  "H" "sp3" }
+>> 	{ "HP"  "H" "sp3" }
+>> 	{ "OH"  "O" "sp3" }
+>> 	{ "OS"  "O" "sp3" }
+>> 	{ "O"   "O" "sp2" }
+>> 	{ "O2"  "O" "sp2" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "CT"  "C" "sp3" }
+>> 	{ "CH"  "C" "sp3" }
+>> 	{ "C2"  "C" "sp3" }
+>> 	{ "C3"  "C" "sp3" }
+>> 	{ "C"   "C" "sp2" }
+>> 	{ "C*"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CB"  "C" "sp2" }
+>> 	{ "CC"  "C" "sp2" }
+>> 	{ "CN"  "C" "sp2" }
+>> 	{ "CM"  "C" "sp2" }
+>> 	{ "CK"  "C" "sp2" }
+>> 	{ "CQ"  "C" "sp2" }
+>> 	{ "CD"  "C" "sp2" }
+>> 	{ "CE"  "C" "sp2" }
+>> 	{ "CF"  "C" "sp2" }
+>> 	{ "CP"  "C" "sp2" }
+>> 	{ "CI"  "C" "sp2" }
+>> 	{ "CJ"  "C" "sp2" }
+>> 	{ "CW"  "C" "sp2" }
+>> 	{ "CV"  "C" "sp2" }
+>> 	{ "CR"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CY"  "C" "sp2" }
+>> 	{ "C0"  "Ca" "sp2" }
+>> 	{ "MG"  "Mg" "sp3" }
+>> 	{ "N"   "N" "sp2" }
+>> 	{ "NA"  "N" "sp2" }
+>> 	{ "N2"  "N" "sp2" }
+>> 	{ "N*"  "N" "sp2" }
+>> 	{ "NP"  "N" "sp2" }
+>> 	{ "NQ"  "N" "sp2" }
+>> 	{ "NB"  "N" "sp2" }
+>> 	{ "NC"  "N" "sp2" }
+>> 	{ "NT"  "N" "sp3" }
+>> 	{ "N3"  "N" "sp3" }
+>> 	{ "S"   "S" "sp3" }
+>> 	{ "SH"  "S" "sp3" }
+>> 	{ "P"   "P" "sp3" }
+>> 	{ "LP"  ""  "sp3" }
+>> 	{ "F"   "F" "sp3" }
+>> 	{ "CL"  "Cl" "sp3" }
+>> 	{ "BR"  "Br" "sp3" }
+>> 	{ "I"   "I"  "sp3" }
+>> 	{ "FE"  "Fe" "sp3" }
+>> 	{ "EP"  ""  "sp3" }
+>> # glycam
+>> 	{ "OG"  "O" "sp3" }
+>> 	{ "OL"  "O" "sp3" }
+>> 	{ "AC"  "C" "sp3" }
+>> 	{ "EC"  "C" "sp3" }
+>> }
+>> #
+>> #	Load the main parameter set.
+>> #
+>> parm99 = loadamberparams parm99.dat
+Loading parameters: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/parm/parm99.dat
+Reading title:
+PARM99 for DNA,RNA,AA, organic molecules, TIP3P wat. Polariz.& LP incl.02/04/99
+(UNKNOWN ATOM TYPE: HZ)
+(UNKNOWN ATOM TYPE: IM)
+(UNKNOWN ATOM TYPE: Li)
+(UNKNOWN ATOM TYPE: IP)
+(UNKNOWN ATOM TYPE: K)
+(UNKNOWN ATOM TYPE: Rb)
+(UNKNOWN ATOM TYPE: Cs)
+(UNKNOWN ATOM TYPE: Zn)
+(UNKNOWN ATOM TYPE: IB)
+(UNKNOWN ATOM TYPE: LP)
+>> frcmod99SB = loadamberparams frcmod.ff99SB
+Loading parameters: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/parm/frcmod.ff99SB
+Reading force field modification type file (frcmod)
+Reading title:
+Modification/update of parm99.dat (Hornak & Simmerling)
+>> #
+>> #	Load DNA/RNA libraries
+>> #
+>> loadOff all_nucleic94.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/all_nucleic94.lib
+Loading: DA
+Loading: DA3
+Loading: DA5
+Loading: DAN
+Loading: DC
+Loading: DC3
+Loading: DC5
+Loading: DCN
+Loading: DG
+Loading: DG3
+Loading: DG5
+Loading: DGN
+Loading: DT
+Loading: DT3
+Loading: DT5
+Loading: DTN
+Loading: RA
+Loading: RA3
+Loading: RA5
+Loading: RAN
+Loading: RC
+Loading: RC3
+Loading: RC5
+Loading: RCN
+Loading: RG
+Loading: RG3
+Loading: RG5
+Loading: RGN
+Loading: RU
+Loading: RU3
+Loading: RU5
+Loading: RUN
+>> #
+>> #	Load main chain and terminating 
+>> #	amino acid libraries (i.e. ff94 libs)
+>> #
+>> loadOff all_amino94.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/all_amino94.lib
+Loading: ALA
+Loading: ARG
+Loading: ASH
+Loading: ASN
+Loading: ASP
+Loading: CYM
+Loading: CYS
+Loading: CYX
+Loading: GLH
+Loading: GLN
+Loading: GLU
+Loading: GLY
+Loading: HID
+Loading: HIE
+Loading: HIP
+Loading: ILE
+Loading: LEU
+Loading: LYN
+Loading: LYS
+Loading: MET
+Loading: PHE
+Loading: PRO
+Loading: SER
+Loading: THR
+Loading: TRP
+Loading: TYR
+Loading: VAL
+>> loadOff all_aminoct94.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/all_aminoct94.lib
+Loading: CALA
+Loading: CARG
+Loading: CASN
+Loading: CASP
+Loading: CCYS
+Loading: CCYX
+Loading: CGLN
+Loading: CGLU
+Loading: CGLY
+Loading: CHID
+Loading: CHIE
+Loading: CHIP
+Loading: CILE
+Loading: CLEU
+Loading: CLYS
+Loading: CMET
+Loading: CPHE
+Loading: CPRO
+Loading: CSER
+Loading: CTHR
+Loading: CTRP
+Loading: CTYR
+Loading: CVAL
+Loading: NHE
+Loading: NME
+>> loadOff all_aminont94.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/all_aminont94.lib
+Loading: ACE
+Loading: NALA
+Loading: NARG
+Loading: NASN
+Loading: NASP
+Loading: NCYS
+Loading: NCYX
+Loading: NGLN
+Loading: NGLU
+Loading: NGLY
+Loading: NHID
+Loading: NHIE
+Loading: NHIP
+Loading: NILE
+Loading: NLEU
+Loading: NLYS
+Loading: NMET
+Loading: NPHE
+Loading: NPRO
+Loading: NSER
+Loading: NTHR
+Loading: NTRP
+Loading: NTYR
+Loading: NVAL
+>> #
+>> #       Load water and ions
+>> # 
+>> loadOff ions94.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/ions94.lib
+Loading: CIO
+Loading: Cl-
+Loading: Cs+
+Loading: IB
+Loading: K+
+Loading: Li+
+Loading: MG2
+Loading: Na+
+Loading: Rb+
+>> loadOff solvents.lib
+Loading library: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/lib/solvents.lib
+Loading: CHCL3BOX
+Loading: DC4
+Loading: FB3
+Loading: FB3BOX
+Loading: FB4
+Loading: FB4BOX
+Loading: MEOHBOX
+Loading: NMABOX
+Loading: OP3
+Loading: OPC
+Loading: OPC3BOX
+Loading: OPCBOX
+Loading: PL3
+Loading: POL3BOX
+Loading: QSPCFWBOX
+Loading: SPC
+Loading: SPCBOX
+Loading: SPCFWBOX
+Loading: SPF
+Loading: SPG
+Loading: T4E
+Loading: TIP3PBOX
+Loading: TIP3PFBOX
+Loading: TIP4PBOX
+Loading: TIP4PEWBOX
+Loading: TIP5PBOX
+Loading: TP3
+Loading: TP4
+Loading: TP5
+Loading: TPF
+>> HOH = TP3
+>> WAT = TP3
+>> 
+>> #
+>> #	Define the PDB name map for the amino acids and DNA.
+>> #
+>> addPdbResMap {
+>>   { 0 "ALA" "NALA" } { 1 "ALA" "CALA" }
+>>   { 0 "ARG" "NARG" } { 1 "ARG" "CARG" }
+>>   { 0 "ASN" "NASN" } { 1 "ASN" "CASN" }
+>>   { 0 "ASP" "NASP" } { 1 "ASP" "CASP" }
+>>   { 0 "CYS" "NCYS" } { 1 "CYS" "CCYS" }
+>>   { 0 "CYX" "NCYX" } { 1 "CYX" "CCYX" }
+>>   { 0 "GLN" "NGLN" } { 1 "GLN" "CGLN" }
+>>   { 0 "GLU" "NGLU" } { 1 "GLU" "CGLU" }
+>>   { 0 "GLY" "NGLY" } { 1 "GLY" "CGLY" }
+>>   { 0 "HID" "NHID" } { 1 "HID" "CHID" }
+>>   { 0 "HIE" "NHIE" } { 1 "HIE" "CHIE" }
+>>   { 0 "HIP" "NHIP" } { 1 "HIP" "CHIP" }
+>>   { 0 "ILE" "NILE" } { 1 "ILE" "CILE" }
+>>   { 0 "LEU" "NLEU" } { 1 "LEU" "CLEU" }
+>>   { 0 "LYS" "NLYS" } { 1 "LYS" "CLYS" }
+>>   { 0 "MET" "NMET" } { 1 "MET" "CMET" }
+>>   { 0 "PHE" "NPHE" } { 1 "PHE" "CPHE" }
+>>   { 0 "PRO" "NPRO" } { 1 "PRO" "CPRO" }
+>>   { 0 "SER" "NSER" } { 1 "SER" "CSER" }
+>>   { 0 "THR" "NTHR" } { 1 "THR" "CTHR" }
+>>   { 0 "TRP" "NTRP" } { 1 "TRP" "CTRP" }
+>>   { 0 "TYR" "NTYR" } { 1 "TYR" "CTYR" }
+>>   { 0 "VAL" "NVAL" } { 1 "VAL" "CVAL" }
+>>   { 0 "HIS" "NHIS" } { 1 "HIS" "CHIS" }
+>>   { 0 "GUA" "DG5"  } { 1 "GUA" "DG3"  } { "GUA" "DG" }
+>>   { 0 "ADE" "DA5"  } { 1 "ADE" "DA3"  } { "ADE" "DA" }
+>>   { 0 "CYT" "DC5"  } { 1 "CYT" "DC3"  } { "CYT" "DC" }
+>>   { 0 "THY" "DT5"  } { 1 "THY" "DT3"  } { "THY" "DT" }
+>>   { 0 "G" "RG5"  } { 1 "G" "RG3"  } { "G" "RG" } { "GN" "RGN" }
+>>   { 0 "A" "RA5"  } { 1 "A" "RA3"  } { "A" "RA" } { "AN" "RAN" }
+>>   { 0 "C" "RC5"  } { 1 "C" "RC3"  } { "C" "RC" } { "CN" "RCN" }
+>>   { 0 "U" "RU5"  } { 1 "U" "RU3"  } { "U" "RU" } { "UN" "RUN" }
+>>   { 0 "DG" "DG5"  } { 1 "DG" "DG3"  }  
+>>   { 0 "DA" "DA5"  } { 1 "DA" "DA3"  }  
+>>   { 0 "DC" "DC5"  } { 1 "DC" "DC3"  }  
+>>   { 0 "DT" "DT5"  } { 1 "DT" "DT3"  }
+>> 
+>> }
+>> 
+>> addPdbAtomMap {
+>>   { "O5*" "O5'" }
+>>   { "C5*" "C5'" }
+>>   { "C4*" "C4'" }
+>>   { "O4*" "O4'" }
+>>   { "C3*" "C3'" }
+>>   { "O3*" "O3'" }
+>>   { "C2*" "C2'" }
+>>   { "C1*" "C1'" }
+>>   { "C5M" "C7"  }
+>>   { "O2*" "O2'" }
+>>   { "H1*" "H1'" }
+>>   { "H2*1" "H2'1" }
+>>   { "H2*2" "H2'2" }
+>>   { "H2'"  "H2'1" }
+>>   { "H2''" "H2'2" }
+>>   { "H3*" "H3'" }
+>>   { "H4*" "H4'" }
+>>   { "H5*1" "H5'1" }
+>>   { "H5*2" "H5'2" }
+>>   { "H5'"  "H5'1" }
+>>   { "H5''" "H5'2" }
+>>   { "HO2'" "HO'2" }
+>>   { "HO5'" "H5T" }
+>>   { "HO3'" "H3T" }
+>>   { "O1'" "O4'" }
+>>   { "OA"  "O1P" }
+>>   { "OB"  "O2P" }
+>>   { "OP1" "O1P" }
+>>   { "OP2" "O2P" }
+>> }
+>> 
+>> 
+>> #
+>> # assumed that most often proteins use HIE
+>> #
+>> NHIS = NHIE
+>> HIS = HIE
+>> CHIS = CHIE
+> 
+> loadamberprep ZAFF/ZAFF.prep
+
+Error: Could not open file ZAFF/ZAFF.prep: not found
+> loadamberprep ZAFF.prep
+Loading Prep file: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/cmd/ZAFF.prep
+(UNKNOWN ATOM TYPE: S1)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: S2)
+(UNKNOWN ATOM TYPE: N1)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: S3)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: S4)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: S5)
+(UNKNOWN ATOM TYPE: N4)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: D1)
+(UNKNOWN ATOM TYPE: E1)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: D2)
+(UNKNOWN ATOM TYPE: D2)
+(UNKNOWN ATOM TYPE: E2)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: NR)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: N5)
+(UNKNOWN ATOM TYPE: N6)
+(UNKNOWN ATOM TYPE: N7)
+(UNKNOWN ATOM TYPE: O1)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: N8)
+(UNKNOWN ATOM TYPE: N9)
+(UNKNOWN ATOM TYPE: N0)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: O3)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: NY)
+(UNKNOWN ATOM TYPE: O4)
+(UNKNOWN ATOM TYPE: ZN)
+Loaded UNIT: AP1
+Loaded UNIT: AP2
+Loaded UNIT: CY1
+Loaded UNIT: CY2
+Loaded UNIT: CY3
+Loaded UNIT: CY4
+Loaded UNIT: CY5
+Loaded UNIT: HD1
+Loaded UNIT: HD2
+Loaded UNIT: HD3
+Loaded UNIT: HD4
+Loaded UNIT: HD5
+Loaded UNIT: HD6
+Loaded UNIT: HD7
+Loaded UNIT: HD8
+Loaded UNIT: HD9
+Loaded UNIT: HDA
+Loaded UNIT: HDD
+Loaded UNIT: HE1
+Loaded UNIT: HE2
+Loaded UNIT: HE3
+Loaded UNIT: HE4
+Loaded UNIT: HE5
+Loaded UNIT: HE6
+Loaded UNIT: OH1
+Loaded UNIT: WT1
+Loaded UNIT: WT2
+Loaded UNIT: WT3
+Loaded UNIT: Z10
+Loaded UNIT: Z11
+Loaded UNIT: Z12
+Loaded UNIT: ZN1
+Loaded UNIT: ZN2
+Loaded UNIT: ZN3
+Loaded UNIT: ZN4
+Loaded UNIT: ZN5
+Loaded UNIT: ZN6
+Loaded UNIT: ZN7
+Loaded UNIT: ZN8
+Loaded UNIT: ZN9
+> loadamberprep /home/alumno/miniconda3/envs/drogNasim22/dat/leap/cmd/oldff/ZAFF.prep
+
+Error: Could not open file /home/alumno/miniconda3/envs/drogNasim22/dat/leap/cmd/oldff/ZAFF.prep: No such file or directory
+> loadamberprep /home/alumno/miniconda3/envs/drogNasim22/dat/leap/cmd/oldff/ZAFF.prep
+Loading Prep file: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/cmd/oldff/ZAFF.prep
+(UNKNOWN ATOM TYPE: S1)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: S2)
+(UNKNOWN ATOM TYPE: N1)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: S3)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: S4)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: S5)
+(UNKNOWN ATOM TYPE: N4)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: D1)
+(UNKNOWN ATOM TYPE: E1)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: D2)
+(UNKNOWN ATOM TYPE: D2)
+(UNKNOWN ATOM TYPE: E2)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: NR)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: N5)
+(UNKNOWN ATOM TYPE: N6)
+(UNKNOWN ATOM TYPE: N7)
+(UNKNOWN ATOM TYPE: O1)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: N8)
+(UNKNOWN ATOM TYPE: N9)
+(UNKNOWN ATOM TYPE: N0)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: O3)
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: NY)
+(UNKNOWN ATOM TYPE: O4)
+(UNKNOWN ATOM TYPE: ZN)
+Loaded UNIT: AP1
+Loaded UNIT: AP2
+Loaded UNIT: CY1
+Loaded UNIT: CY2
+Loaded UNIT: CY3
+Loaded UNIT: CY4
+Loaded UNIT: CY5
+Loaded UNIT: HD1
+Loaded UNIT: HD2
+Loaded UNIT: HD3
+Loaded UNIT: HD4
+Loaded UNIT: HD5
+Loaded UNIT: HD6
+Loaded UNIT: HD7
+Loaded UNIT: HD8
+Loaded UNIT: HD9
+Loaded UNIT: HDA
+Loaded UNIT: HDD
+Loaded UNIT: HE1
+Loaded UNIT: HE2
+Loaded UNIT: HE3
+Loaded UNIT: HE4
+Loaded UNIT: HE5
+Loaded UNIT: HE6
+Loaded UNIT: OH1
+Loaded UNIT: WT1
+Loaded UNIT: WT2
+Loaded UNIT: WT3
+Loaded UNIT: Z10
+Loaded UNIT: Z11
+Loaded UNIT: Z12
+Loaded UNIT: ZN1
+Loaded UNIT: ZN2
+Loaded UNIT: ZN3
+Loaded UNIT: ZN4
+Loaded UNIT: ZN5
+Loaded UNIT: ZN6
+Loaded UNIT: ZN7
+Loaded UNIT: ZN8
+Loaded UNIT: ZN9
+> loadamberparams /home/alumno/miniconda3/envs/drogNasim22/dat/leap/cmd/oldff/ZAFF.frcmod
+Loading parameters: /home/alumno/miniconda3/envs/drogNasim22/dat/leap/cmd/oldff/ZAFF.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+ZAFF parameter set created by MTK++/MCPB 
+(UNKNOWN ATOM TYPE: ZN)
+(UNKNOWN ATOM TYPE: S1)
+(UNKNOWN ATOM TYPE: S2)
+(UNKNOWN ATOM TYPE: N1)
+(UNKNOWN ATOM TYPE: S3)
+(UNKNOWN ATOM TYPE: S4)
+(UNKNOWN ATOM TYPE: S5)
+(UNKNOWN ATOM TYPE: N4)
+(UNKNOWN ATOM TYPE: N5)
+(UNKNOWN ATOM TYPE: N6)
+(UNKNOWN ATOM TYPE: N7)
+(UNKNOWN ATOM TYPE: O1)
+(UNKNOWN ATOM TYPE: N8)
+(UNKNOWN ATOM TYPE: N9)
+(UNKNOWN ATOM TYPE: N0)
+(UNKNOWN ATOM TYPE: O3)
+(UNKNOWN ATOM TYPE: NY)
+(UNKNOWN ATOM TYPE: O4)
+(UNKNOWN ATOM TYPE: E1)
+(UNKNOWN ATOM TYPE: D1)
+(UNKNOWN ATOM TYPE: E2)
+(UNKNOWN ATOM TYPE: D2)
+(UNKNOWN ATOM TYPE: NR)
+> SIR=loadpdb 4kxq_proteina_sH_ZAFF.pdb
+Loading PDB file: ./4kxq_proteina_sH_ZAFF.pdb
+ (starting new molecule for chain  )
+Matching PDB residue names to LEaP variables.
+Mapped residue HIS, term: Terminal/beginning, seq. number: 0 to: NHIS.
+Mapped residue ILE, term: Terminal/last, seq. number: 278 to: CILE.
+
+Warning: Unknown residue: ZN   number: 279   type: Terminal/last
+..relaxing end constraints to try for a dbase match
+
+Warning:   -no luck
+  Added missing heavy atom: .R<NHIE 232>.A<CG 10>
+  Added missing heavy atom: .R<NHIE 232>.A<ND1 11>
+  Added missing heavy atom: .R<NHIE 232>.A<CD2 16>
+  Added missing heavy atom: .R<NHIE 232>.A<CE1 12>
+  Added missing heavy atom: .R<NHIE 232>.A<NE2 14>
+  Added missing heavy atom: .R<CILE 510>.A<OXT 20>
+Creating new UNIT for residue: ZN sequence: 511
+Created a new atom named: ZN1 within residue: .R<ZN 511>
+  total atoms in file: 2215
+  Leap added 2258 missing atoms according to residue templates:
+       6 Heavy
+       2252 H / lone pairs
+  The file contained 1 atoms not in residue templates
+> SIR=loadpdb 4kxq_proteina_sH_ZAFF.pdb
+Loading PDB file: ./4kxq_proteina_sH_ZAFF.pdb
+Matching PDB residue names to LEaP variables.
+Mapped residue HIS, term: Terminal/beginning, seq. number: 0 to: NHIS.
+  Added missing heavy atom: .R<NHIE 232>.A<CG 10>
+  Added missing heavy atom: .R<NHIE 232>.A<ND1 11>
+  Added missing heavy atom: .R<NHIE 232>.A<CD2 16>
+  Added missing heavy atom: .R<NHIE 232>.A<CE1 12>
+  Added missing heavy atom: .R<NHIE 232>.A<NE2 14>
+
+Warning: failed to find default bond length ZN-C, types ZN-C
+  total atoms in file: 2215
+  Leap added 2257 missing atoms according to residue templates:
+       5 Heavy
+       2252 H / lone pairs
+> check SIR
+Checking 'SIR'....
+
+Warning: There is a bond of 61.332731 angstroms between: 
+
+Warning: The unperturbed charge of the unit (-3.000000) is not zero.
+
+Warning: Close contact of 1.178946 angstroms between .R<GLN 345>.A<HE21 14> and .R<SER 441>.A<HG 9>
+Checking parameters for unit 'SIR'.
+Checking for bond parameters.
+
+Error: Could not find bond parameter for: C - ZN
+Checking for angle parameters.
+
+Error: Could not find angle parameter: O - C - ZN
+
+Error: Could not find angle parameter: CT - C - ZN
+
+Warning: There are missing parameters.
+check:  Warnings: 3
+Unit is OK.
+> deleteBond SIR.510.C SIR.511.ZN
+> check SIR
+Checking 'SIR'....
+
+Warning: The unperturbed charge of the unit (-3.000000) is not zero.
+
+Warning: Close contact of 1.178946 angstroms between .R<GLN 345>.A<HE21 14> and .R<SER 441>.A<HG 9>
+Checking parameters for unit 'SIR'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 2
+Unit is OK.
+> addions SIR Na+ 0
+3 Na+ ions required to neutralize.
+Adding 3 counter ions to "SIR" using 1A grid
+Total solute charge:  -3.00  Max atom radius:   2.00
+Grid extends from solute vdw + 1.87  to  7.87
+Box:
+   enclosing:  -13.91 -49.39 -25.29   70.38 22.91 30.12
+   sized:			      114.09 78.61 102.71
+   edge:        128.00
+Resolution:      1.00 Angstrom.
+Tree depth: 7
+Volume =  3.12% of box, grid points 65503
+ (no solvent present)
+Calculating grid charges
+Placed Na+ in SIR at (-2.91, -33.39, -2.29).
+Placed Na+ in SIR at (11.09, -20.39, 21.71).
+Placed Na+ in SIR at (50.09, -32.39, -4.29).
+
+Done adding ions.
+> check SIR
+Checking 'SIR'....
+
+Warning: Close contact of 1.178946 angstroms between .R<GLN 345>.A<HE21 14> and .R<SER 441>.A<HG 9>
+Checking parameters for unit 'SIR'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 1
+Unit is OK.
+> savepdb SIR SIRT_close_dock.pdb
+Writing pdb file: SIRT_close_dock.pdb
+
+Warning:  Converting N-terminal residue name to PDB format: NHIE -> HIE
+> quit
+	Quit
+
+Exiting LEaP: Errors = 5; Warnings = 11; Notes = 0.

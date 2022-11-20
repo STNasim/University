@@ -1,0 +1,106 @@
+#include "manejoarchivos.h"
+
+ManejoArchivos::ManejoArchivos()
+{
+
+}
+
+void ManejoArchivos::CargarPacientes()
+{
+    ifstream archi;
+    archi.open("DatosDePacientes.txt");
+    if(archi.is_open())
+    {
+        int DNI;
+        string datos;
+        while(!archi.eof())
+        {
+            archi>>DNI;
+            archi.ignore(1);
+            getline(archi,datos);
+            datosMemoria.insert(pair<int,string>(DNI,datos));
+        }
+    }
+    archi.close();
+}
+
+void ManejoArchivos::AgregarPaciente(int DNI, string datos)
+{
+    ofstream archi;
+    archi.open("DatosDePacientes.txt", ios::app);
+    if(archi.is_open())
+    {
+        archi<<DNI<<" "<<datos;
+        datosMemoria.insert(pair<int,string>(DNI,datos));
+    }
+    archi.close();
+}
+
+void ManejoArchivos::ModificarPaciente(int DNI, string datos)
+{
+    if(datosMemoria.erase(DNI)==1)
+        datosMemoria.insert(pair<int,string>(DNI,datos));
+    fstream archi;
+    string extraccion, aux;
+    archi.open("DatosDePacientes.txt",ios::in);
+    if(archi.is_open())
+    {
+        while(!archi.eof())
+        {
+            getline(archi,aux,'\n');
+            extraccion+=aux;
+            extraccion+='\n';
+        }
+        extraccion.pop_back();
+        aux= to_string(DNI);
+        int inicio=extraccion.find(aux);
+        if(inicio!=-1)
+        {
+            int fin=extraccion.find('\n',inicio);
+            string linea=aux;
+            linea+=" ";
+            linea+=datos;
+            extraccion.replace(inicio,fin-inicio,linea);
+        }
+    }
+    archi.close();
+    archi.open("DatosDePacientes.txt",ios::out);
+    if(archi.is_open())
+        archi<<extraccion;
+    archi.close();
+}
+
+bool ManejoArchivos::SeleccionarPaciente(int DNI)
+{
+    pacienteSeleccionado=datosMemoria.find(DNI);
+    return (pacienteSeleccionado!=datosMemoria.end());
+}
+
+void ManejoArchivos::CargarDatosPaciente()
+{
+    datosPaciente.clear();
+    datosPaciente.resize(0);
+    test extraccion;
+    fstream archi;
+    archi.open("EstudiosDePacientes_SEMA.dat",ios::binary | ios::in );
+    if(archi.is_open())
+    {
+        while(!archi.eof())
+        {
+            archi.read((char*)&extraccion,sizeof (test));
+            if(extraccion.DNI==pacienteSeleccionado->first)
+                datosPaciente.push_back(extraccion);
+        }
+        for(int i=0;i<(int)datosPaciente.size();i++)
+        {
+            cout<<datosPaciente[i].DNI<<endl;
+            cout<<pacienteSeleccionado->second<<endl;
+            cout<<"Test: "<<datosPaciente[i].tipo<<"  - ";
+            cout<<"Fecha: "<<datosPaciente[i].anio<<'/'<<datosPaciente[i].mes<<'/'<<datosPaciente[i].dia<<" - ";
+            cout<<"Hora: "<<datosPaciente[i].horas<<":"<<datosPaciente[i].minutos<<" hs - ";
+            cout<<"Nivel: "<<datosPaciente[i].nivel<<" - ";
+            cout<<"Tiempo: "<<datosPaciente[i].tiempo<<" segundos."<<endl;
+        }
+    }
+    archi.close();
+}

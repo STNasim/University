@@ -1,0 +1,39 @@
+#ifndef MANEJOARCHIVOS_H
+#define MANEJOARCHIVOS_H
+
+#include <fstream>
+#include <map>
+#include <vector>
+#include <iostream>
+
+using namespace std;
+class ManejoArchivos
+{
+struct test
+{
+      int DNI;
+      char anio[4];
+      char mes[2];
+      char dia[2];
+      char horas[2];
+      char minutos[2];
+      char tipo;
+      char nivel;
+      unsigned int tiempo;
+};
+
+public:
+    ManejoArchivos();
+    void CargarPacientes();
+    void AgregarPaciente(int DNI, string datos);
+    void ModificarPaciente(int DNI, string datos);
+    bool SeleccionarPaciente(int DNI);
+    void CargarDatosPaciente();
+    vector <test> ObtenerDatosPaciente();
+private:
+    map<int,string> datosMemoria;
+    map<int,string>::iterator pacienteSeleccionado;
+    vector <test> datosPaciente;
+};
+
+#endif // MANEJOARCHIVOS_H

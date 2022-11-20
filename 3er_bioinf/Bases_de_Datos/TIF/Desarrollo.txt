@@ -1,0 +1,222 @@
+CREATE OR REPLACE VIEW avg_rating_movies
+AS SELECT movieid, AVG(rating) AS avg_rating
+FROM u2base INNER JOIN users USING (userid)
+GROUP BY movieid
+
+SELECT actorid, COUNT(DISTINCT(directorid)) AS directores 
+FROM movies2actors INNER JOIN movies USING (movieid) 
+INNER JOIN movies2directors USING (movieid) 
+GROUP by actorid 
+ORDER BY directores DESC
+LIMIT 0,10
+
+SELECT actorid,a_quality
+FROM actors
+WHERE actorid in
+(
+SELECT actorid
+FROM movies2actors INNER JOIN movies USING (movieid)
+INNER JOIN movies2directors USING (movieid)
+GROUP by actorid
+ORDER BY COUNT(DISTINCT(directorid)) DESC
+LIMIT 0,10
+)
+
+SELECT actorid,a_quality 
+FROM actors
+WHERE actorid IN 
+(
+	SELECT actorid
+	FROM
+	(
+		SELECT actorid
+		FROM movies2actors INNER JOIN movies USING (movieid) 
+		INNER JOIN movies2directors USING (movieid) 
+		GROUP by actorid 
+		ORDER BY COUNT(DISTINCT(directorid)) DESC
+		LIMIT 0,10
+	) AS a
+)
+
+SELECT directorid, COUNT(DISTINCT(actorid)) AS actores 
+FROM movies2directors INNER JOIN movies USING (movieid) 
+INNER JOIN movies2actors USING (movieid) 
+GROUP by directorid 
+ORDER BY actores DESC
+LIMIT 0, 10
+
+//PREGUNTAR POR ESTA CONSULTA
+SELECT *
+FROM directors as D
+WHERE directorid IN 
+(
+	SELECT directorid
+	FROM
+	(
+		SELECT directorid
+		FROM movies2actors INNER JOIN movies USING (movieid) 
+		INNER JOIN movies2directors USING (movieid) 
+		GROUP by directorid 
+		ORDER BY COUNT(DISTINCT(actorid)) DESC
+		LIMIT 0,10
+	) AS a
+)
+
+CREATE OR REPLACE VIEW top10dir AS
+SELECT directorid
+FROM movies2directors INNER JOIN movies USING (movieid)
+INNER JOIN movies2actors USING (movieid)
+GROUP by directorid
+ORDER BY COUNT(DISTINCT(actorid)) DESC
+LIMIT 0, 10
+SELECT *
+FROM directors
+WHERE directorid IN
+(
+SELECT *
+FROM top10dir
+)
+
+SELECT *
+FROM directors
+WHERE directorid=5185 OR directorid=156165 OR directorid=151963
+OR directorid=260322 OR directorid=121794 OR directorid=264160
+OR directorid=70986 OR directorid=246973 OR directorid=158572 OR
+directorid=209221
+
+SELECT actorid, AVG(avg_rating) AS notaPromedio
+FROM avg_rating_movies INNER JOIN movies USING (movieid)
+INNER JOIN movies2actors USING (movieid)
+WHERE actorid IN 
+(
+	SELECT actorid
+	FROM
+	(
+		SELECT actorid
+		FROM movies2actors INNER JOIN movies USING (movieid) 
+		INNER JOIN movies2directors USING (movieid) 
+		GROUP by actorid 
+		ORDER BY COUNT(DISTINCT(directorid)) DESC
+		LIMIT 0,10
+	) AS a
+)
+GROUP BY actorid
+
+SELECT AVG(notaPromedio) AS promedioNotas, STDDEV(notaPromedio) AS desvioEstandar
+FROM
+(
+    SELECT actorid, AVG(avg_rating) AS notaPromedio
+    FROM avg_rating_movies INNER JOIN movies USING (movieid)
+    INNER JOIN movies2actors USING (movieid)
+    WHERE actorid IN
+    (
+        SELECT actorid
+        FROM
+        (
+            SELECT actorid
+            FROM movies2actors INNER JOIN movies USING (movieid) 
+            INNER JOIN movies2directors USING (movieid) 
+            GROUP by actorid 
+            ORDER BY COUNT(DISTINCT(directorid)) DESC
+            LIMIT 0,10
+        ) AS a
+    )
+    GROUP BY actorid
+) AS b
+
+SELECT AVG(notaPromedio) AS promedioNotas, STDDEV(notaPromedio) AS desvioEstandar
+FROM
+(
+	SELECT directorid, AVG(avg_rating) AS notaPromedio
+	FROM movies2directors INNER JOIN avg_rating_movies USING(movieid)
+	WHERE directorid=5185 OR directorid=156165 OR directorid=151963
+	OR directorid=260322 OR directorid=121794 OR directorid=264160
+	OR directorid=70986 OR directorid=246973 OR directorid=158572 OR
+	directorid=209221
+	GROUP BY directorid
+) as b
+
+
+SELECT *
+FROM actors,directors
+
+SELECT A.actorid,M2A.movieid
+FROM actors A JOIN movies2actors M2A USING (actorid)
+WHERE a_gender='F'
+
+(
+SELECT *
+FROM users
+WHERE age>10
+)
+UNION
+(
+SELECT *
+FROM users
+WHERE u_gender='F'
+)
+
+SELECT *
+FROM users
+WHERE age>10
+INTERSECT
+(
+SELECT *
+FROM users
+WHERE u_gender='F'
+)
+
+SELECT *
+FROM users
+WHERE age>10
+EXCEPT
+SELECT *
+FROM users
+WHERE u_gender='F'
+
+SELECT *
+FROM users
+WHERE userid IN
+(
+SELECT userid
+FROM u2base
+WHERE movieid=1711384
+)
+
+SELECT genre, COUNT(movieid) as cantidadDePeliculas
+FROM movies2directors
+GROUP BY genre
+
+SELECT genre, COUNT(movieid) as cantidadPeliculas
+FROM u2base INNER JOIN users USING (userid)
+INNER JOIN movies USING (movieid)
+INNER JOIN movies2directors USING (movieid)
+WHERE age>40
+GROUP BY genre
+ORDER BY cantidadPeliculas DESC
+
+SELECT *
+FROM directors D
+WHERE EXISTS
+(
+SELECT *
+FROM movies2directors M2D INNER JOIN avg_rating_movies ARM ON
+ARM.movieid=M2D.movieid
+WHERE avg_rating>4.5 AND D.directorid = M2D.directorid
+)
+
+SELECT userid, COUNT(movieid) as pelisPuntuadas
+FROM u2base
+WHERE movieid IN
+(
+SELECT *
+FROM
+(
+	SELECT movieid
+	FROM avg_rating_movies
+	ORDER BY avg_rating DESC
+	LIMIT 0,10
+)as A
+)
+GROUP BY userid
+ORDER BY pelisPuntuadas DESC

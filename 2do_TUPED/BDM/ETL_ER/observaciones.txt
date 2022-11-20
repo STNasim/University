@@ -1,0 +1,9 @@
+Notas ETL:
+
+Utilicé la BD epidemologia sin haber cargado datos de Santa Fé.
+
+Que en enfermedad haya una ID en vez de que la ID sea el nombre de la enfermedad puede generar casos como este dónde Dengue tenga dos categorias, lo solucioné borrando la enfermedad Dengue al cargar las nuevas enfermedades.
+
+Importante cargar en formato UTF-8 sino no lee tildes.
+
+Por alguna razón al hacer el join con las enfermedades por su nombre, no se toman las enfermedades de nombre "Covid", probé cambiando el tipo de operación pero no hay forma. Corrección: Era porque al ordenar, la sentencia SQL que cargaba desde la BD ordenaba a "Cólera" arriba de "Covid" por su tilde.

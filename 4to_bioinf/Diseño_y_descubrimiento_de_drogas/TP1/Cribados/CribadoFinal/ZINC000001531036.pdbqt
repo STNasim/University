@@ -1,0 +1,41 @@
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   LIG    1        6.685  -0.521   2.078  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  C   LIG    1        5.178  -0.559   2.338  0.00  0.00    +0.000 C 
+BRANCH   2   3
+ATOM      3  C   LIG    1        4.391  -0.286   1.056  0.00  0.00    +0.011 C 
+BRANCH   3   4
+ATOM      4  C   LIG    1        2.890  -0.320   1.308  0.00  0.00    +0.120 C 
+BRANCH   4   6
+ATOM      5  O   LIG    1        1.786  -0.921  -0.749  0.00  0.00    -0.251 OA
+ATOM      6  C   LIG    1        2.133  -0.051   0.033  0.00  0.00    +0.305 C 
+BRANCH   6   7
+ATOM      7  O   LIG    1        1.903   1.261  -0.189  0.00  0.00    -0.481 OA
+ATOM      8  H   LIG    1        2.252   1.849   0.506  0.00  0.00    +0.295 HD
+ENDBRANCH   6   7
+ENDBRANCH   4   6
+ENDBRANCH   3   4
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1   9
+ATOM      9  C   LIG    1        7.487  -0.784   3.355  0.00  0.00    +0.000 C 
+BRANCH   9  10
+ATOM     10  C   LIG    1        8.991  -0.728   3.080  0.00  0.00    +0.011 C 
+BRANCH  10  11
+ATOM     11  C   LIG    1        9.810  -0.976   4.347  0.00  0.00    +0.120 C 
+BRANCH  11  12
+ATOM     12  C   LIG    1       11.296  -0.923   4.072  0.00  0.00    +0.305 C 
+ATOM     13  O   LIG    1       11.809  -0.699   2.989  0.00  0.00    -0.251 OA
+BRANCH  12  14
+ATOM     14  O   LIG    1       12.033  -1.154   5.185  0.00  0.00    -0.481 OA
+ATOM     15  H   LIG    1       11.500  -1.317   5.985  0.00  0.00    +0.295 HD
+ENDBRANCH  12  14
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 10

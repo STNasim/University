@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Proyecto SEMA Salim Taleb Nasim A.: Fichero Fuente CasosDePrueba/Caso4/texto.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Proyecto SEMA Salim Taleb Nasim A.
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('texto_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">texto.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="texto_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="texto_8h.html">texto.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QOpenGLFunctions&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QPainter&gt;</span> <span class="comment">// Para función texto</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span>  <span class="comment">// Para función texto</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_texto.html#a6664bddbfd0f4921515b4b5205c741c3">   10</a></span>&#160;<a class="code" href="class_texto.html#a6664bddbfd0f4921515b4b5205c741c3">Texto::Texto</a>(<span class="keywordtype">string</span> pFrase, <span class="keywordtype">int</span> pX, <span class="keywordtype">int</span> pY, <span class="keywordtype">float</span> pR, <span class="keywordtype">float</span> pG, <span class="keywordtype">float</span> pB){</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    frase = pFrase;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    posX = pX;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    posY = pY;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// color rgb</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    color.resize(3);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    color[0]=pR;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    color[1]=pG;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    color[2]=pB;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_texto.html#ac7c051fee4cad1afbc3e6ad0eee3fec4">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_texto.html#ac7c051fee4cad1afbc3e6ad0eee3fec4">Texto::dibujar</a>()</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    dibujarTexto(frase, posX + 0.5, posY + 0.5, 10);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_texto.html#aee88cbc074d95a71fe9152b29b6f20db">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_texto.html#aee88cbc074d95a71fe9152b29b6f20db">Texto::setColor</a>(<span class="keywordtype">float</span> pR, <span class="keywordtype">float</span> pG, <span class="keywordtype">float</span> pB)</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    color[0]=pR;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    color[1]=pG;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    color[2]=pB;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_texto.html#ae59e9765c07bdab77b4ba854fe198b90">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_texto.html#ae59e9765c07bdab77b4ba854fe198b90">Texto::dibujarTexto</a>(<span class="keywordtype">string</span> pTexto, <span class="keywordtype">float</span> pX, <span class="keywordtype">float</span> pY, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> pTam)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">float</span> escala = 0.05f;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QFont fuente(<span class="stringliteral">&quot;Arial&quot;</span>, pTam);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QString qTexto(pTexto.c_str());</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//QPointF posicion(pX, -pY/escala);</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QPointF posicion(0, 0);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    glLineWidth(anchoLineaTexto);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QPainterPath camino;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    camino.addText(posicion, fuente, qTexto);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QList&lt;QPolygonF&gt; poligonos = camino.toSubpathPolygons();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    vector&lt;float&gt; coordenadasX, coordenadasY; <span class="comment">// Vectores para centrar texto en coordenada (0, 0)</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">float</span> x, y; <span class="comment">// Auxiliares</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span> (QList&lt;QPolygonF&gt;::iterator i = poligonos.begin(); i != poligonos.end(); i++){</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span> (QPolygonF::iterator p = (*i).begin(); p != i-&gt;end(); p++){</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            x = escala*p-&gt;rx(); y = -escala*p-&gt;ry();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            coordenadasX.push_back(x);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            coordenadasY.push_back(y);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Centrado de caracter en coordenada (0, 0)</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">float</span> coordx_min, coordx_max, coordy_min, coordy_max;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    coordx_min = *min_element(coordenadasX.begin(),coordenadasX.end());</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    coordx_max = *max_element(coordenadasX.begin(),coordenadasX.end());</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    coordy_min = *min_element(coordenadasY.begin(),coordenadasY.end());</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    coordy_max = *max_element(coordenadasY.begin(),coordenadasY.end());</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">float</span> tx, ty, cx, cy;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    cx = (coordx_max+coordx_min)/2;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    cy = (coordy_max+coordy_min)/2;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    tx = -cx + pX;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ty = -cy + pY;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    glColor3f(color[0],color[1],color[2]);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    glPushMatrix();{</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        glTranslatef(tx, ty, 0);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">for</span> (QList&lt;QPolygonF&gt;::iterator i = poligonos.begin(); i != poligonos.end(); i++){</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            glBegin(GL_LINE_STRIP);{</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">for</span> (QPolygonF::iterator p = (*i).begin(); p != i-&gt;end(); p++){</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    x = escala*p-&gt;rx(); y = -escala*p-&gt;ry();</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    glVertex3f(x, y, 0);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                }</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            glEnd();</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    glPopMatrix();</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    glLineWidth(1);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="ttc" id="class_texto_html_a6664bddbfd0f4921515b4b5205c741c3"><div class="ttname"><a href="class_texto.html#a6664bddbfd0f4921515b4b5205c741c3">Texto::Texto</a></div><div class="ttdeci">Texto(string pFrase, int pX, int pY, float pR=1, float pG=0, float pB=0)</div><div class="ttdoc">Texto Constructor que guarda los atributos a usar para luego dibujar. </div><div class="ttdef"><b>Definition:</b> <a href="texto_8cpp_source.html#l00010">texto.cpp:10</a></div></div>
+<div class="ttc" id="class_texto_html_ae59e9765c07bdab77b4ba854fe198b90"><div class="ttname"><a href="class_texto.html#ae59e9765c07bdab77b4ba854fe198b90">Texto::dibujarTexto</a></div><div class="ttdeci">void dibujarTexto(string pTexto, float pX=0, float pY=0, unsigned char pTam=10)</div><div class="ttdef"><b>Definition:</b> <a href="texto_8cpp_source.html#l00034">texto.cpp:34</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdoc">STL namespace. </div></div>
+<div class="ttc" id="texto_8h_html"><div class="ttname"><a href="texto_8h.html">texto.h</a></div></div>
+<div class="ttc" id="class_texto_html_ac7c051fee4cad1afbc3e6ad0eee3fec4"><div class="ttname"><a href="class_texto.html#ac7c051fee4cad1afbc3e6ad0eee3fec4">Texto::dibujar</a></div><div class="ttdeci">void dibujar() override</div><div class="ttdoc">dibujar Dibuja el texto </div><div class="ttdef"><b>Definition:</b> <a href="texto_8cpp_source.html#l00022">texto.cpp:22</a></div></div>
+<div class="ttc" id="class_texto_html_aee88cbc074d95a71fe9152b29b6f20db"><div class="ttname"><a href="class_texto.html#aee88cbc074d95a71fe9152b29b6f20db">Texto::setColor</a></div><div class="ttdeci">void setColor(float pR=1, float pG=0, float pB=0)</div><div class="ttdoc">setColor Permite modificar el color del texto </div><div class="ttdef"><b>Definition:</b> <a href="texto_8cpp_source.html#l00027">texto.cpp:27</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_976087990f5b576a29d893eb8795d10a.html">CasosDePrueba</a></li><li class="navelem"><a class="el" href="dir_8ab687b58ce59e9402279a283f365b5d.html">Caso4</a></li><li class="navelem"><a class="el" href="texto_8cpp.html">texto.cpp</a></li>
+    <li class="footer">Generado el Lunes, 8 de Junio de 2020 09:50:13 para Proyecto SEMA Salim Taleb Nasim A. por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

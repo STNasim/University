@@ -1,0 +1,414 @@
+MODEL 1
+REMARK VINA RESULT:      -4.6      0.000      0.000
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CG  ARG A  1       24.116 -21.510   6.965  0.00  0.00    +0.039 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CD  ARG A  1       25.562 -21.025   7.062  0.00  0.00    +0.196 C 
+BRANCH   2   3
+ATOM      3  NE  ARG A  1       26.211 -21.201   5.780  0.00  0.00    -0.276 N 
+ATOM      4  HE  ARG A  1       26.047 -22.082   5.314  0.00  0.00    +0.258 HD
+BRANCH   3   7
+ATOM      5  NH1 ARG A  1       26.175 -19.514   4.172  0.00  0.00    -0.130 NA
+ATOM      6  HH1 ARG A  1       26.820 -18.821   3.790  0.00  0.00    +0.306 HD
+ATOM      7  CZ  ARG A  1       26.774 -20.196   5.079  0.00  0.00    +0.376 C 
+BRANCH   7   8
+ATOM      8  NH2 ARG A  1       28.044 -19.967   5.463  0.00  0.00    -0.289 N 
+ATOM      9 HH21 ARG A  1       28.156 -19.151   6.049  0.00  0.00    +0.255 HD
+ATOM     10 HH22 ARG A  1       28.731 -19.982   4.720  0.00  0.00    +0.255 HD
+ENDBRANCH   7   8
+ENDBRANCH   3   7
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1  11
+ATOM     11  CB  ARG A  1       23.122 -20.416   6.565  0.00  0.00    +0.033 C 
+BRANCH  11  12
+ATOM     12  CA  ARG A  1       22.639 -20.483   5.110  0.00  0.00    +0.161 C 
+BRANCH  12  13
+ATOM     13  N   ARG A  1       23.471 -21.396   4.270  0.00  0.00    -0.318 NA
+ATOM     14  H1  ARG A  1       24.450 -21.283   4.562  0.00  0.00    +0.119 HD
+ATOM     15  H2  ARG A  1       23.464 -21.056   3.304  0.00  0.00    +0.119 HD
+ENDBRANCH  12  13
+BRANCH  12  16
+ATOM     16  C   ARG A  1       22.680 -19.079   4.466  0.00  0.00    +0.322 C 
+ATOM     17  O   ARG A  1       22.045 -18.115   4.836  0.00  0.00    -0.249 OA
+BRANCH  16  18
+ATOM     18  OXT ARG A  1       23.524 -19.065   3.396  0.00  0.00    -0.479 OA
+ATOM     19  HXT ARG A  1       23.513 -19.992   3.051  0.00  0.00    +0.295 HD
+ENDBRANCH  16  18
+ENDBRANCH  12  16
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 9
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -4.4      6.930      7.700
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CG  ARG A  1       26.538 -14.530   2.474  0.00  0.00    +0.039 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CD  ARG A  1       27.523 -14.663   3.636  0.00  0.00    +0.196 C 
+BRANCH   2   3
+ATOM      3  NE  ARG A  1       28.149 -13.381   3.879  0.00  0.00    -0.276 N 
+ATOM      4  HE  ARG A  1       28.408 -12.849   3.062  0.00  0.00    +0.258 HD
+BRANCH   3   7
+ATOM      5  NH1 ARG A  1       29.026 -11.897   5.449  0.00  0.00    -0.130 NA
+ATOM      6  HH1 ARG A  1       28.813 -11.589   6.399  0.00  0.00    +0.306 HD
+ATOM      7  CZ  ARG A  1       28.156 -12.765   5.079  0.00  0.00    +0.376 C 
+BRANCH   7   8
+ATOM      8  NH2 ARG A  1       27.117 -13.146   5.845  0.00  0.00    -0.289 N 
+ATOM      9 HH21 ARG A  1       26.212 -12.929   5.449  0.00  0.00    +0.255 HD
+ATOM     10 HH22 ARG A  1       27.168 -12.868   6.816  0.00  0.00    +0.255 HD
+ENDBRANCH   7   8
+ENDBRANCH   3   7
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1  11
+ATOM     11  CB  ARG A  1       25.946 -13.126   2.323  0.00  0.00    +0.033 C 
+BRANCH  11  12
+ATOM     12  CA  ARG A  1       24.426 -13.040   2.522  0.00  0.00    +0.161 C 
+BRANCH  12  13
+ATOM     13  N   ARG A  1       23.892 -11.668   2.273  0.00  0.00    -0.318 NA
+ATOM     14  H1  ARG A  1       23.162 -11.486   2.972  0.00  0.00    +0.119 HD
+ATOM     15  H2  ARG A  1       23.382 -11.667   1.383  0.00  0.00    +0.119 HD
+ENDBRANCH  12  13
+BRANCH  12  16
+ATOM     16  C   ARG A  1       24.051 -13.442   3.965  0.00  0.00    +0.322 C 
+ATOM     17  O   ARG A  1       23.582 -14.507   4.302  0.00  0.00    -0.249 OA
+BRANCH  16  18
+ATOM     18  OXT ARG A  1       24.302 -12.417   4.830  0.00  0.00    -0.479 OA
+ATOM     19  HXT ARG A  1       24.634 -12.854   5.652  0.00  0.00    +0.295 HD
+ENDBRANCH  16  18
+ENDBRANCH  12  16
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 9
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -4.2      1.540      1.760
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CG  ARG A  1       24.768 -21.453   6.698  0.00  0.00    +0.039 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CD  ARG A  1       26.091 -20.780   7.062  0.00  0.00    +0.196 C 
+BRANCH   2   3
+ATOM      3  NE  ARG A  1       26.963 -20.786   5.907  0.00  0.00    -0.276 N 
+ATOM      4  HE  ARG A  1       26.549 -21.088   5.037  0.00  0.00    +0.258 HD
+BRANCH   3   7
+ATOM      5  NH1 ARG A  1       28.401 -19.061   5.281  0.00  0.00    -0.130 NA
+ATOM      6  HH1 ARG A  1       29.388 -18.822   5.395  0.00  0.00    +0.306 HD
+ATOM      7  CZ  ARG A  1       28.166 -20.176   5.871  0.00  0.00    +0.376 C 
+BRANCH   7   8
+ATOM      8  NH2 ARG A  1       29.097 -20.865   6.557  0.00  0.00    -0.289 N 
+ATOM      9 HH21 ARG A  1       29.272 -20.506   7.486  0.00  0.00    +0.255 HD
+ATOM     10 HH22 ARG A  1       29.962 -21.037   6.061  0.00  0.00    +0.255 HD
+ENDBRANCH   7   8
+ENDBRANCH   3   7
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1  11
+ATOM     11  CB  ARG A  1       23.581 -20.488   6.631  0.00  0.00    +0.033 C 
+BRANCH  11  12
+ATOM     12  CA  ARG A  1       22.896 -20.401   5.259  0.00  0.00    +0.161 C 
+BRANCH  12  13
+ATOM     13  N   ARG A  1       21.941 -21.525   5.023  0.00  0.00    -0.318 NA
+ATOM     14  H1  ARG A  1       20.996 -21.127   4.975  0.00  0.00    +0.119 HD
+ATOM     15  H2  ARG A  1       21.913 -22.117   5.860  0.00  0.00    +0.119 HD
+ENDBRANCH  12  13
+BRANCH  12  16
+ATOM     16  C   ARG A  1       23.950 -20.429   4.131  0.00  0.00    +0.322 C 
+ATOM     17  O   ARG A  1       24.766 -19.561   3.906  0.00  0.00    -0.249 OA
+BRANCH  16  18
+ATOM     18  OXT ARG A  1       23.833 -21.569   3.391  0.00  0.00    -0.479 OA
+ATOM     19  HXT ARG A  1       24.761 -21.807   3.143  0.00  0.00    +0.295 HD
+ENDBRANCH  16  18
+ENDBRANCH  12  16
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 9
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -4.2      1.608      2.017
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CG  ARG A  1       23.347 -20.762   6.850  0.00  0.00    +0.039 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CD  ARG A  1       24.711 -21.447   6.770  0.00  0.00    +0.196 C 
+BRANCH   2   3
+ATOM      3  NE  ARG A  1       25.753 -20.451   6.892  0.00  0.00    -0.276 N 
+ATOM      4  HE  ARG A  1       25.623 -19.755   7.612  0.00  0.00    +0.258 HD
+BRANCH   3   7
+ATOM      5  NH1 ARG A  1       28.022 -20.989   6.896  0.00  0.00    -0.130 NA
+ATOM      6  HH1 ARG A  1       28.805 -20.963   6.241  0.00  0.00    +0.306 HD
+ATOM      7  CZ  ARG A  1       26.965 -20.557   6.310  0.00  0.00    +0.376 C 
+BRANCH   7   8
+ATOM      8  NH2 ARG A  1       26.935 -20.178   5.018  0.00  0.00    -0.289 N 
+ATOM      9 HH21 ARG A  1       27.133 -19.197   4.873  0.00  0.00    +0.255 HD
+ATOM     10 HH22 ARG A  1       26.116 -20.467   4.500  0.00  0.00    +0.255 HD
+ENDBRANCH   7   8
+ENDBRANCH   3   7
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1  11
+ATOM     11  CB  ARG A  1       22.674 -20.563   5.489  0.00  0.00    +0.033 C 
+BRANCH  11  12
+ATOM     12  CA  ARG A  1       22.934 -19.199   4.833  0.00  0.00    +0.161 C 
+BRANCH  12  13
+ATOM     13  N   ARG A  1       21.732 -18.663   4.128  0.00  0.00    -0.318 NA
+ATOM     14  H1  ARG A  1       22.040 -18.299   3.218  0.00  0.00    +0.119 HD
+ATOM     15  H2  ARG A  1       21.400 -17.830   4.624  0.00  0.00    +0.119 HD
+ENDBRANCH  12  13
+BRANCH  12  16
+ATOM     16  C   ARG A  1       24.079 -19.311   3.802  0.00  0.00    +0.322 C 
+ATOM     17  O   ARG A  1       24.785 -18.398   3.431  0.00  0.00    -0.249 OA
+BRANCH  16  18
+ATOM     18  OXT ARG A  1       24.186 -20.589   3.338  0.00  0.00    -0.479 OA
+ATOM     19  HXT ARG A  1       23.553 -20.637   2.579  0.00  0.00    +0.295 HD
+ENDBRANCH  16  18
+ENDBRANCH  12  16
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 9
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -4.0      7.055      8.449
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CG  ARG A  1       26.088 -15.215   3.243  0.00  0.00    +0.039 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CD  ARG A  1       25.454 -14.015   2.541  0.00  0.00    +0.196 C 
+BRANCH   2   3
+ATOM      3  NE  ARG A  1       24.266 -13.612   3.262  0.00  0.00    -0.276 N 
+ATOM      4  HE  ARG A  1       23.704 -14.357   3.648  0.00  0.00    +0.258 HD
+BRANCH   3   7
+ATOM      5  NH1 ARG A  1       24.050 -11.954   4.886  0.00  0.00    -0.130 NA
+ATOM      6  HH1 ARG A  1       23.826 -10.958   4.924  0.00  0.00    +0.306 HD
+ATOM      7  CZ  ARG A  1       24.024 -12.348   3.666  0.00  0.00    +0.376 C 
+BRANCH   7   8
+ATOM      8  NH2 ARG A  1       23.778 -11.528   2.626  0.00  0.00    -0.289 N 
+ATOM      9 HH21 ARG A  1       23.085 -11.881   1.980  0.00  0.00    +0.255 HD
+ATOM     10 HH22 ARG A  1       24.596 -11.190   2.137  0.00  0.00    +0.255 HD
+ENDBRANCH   7   8
+ENDBRANCH   3   7
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1  11
+ATOM     11  CB  ARG A  1       27.515 -14.960   3.736  0.00  0.00    +0.033 C 
+BRANCH  11  12
+ATOM     12  CA  ARG A  1       27.927 -13.482   3.782  0.00  0.00    +0.161 C 
+BRANCH  12  13
+ATOM     13  N   ARG A  1       29.350 -13.271   3.375  0.00  0.00    -0.318 NA
+ATOM     14  H1  ARG A  1       29.631 -12.337   3.697  0.00  0.00    +0.119 HD
+ATOM     15  H2  ARG A  1       29.395 -13.201   2.353  0.00  0.00    +0.119 HD
+ENDBRANCH  12  13
+BRANCH  12  16
+ATOM     16  C   ARG A  1       27.754 -12.920   5.210  0.00  0.00    +0.322 C 
+ATOM     17  O   ARG A  1       26.833 -13.168   5.959  0.00  0.00    -0.249 OA
+BRANCH  16  18
+ATOM     18  OXT ARG A  1       28.780 -12.078   5.524  0.00  0.00    -0.479 OA
+ATOM     19  HXT ARG A  1       28.399 -11.449   6.185  0.00  0.00    +0.295 HD
+ENDBRANCH  16  18
+ENDBRANCH  12  16
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 9
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -4.0      2.067      2.782
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CG  ARG A  1       25.617 -19.498   4.075  0.00  0.00    +0.039 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CD  ARG A  1       26.335 -20.106   5.281  0.00  0.00    +0.196 C 
+BRANCH   2   3
+ATOM      3  NE  ARG A  1       27.761 -20.096   5.042  0.00  0.00    -0.276 N 
+ATOM      4  HE  ARG A  1       28.074 -20.537   4.188  0.00  0.00    +0.258 HD
+BRANCH   3   7
+ATOM      5  NH1 ARG A  1       29.057 -19.579   6.910  0.00  0.00    -0.130 NA
+ATOM      6  HH1 ARG A  1       29.700 -18.842   7.203  0.00  0.00    +0.306 HD
+ATOM      7  CZ  ARG A  1       28.633 -19.327   5.726  0.00  0.00    +0.376 C 
+BRANCH   7   8
+ATOM      8  NH2 ARG A  1       29.035 -18.263   5.004  0.00  0.00    -0.289 N 
+ATOM      9 HH21 ARG A  1       28.884 -17.374   5.463  0.00  0.00    +0.255 HD
+ATOM     10 HH22 ARG A  1       28.712 -18.241   4.046  0.00  0.00    +0.255 HD
+ENDBRANCH   7   8
+ENDBRANCH   3   7
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1  11
+ATOM     11  CB  ARG A  1       24.445 -20.340   3.565  0.00  0.00    +0.033 C 
+BRANCH  11  12
+ATOM     12  CA  ARG A  1       23.057 -19.840   3.990  0.00  0.00    +0.161 C 
+BRANCH  12  13
+ATOM     13  N   ARG A  1       23.035 -18.370   4.258  0.00  0.00    -0.318 NA
+ATOM     14  H1  ARG A  1       23.097 -18.236   5.274  0.00  0.00    +0.119 HD
+ATOM     15  H2  ARG A  1       22.106 -18.005   4.021  0.00  0.00    +0.119 HD
+ENDBRANCH  12  13
+BRANCH  12  16
+ATOM     16  C   ARG A  1       22.597 -20.563   5.276  0.00  0.00    +0.322 C 
+ATOM     17  O   ARG A  1       22.961 -20.299   6.402  0.00  0.00    -0.249 OA
+BRANCH  16  18
+ATOM     18  OXT ARG A  1       21.727 -21.569   4.977  0.00  0.00    -0.479 OA
+ATOM     19  HXT ARG A  1       21.123 -21.624   5.758  0.00  0.00    +0.295 HD
+ENDBRANCH  16  18
+ENDBRANCH  12  16
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 9
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -4.0      2.821      4.357
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CG  ARG A  1       24.660 -21.520   6.424  0.00  0.00    +0.039 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CD  ARG A  1       23.473 -20.557   6.436  0.00  0.00    +0.196 C 
+BRANCH   2   3
+ATOM      3  NE  ARG A  1       22.958 -20.419   5.091  0.00  0.00    -0.276 N 
+ATOM      4  HE  ARG A  1       22.443 -21.209   4.728  0.00  0.00    +0.258 HD
+BRANCH   3   7
+ATOM      5  NH1 ARG A  1       22.081 -18.293   4.711  0.00  0.00    -0.130 NA
+ATOM      6  HH1 ARG A  1       22.227 -17.521   4.058  0.00  0.00    +0.306 HD
+ATOM      7  CZ  ARG A  1       22.891 -19.247   4.428  0.00  0.00    +0.376 C 
+BRANCH   7   8
+ATOM      8  NH2 ARG A  1       23.803 -19.177   3.440  0.00  0.00    -0.289 N 
+ATOM      9 HH21 ARG A  1       23.716 -18.356   2.857  0.00  0.00    +0.255 HD
+ATOM     10 HH22 ARG A  1       23.901 -20.015   2.881  0.00  0.00    +0.255 HD
+ENDBRANCH   7   8
+ENDBRANCH   3   7
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1  11
+ATOM     11  CB  ARG A  1       25.986 -20.872   6.833  0.00  0.00    +0.033 C 
+BRANCH  11  12
+ATOM     12  CA  ARG A  1       26.625 -19.978   5.760  0.00  0.00    +0.161 C 
+BRANCH  12  13
+ATOM     13  N   ARG A  1       26.275 -20.408   4.373  0.00  0.00    -0.318 NA
+ATOM     14  H1  ARG A  1       26.856 -21.223   4.142  0.00  0.00    +0.119 HD
+ATOM     15  H2  ARG A  1       26.590 -19.689   3.714  0.00  0.00    +0.119 HD
+ENDBRANCH  12  13
+BRANCH  12  16
+ATOM     16  C   ARG A  1       28.164 -20.003   5.890  0.00  0.00    +0.322 C 
+ATOM     17  O   ARG A  1       28.806 -20.810   6.528  0.00  0.00    -0.249 OA
+BRANCH  16  18
+ATOM     18  OXT ARG A  1       28.722 -18.970   5.196  0.00  0.00    -0.479 OA
+ATOM     19  HXT ARG A  1       28.292 -19.000   4.306  0.00  0.00    +0.295 HD
+ENDBRANCH  16  18
+ENDBRANCH  12  16
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 9
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -3.9      3.394      4.234
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CG  ARG A  1       24.924 -18.322   3.455  0.00  0.00    +0.039 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CD  ARG A  1       26.196 -17.477   3.386  0.00  0.00    +0.196 C 
+BRANCH   2   3
+ATOM      3  NE  ARG A  1       25.838 -16.075   3.373  0.00  0.00    -0.276 N 
+ATOM      4  HE  ARG A  1       24.958 -15.836   3.805  0.00  0.00    +0.258 HD
+BRANCH   3   7
+ATOM      5  NH1 ARG A  1       26.580 -14.284   2.079  0.00  0.00    -0.130 NA
+ATOM      6  HH1 ARG A  1       27.365 -13.630   2.072  0.00  0.00    +0.306 HD
+ATOM      7  CZ  ARG A  1       26.702 -15.082   3.075  0.00  0.00    +0.376 C 
+BRANCH   7   8
+ATOM      8  NH2 ARG A  1       27.704 -15.005   3.971  0.00  0.00    -0.289 N 
+ATOM      9 HH21 ARG A  1       27.412 -15.152   4.928  0.00  0.00    +0.255 HD
+ATOM     10 HH22 ARG A  1       28.296 -14.188   3.890  0.00  0.00    +0.255 HD
+ENDBRANCH   7   8
+ENDBRANCH   3   7
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1  11
+ATOM     11  CB  ARG A  1       25.184 -19.815   3.670  0.00  0.00    +0.033 C 
+BRANCH  11  12
+ATOM     12  CA  ARG A  1       25.017 -20.298   5.118  0.00  0.00    +0.161 C 
+BRANCH  12  13
+ATOM     13  N   ARG A  1       25.829 -21.517   5.413  0.00  0.00    -0.318 NA
+ATOM     14  H1  ARG A  1       25.209 -22.206   5.856  0.00  0.00    +0.119 HD
+ATOM     15  H2  ARG A  1       26.508 -21.293   6.147  0.00  0.00    +0.119 HD
+ENDBRANCH  12  13
+BRANCH  12  16
+ATOM     16  C   ARG A  1       23.536 -20.634   5.403  0.00  0.00    +0.322 C 
+ATOM     17  O   ARG A  1       22.902 -20.264   6.367  0.00  0.00    -0.249 OA
+BRANCH  16  18
+ATOM     18  OXT ARG A  1       23.026 -21.431   4.421  0.00  0.00    -0.479 OA
+ATOM     19  HXT ARG A  1       22.581 -22.172   4.901  0.00  0.00    +0.295 HD
+ENDBRANCH  16  18
+ENDBRANCH  12  16
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 9
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -3.9      3.709      4.548
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CG  ARG A  1       24.863 -18.291   3.651  0.00  0.00    +0.039 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  CD  ARG A  1       26.117 -17.490   3.299  0.00  0.00    +0.196 C 
+BRANCH   2   3
+ATOM      3  NE  ARG A  1       25.808 -16.077   3.345  0.00  0.00    -0.276 N 
+ATOM      4  HE  ARG A  1       24.940 -15.824   3.796  0.00  0.00    +0.258 HD
+BRANCH   3   7
+ATOM      5  NH1 ARG A  1       26.601 -14.264   2.113  0.00  0.00    -0.130 NA
+ATOM      6  HH1 ARG A  1       27.408 -13.638   2.124  0.00  0.00    +0.306 HD
+ATOM      7  CZ  ARG A  1       26.702 -15.103   3.078  0.00  0.00    +0.376 C 
+BRANCH   7   8
+ATOM      8  NH2 ARG A  1       27.712 -15.093   3.968  0.00  0.00    -0.289 N 
+ATOM      9 HH21 ARG A  1       27.413 -15.156   4.932  0.00  0.00    +0.255 HD
+ATOM     10 HH22 ARG A  1       28.393 -14.355   3.843  0.00  0.00    +0.255 HD
+ENDBRANCH   7   8
+ENDBRANCH   3   7
+ENDBRANCH   2   3
+ENDBRANCH   1   2
+BRANCH   1  11
+ATOM     11  CB  ARG A  1       25.030 -19.804   3.483  0.00  0.00    +0.033 C 
+BRANCH  11  12
+ATOM     12  CA  ARG A  1       24.843 -20.621   4.769  0.00  0.00    +0.161 C 
+BRANCH  12  13
+ATOM     13  N   ARG A  1       23.613 -20.230   5.522  0.00  0.00    -0.318 NA
+ATOM     14  H1  ARG A  1       23.738 -20.523   6.499  0.00  0.00    +0.119 HD
+ATOM     15  H2  ARG A  1       22.828 -20.804   5.196  0.00  0.00    +0.119 HD
+ENDBRANCH  12  13
+BRANCH  12  16
+ATOM     16  C   ARG A  1       26.055 -20.429   5.707  0.00  0.00    +0.322 C 
+ATOM     17  O   ARG A  1       26.004 -20.341   6.915  0.00  0.00    -0.249 OA
+BRANCH  16  18
+ATOM     18  OXT ARG A  1       27.211 -20.352   4.989  0.00  0.00    -0.479 OA
+ATOM     19  HXT ARG A  1       27.070 -20.950   4.215  0.00  0.00    +0.295 HD
+ENDBRANCH  16  18
+ENDBRANCH  12  16
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 9
+ENDMDL

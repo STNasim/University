@@ -1,0 +1,270 @@
+MODEL 1
+REMARK VINA RESULT:      -3.6      0.000      0.000
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  CYS A  1       26.418 -14.260   4.282  0.00  0.00    +0.170 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   CYS A  1       26.838 -13.239   5.296  0.00  0.00    -0.318 NA
+ATOM      3  H1  CYS A  1       27.547 -12.636   4.861  0.00  0.00    +0.119 HD
+ATOM      4  H2  CYS A  1       26.043 -12.599   5.414  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   CYS A  1       27.133 -13.943   2.964  0.00  0.00    +0.323 C 
+ATOM      6  O   CYS A  1       26.742 -14.254   1.849  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT CYS A  1       28.304 -13.290   3.190  0.00  0.00    -0.479 OA
+ATOM      8  HXT CYS A  1       28.265 -12.968   4.127  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  CYS A  1       24.902 -14.315   4.059  0.00  0.00    +0.095 C 
+BRANCH   9  10
+ATOM     10  SG  CYS A  1       24.186 -12.643   3.909  0.00  0.00    -0.176 S 
+ATOM     11  HG  CYS A  1       24.840 -12.100   4.948  0.00  0.00    +0.102 HD
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -3.5      1.932      2.194
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  CYS A  1       26.619 -13.333   3.223  0.00  0.00    +0.170 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   CYS A  1       26.204 -14.186   2.062  0.00  0.00    -0.318 NA
+ATOM      3  H1  CYS A  1       25.190 -14.334   2.128  0.00  0.00    +0.119 HD
+ATOM      4  H2  CYS A  1       26.290 -13.599   1.223  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   CYS A  1       27.995 -13.815   3.699  0.00  0.00    +0.323 C 
+ATOM      6  O   CYS A  1       29.007 -13.133   3.759  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT CYS A  1       27.964 -15.135   4.020  0.00  0.00    -0.479 OA
+ATOM      8  HXT CYS A  1       28.688 -15.565   3.496  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  CYS A  1       25.622 -13.352   4.387  0.00  0.00    +0.095 C 
+BRANCH   9  10
+ATOM     10  SG  CYS A  1       24.131 -14.321   3.974  0.00  0.00    -0.176 S 
+ATOM     11  HG  CYS A  1       24.661 -14.986   2.935  0.00  0.00    +0.102 HD
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -3.5      1.989      2.126
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  CYS A  1       26.944 -14.063   2.718  0.00  0.00    +0.170 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   CYS A  1       26.542 -15.453   3.110  0.00  0.00    -0.318 NA
+ATOM      3  H1  CYS A  1       27.320 -15.868   3.636  0.00  0.00    +0.119 HD
+ATOM      4  H2  CYS A  1       25.814 -15.354   3.829  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   CYS A  1       27.900 -13.524   3.789  0.00  0.00    +0.323 C 
+ATOM      6  O   CYS A  1       27.592 -13.229   4.934  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT CYS A  1       29.156 -13.376   3.291  0.00  0.00    -0.479 OA
+ATOM      8  HXT CYS A  1       29.318 -14.163   2.710  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  CYS A  1       25.758 -13.107   2.541  0.00  0.00    +0.095 C 
+BRANCH   9  10
+ATOM     10  SG  CYS A  1       24.322 -13.631   3.539  0.00  0.00    -0.176 S 
+ATOM     11  HG  CYS A  1       24.701 -13.036   4.681  0.00  0.00    +0.102 HD
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -3.3      1.867      1.934
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  CYS A  1       26.825 -13.697   3.415  0.00  0.00    +0.170 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   CYS A  1       28.189 -13.134   3.150  0.00  0.00    -0.318 NA
+ATOM      3  H1  CYS A  1       28.239 -12.889   2.153  0.00  0.00    +0.119 HD
+ATOM      4  H2  CYS A  1       28.219 -12.214   3.608  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   CYS A  1       26.948 -15.223   3.494  0.00  0.00    +0.323 C 
+ATOM      6  O   CYS A  1       26.138 -16.026   3.056  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT CYS A  1       28.076 -15.587   4.160  0.00  0.00    -0.479 OA
+ATOM      8  HXT CYS A  1       28.728 -15.867   3.467  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  CYS A  1       25.783 -13.306   2.359  0.00  0.00    +0.095 C 
+BRANCH   9  10
+ATOM     10  SG  CYS A  1       24.201 -12.821   3.129  0.00  0.00    -0.176 S 
+ATOM     11  HG  CYS A  1       23.923 -11.811   2.288  0.00  0.00    +0.102 HD
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -3.3      2.993      3.366
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  CYS A  1       25.614 -14.094   3.402  0.00  0.00    +0.170 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   CYS A  1       26.220 -14.066   2.031  0.00  0.00    -0.318 NA
+ATOM      3  H1  CYS A  1       25.461 -13.920   1.355  0.00  0.00    +0.119 HD
+ATOM      4  H2  CYS A  1       26.751 -13.188   1.964  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   CYS A  1       24.453 -13.092   3.429  0.00  0.00    +0.323 C 
+ATOM      6  O   CYS A  1       24.057 -12.488   4.414  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT CYS A  1       23.877 -12.982   2.202  0.00  0.00    -0.479 OA
+ATOM      8  HXT CYS A  1       24.205 -13.753   1.672  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  CYS A  1       26.612 -13.774   4.522  0.00  0.00    +0.095 C 
+BRANCH   9  10
+ATOM     10  SG  CYS A  1       28.252 -13.336   3.851  0.00  0.00    -0.176 S 
+ATOM     11  HG  CYS A  1       28.104 -12.004   3.936  0.00  0.00    +0.102 HD
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -3.3      6.913      7.155
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  CYS A  1       24.484 -20.635   4.103  0.00  0.00    +0.170 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   CYS A  1       23.430 -21.571   4.611  0.00  0.00    -0.318 NA
+ATOM      3  H1  CYS A  1       22.984 -21.131   5.425  0.00  0.00    +0.119 HD
+ATOM      4  H2  CYS A  1       22.674 -21.567   3.914  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   CYS A  1       25.542 -20.469   5.202  0.00  0.00    +0.323 C 
+ATOM      6  O   CYS A  1       25.337 -20.546   6.404  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT CYS A  1       26.758 -20.181   4.667  0.00  0.00    -0.479 OA
+ATOM      8  HXT CYS A  1       27.110 -19.410   5.181  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  CYS A  1       23.938 -19.264   3.686  0.00  0.00    +0.095 C 
+BRANCH   9  10
+ATOM     10  SG  CYS A  1       22.389 -18.864   4.565  0.00  0.00    -0.176 S 
+ATOM     11  HG  CYS A  1       22.777 -19.310   5.772  0.00  0.00    +0.102 HD
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -3.2      6.298      6.540
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  CYS A  1       25.466 -20.302   4.328  0.00  0.00    +0.170 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   CYS A  1       26.882 -20.047   4.750  0.00  0.00    -0.318 NA
+ATOM      3  H1  CYS A  1       27.347 -20.957   4.854  0.00  0.00    +0.119 HD
+ATOM      4  H2  CYS A  1       27.362 -19.642   3.936  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   CYS A  1       24.919 -19.015   3.698  0.00  0.00    +0.323 C 
+ATOM      6  O   CYS A  1       23.737 -18.732   3.571  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT CYS A  1       25.930 -18.224   3.251  0.00  0.00    -0.479 OA
+ATOM      8  HXT CYS A  1       26.639 -18.264   3.943  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  CYS A  1       24.555 -20.756   5.475  0.00  0.00    +0.095 C 
+BRANCH   9  10
+ATOM     10  SG  CYS A  1       25.460 -20.828   7.059  0.00  0.00    -0.176 S 
+ATOM     11  HG  CYS A  1       26.592 -20.258   6.617  0.00  0.00    +0.102 HD
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -3.1      7.275      7.423
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  CYS A  1       25.399 -20.258   4.968  0.00  0.00    +0.170 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   CYS A  1       25.797 -20.028   3.541  0.00  0.00    -0.318 NA
+ATOM      3  H1  CYS A  1       25.407 -20.795   2.979  0.00  0.00    +0.119 HD
+ATOM      4  H2  CYS A  1       25.258 -19.216   3.214  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   CYS A  1       26.670 -20.238   5.825  0.00  0.00    +0.323 C 
+ATOM      6  O   CYS A  1       26.718 -20.426   7.031  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT CYS A  1       27.761 -19.941   5.070  0.00  0.00    -0.479 OA
+ATOM      8  HXT CYS A  1       28.002 -20.775   4.591  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  CYS A  1       24.635 -21.569   5.189  0.00  0.00    +0.095 C 
+BRANCH   9  10
+ATOM     10  SG  CYS A  1       23.281 -21.359   6.395  0.00  0.00    -0.176 S 
+ATOM     11  HG  CYS A  1       22.279 -21.340   5.501  0.00  0.00    +0.102 HD
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -3.0      3.042      3.514
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  CYS A  1       24.995 -13.461   3.729  0.00  0.00    +0.170 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   CYS A  1       24.122 -14.638   4.046  0.00  0.00    -0.318 NA
+ATOM      3  H1  CYS A  1       23.889 -15.103   3.160  0.00  0.00    +0.119 HD
+ATOM      4  H2  CYS A  1       24.722 -15.331   4.511  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   CYS A  1       24.108 -12.352   3.151  0.00  0.00    +0.323 C 
+ATOM      6  O   CYS A  1       23.592 -11.448   3.790  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT CYS A  1       23.927 -12.522   1.814  0.00  0.00    -0.479 OA
+ATOM      8  HXT CYS A  1       23.461 -11.708   1.493  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  CYS A  1       26.135 -13.786   2.756  0.00  0.00    +0.095 C 
+BRANCH   9  10
+ATOM     10  SG  CYS A  1       27.753 -13.795   3.600  0.00  0.00    -0.176 S 
+ATOM     11  HG  CYS A  1       28.465 -13.295   2.576  0.00  0.00    +0.102 HD
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL

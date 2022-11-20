@@ -1,0 +1,18 @@
+npts 80 80 90                        # num.grid points in xyz
+gridfld SIR1_lista.maps.fld          # grid_data_file
+spacing 0.20                         # spacing(A)
+receptor_types A C H HD N NA OA SA Zn # receptor atom types
+ligand_types A C NA OA N H HD        # ligand atom types
+receptor SIR1_lista.pdbqt            # macromolecule
+gridcenter  0.56 -4.37 -6.73         # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map SIR1_lista.A.map                 # atom-specific affinity map
+map SIR1_lista.C.map                 # atom-specific affinity map
+map SIR1_lista.NA.map                # atom-specific affinity map
+map SIR1_lista.OA.map                # atom-specific affinity map
+map SIR1_lista.N.map                 # atom-specific affinity map
+map SIR1_lista.H.map                 # atom-specific affinity map
+map SIR1_lista.HD.map                # atom-specific affinity map
+elecmap SIR1_lista.e.map             # electrostatic potential map
+dsolvmap SIR1_lista.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

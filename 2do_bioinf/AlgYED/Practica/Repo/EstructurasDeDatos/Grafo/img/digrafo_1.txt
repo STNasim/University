@@ -1,0 +1,19 @@
+digraph G {
+ layout=neato; 
+ overlap=false; 
+ splines=true; 
+node [color = black];
+edge [color = blue];
+10;
+5;
+12;
+8;
+9;
+6;
+10 -> 5
+10 -> 12
+5 -> 12
+5 -> 8
+12 -> 12
+8 -> 9
+}

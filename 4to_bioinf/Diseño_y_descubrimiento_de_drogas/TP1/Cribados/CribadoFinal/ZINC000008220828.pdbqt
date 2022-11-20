@@ -1,0 +1,15 @@
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  F   LIG    1        0.943   2.200  -0.195  0.00  0.00    -0.168 F 
+ATOM      2  C   LIG    1        2.216   2.263  -0.658  0.00  0.00    +0.415 C 
+ATOM      3  F   LIG    1        2.941   2.959   0.245  0.00  0.00    -0.168 F 
+ATOM      4  F   LIG    1        2.171   2.997  -1.797  0.00  0.00    -0.168 F 
+ENDROOT
+BRANCH   2   5
+ATOM      5  C   LIG    1        2.771   0.872  -0.920  0.00  0.00    +0.251 C 
+ATOM      6 CL   LIG    1        2.804  -0.143   0.545  0.00  0.00    -0.100 Cl
+ATOM      7 BR   LIG    1        4.584   0.964  -1.646  0.00  0.00    -0.061 Br
+ENDBRANCH   2   5
+TORSDOF 1

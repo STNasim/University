@@ -1,0 +1,33 @@
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  GLN A  1        5.991  -3.260   0.152  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   GLN A  1        6.084  -1.899   0.743  0.00  0.00    -0.318 NA
+ATOM      3  H1  GLN A  1        6.538  -1.961   1.658  0.00  0.00    +0.119 HD
+ATOM      4  H2  GLN A  1        6.733  -1.337   0.185  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   GLN A  1        7.380  -3.936   0.126  0.00  0.00    +0.322 C 
+ATOM      6  O   GLN A  1        8.434  -3.337   0.026  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT GLN A  1        7.310  -5.293   0.197  0.00  0.00    -0.479 OA
+ATOM      8  HXT GLN A  1        6.402  -5.678   0.246  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  GLN A  1        5.413  -3.148  -1.268  0.00  0.00    +0.039 C 
+BRANCH   9  10
+ATOM     10  CG  GLN A  1        5.194  -4.486  -1.980  0.00  0.00    +0.098 C 
+BRANCH  10  14
+ATOM     11  NE2 GLN A  1        2.928  -5.233  -1.500  0.00  0.00    -0.329 N 
+ATOM     12 HE21 GLN A  1        2.573  -4.491  -2.089  0.00  0.00    +0.145 HD
+ATOM     13 HE22 GLN A  1        2.257  -5.766  -0.960  0.00  0.00    +0.145 HD
+ATOM     14  CD  GLN A  1        4.250  -5.389  -1.225  0.00  0.00    +0.210 C 
+ATOM     15  OE1 GLN A  1        4.661  -6.161  -0.363  0.00  0.00    -0.276 OA
+ENDBRANCH  10  14
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 6

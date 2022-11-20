@@ -1,0 +1,360 @@
+MODEL 1
+REMARK VINA RESULT:      -4.9      0.000      0.000
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  TYR A  1       24.500 -13.870   3.462  0.00  0.00    +0.186 C 
+ENDROOT
+BRANCH   1   4
+ATOM      2  C   UNK A  0       28.318 -13.896   3.693  0.00  0.00    +0.109 C 
+ATOM      3  C   UNK A  0       26.965 -13.994   3.029  0.00  0.00    +0.211 C 
+ATOM      4  N   TYR A  1       25.908 -13.834   3.899  0.00  0.00    -0.302 N 
+ATOM      5  H   TYR A  1       26.078 -13.980   4.889  0.00  0.00    +0.149 HD
+ATOM      6  O   UNK A  0       26.834 -14.114   1.826  0.00  0.00    -0.276 OA
+ENDBRANCH   1   4
+BRANCH   1   7
+ATOM      7  C   TYR A  1       23.941 -12.471   3.139  0.00  0.00    +0.326 C 
+ATOM      8  O   TYR A  1       23.491 -11.697   3.970  0.00  0.00    -0.249 OA
+BRANCH   7   9
+ATOM      9  OXT TYR A  1       23.870 -12.199   1.812  0.00  0.00    -0.479 OA
+ATOM     10  HXT TYR A  1       24.308 -12.889   1.278  0.00  0.00    +0.295 HD
+ENDBRANCH   7   9
+ENDBRANCH   1   7
+BRANCH   1  11
+ATOM     11  CB  TYR A  1       23.584 -14.625   4.446  0.00  0.00    +0.069 C 
+BRANCH  11  12
+ATOM     12  CG  TYR A  1       23.524 -16.128   4.264  0.00  0.00    -0.045 A 
+ATOM     13  CD2 TYR A  1       24.637 -16.831   3.781  0.00  0.00    +0.007 A 
+ATOM     14  CE2 TYR A  1       24.587 -18.218   3.622  0.00  0.00    +0.045 A 
+ATOM     15  CZ  TYR A  1       23.427 -18.908   3.948  0.00  0.00    +0.117 A 
+ATOM     16  CE1 TYR A  1       22.307 -18.234   4.416  0.00  0.00    +0.045 A 
+ATOM     17  CD1 TYR A  1       22.355 -16.844   4.566  0.00  0.00    +0.007 A 
+BRANCH  15  18
+ATOM     18  OH  TYR A  1       23.425 -20.263   3.791  0.00  0.00    -0.507 OA
+ATOM     19  HH  TYR A  1       24.337 -20.586   3.882  0.00  0.00    +0.292 HD
+ENDBRANCH  15  18
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 6
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -4.8      1.982      3.753
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  TYR A  1       25.940 -16.253   3.708  0.00  0.00    +0.186 C 
+ENDROOT
+BRANCH   1   4
+ATOM      2  C   UNK A  0       24.123 -13.029   2.740  0.00  0.00    +0.109 C 
+ATOM      3  C   UNK A  0       24.659 -14.099   3.661  0.00  0.00    +0.211 C 
+ATOM      4  N   TYR A  1       25.318 -15.116   3.004  0.00  0.00    -0.302 N 
+ATOM      5  H   TYR A  1       25.130 -15.246   2.015  0.00  0.00    +0.149 HD
+ATOM      6  O   UNK A  0       24.590 -14.015   4.872  0.00  0.00    -0.276 OA
+ENDBRANCH   1   4
+BRANCH   1   7
+ATOM      7  C   TYR A  1       27.420 -15.999   4.054  0.00  0.00    +0.326 C 
+ATOM      8  O   TYR A  1       27.941 -14.896   4.101  0.00  0.00    -0.249 OA
+BRANCH   7   9
+ATOM      9  OXT TYR A  1       28.156 -17.131   4.189  0.00  0.00    -0.479 OA
+ATOM     10  HXT TYR A  1       27.648 -17.843   4.622  0.00  0.00    +0.295 HD
+ENDBRANCH   7   9
+ENDBRANCH   1   7
+BRANCH   1  11
+ATOM     11  CB  TYR A  1       25.761 -17.592   2.967  0.00  0.00    +0.069 C 
+BRANCH  11  12
+ATOM     12  CG  TYR A  1       24.867 -18.606   3.653  0.00  0.00    -0.045 A 
+ATOM     13  CD2 TYR A  1       23.511 -18.325   3.873  0.00  0.00    +0.007 A 
+ATOM     14  CE2 TYR A  1       22.683 -19.262   4.496  0.00  0.00    +0.045 A 
+ATOM     15  CZ  TYR A  1       23.206 -20.484   4.899  0.00  0.00    +0.117 A 
+ATOM     16  CE1 TYR A  1       24.548 -20.781   4.703  0.00  0.00    +0.045 A 
+ATOM     17  CD1 TYR A  1       25.379 -19.839   4.088  0.00  0.00    +0.007 A 
+BRANCH  15  18
+ATOM     18  OH  TYR A  1       22.361 -21.376   5.490  0.00  0.00    -0.507 OA
+ATOM     19  HH  TYR A  1       21.763 -20.889   6.081  0.00  0.00    +0.292 HD
+ENDBRANCH  15  18
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 6
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -4.7      2.926      6.328
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  TYR A  1       25.480 -19.583   4.464  0.00  0.00    +0.186 C 
+ENDROOT
+BRANCH   1   4
+ATOM      2  C   UNK A  0       28.730 -20.537   6.240  0.00  0.00    +0.109 C 
+ATOM      3  C   UNK A  0       27.269 -20.180   6.115  0.00  0.00    +0.211 C 
+ATOM      4  N   TYR A  1       26.868 -19.929   4.820  0.00  0.00    -0.302 N 
+ATOM      5  H   TYR A  1       27.581 -19.694   4.137  0.00  0.00    +0.149 HD
+ATOM      6  O   UNK A  0       26.506 -20.202   7.062  0.00  0.00    -0.276 OA
+ENDBRANCH   1   4
+BRANCH   1   7
+ATOM      7  C   TYR A  1       24.572 -20.822   4.340  0.00  0.00    +0.326 C 
+ATOM      8  O   TYR A  1       24.080 -21.218   3.295  0.00  0.00    -0.249 OA
+BRANCH   7   9
+ATOM      9  OXT TYR A  1       24.248 -21.389   5.529  0.00  0.00    -0.479 OA
+ATOM     10  HXT TYR A  1       23.386 -21.070   5.859  0.00  0.00    +0.295 HD
+ENDBRANCH   7   9
+ENDBRANCH   1   7
+BRANCH   1  11
+ATOM     11  CB  TYR A  1       25.383 -18.691   3.211  0.00  0.00    +0.069 C 
+BRANCH  11  12
+ATOM     12  CG  TYR A  1       25.406 -17.198   3.465  0.00  0.00    -0.045 A 
+ATOM     13  CD2 TYR A  1       26.596 -16.470   3.321  0.00  0.00    +0.007 A 
+ATOM     14  CE2 TYR A  1       26.617 -15.091   3.545  0.00  0.00    +0.045 A 
+ATOM     15  CZ  TYR A  1       25.450 -14.434   3.912  0.00  0.00    +0.117 A 
+ATOM     16  CE1 TYR A  1       24.262 -15.134   4.074  0.00  0.00    +0.045 A 
+ATOM     17  CD1 TYR A  1       24.243 -16.516   3.858  0.00  0.00    +0.007 A 
+BRANCH  15  18
+ATOM     18  OH  TYR A  1       25.511 -13.086   4.108  0.00  0.00    -0.507 OA
+ATOM     19  HH  TYR A  1       26.275 -12.737   3.619  0.00  0.00    +0.292 HD
+ENDBRANCH  15  18
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 6
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -4.5      1.584      2.946
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  TYR A  1       25.765 -14.826   3.763  0.00  0.00    +0.186 C 
+ENDROOT
+BRANCH   1   4
+ATOM      2  C   UNK A  0       24.258 -11.884   1.839  0.00  0.00    +0.109 C 
+ATOM      3  C   UNK A  0       24.512 -12.785   3.023  0.00  0.00    +0.211 C 
+ATOM      4  N   TYR A  1       25.362 -13.835   2.748  0.00  0.00    -0.302 N 
+ATOM      5  H   TYR A  1       25.489 -14.105   1.778  0.00  0.00    +0.149 HD
+ATOM      6  O   UNK A  0       24.074 -12.548   4.132  0.00  0.00    -0.276 OA
+ENDBRANCH   1   4
+BRANCH   1   7
+ATOM      7  C   TYR A  1       26.990 -14.374   4.582  0.00  0.00    +0.326 C 
+ATOM      8  O   TYR A  1       26.936 -13.674   5.581  0.00  0.00    -0.249 OA
+BRANCH   7   9
+ATOM      9  OXT TYR A  1       28.180 -14.718   4.027  0.00  0.00    -0.479 OA
+ATOM     10  HXT TYR A  1       28.065 -15.111   3.141  0.00  0.00    +0.295 HD
+ENDBRANCH   7   9
+ENDBRANCH   1   7
+BRANCH   1  11
+ATOM     11  CB  TYR A  1       25.972 -16.236   3.179  0.00  0.00    +0.069 C 
+BRANCH  11  12
+ATOM     12  CG  TYR A  1       24.935 -17.268   3.573  0.00  0.00    -0.045 A 
+ATOM     13  CD2 TYR A  1       25.214 -18.638   3.455  0.00  0.00    +0.007 A 
+ATOM     14  CE2 TYR A  1       24.262 -19.591   3.827  0.00  0.00    +0.045 A 
+ATOM     15  CZ  TYR A  1       23.031 -19.181   4.320  0.00  0.00    +0.117 A 
+ATOM     16  CE1 TYR A  1       22.726 -17.831   4.434  0.00  0.00    +0.045 A 
+ATOM     17  CD1 TYR A  1       23.675 -16.877   4.054  0.00  0.00    +0.007 A 
+BRANCH  15  18
+ATOM     18  OH  TYR A  1       22.136 -20.144   4.684  0.00  0.00    -0.507 OA
+ATOM     19  HH  TYR A  1       22.180 -20.256   5.648  0.00  0.00    +0.292 HD
+ENDBRANCH  15  18
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 6
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -4.3      0.998      1.749
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  TYR A  1       24.588 -14.205   3.811  0.00  0.00    +0.186 C 
+ENDROOT
+BRANCH   1   4
+ATOM      2  C   UNK A  0       27.695 -13.405   5.893  0.00  0.00    +0.109 C 
+ATOM      3  C   UNK A  0       26.907 -13.785   4.662  0.00  0.00    +0.211 C 
+ATOM      4  N   TYR A  1       25.548 -13.871   4.878  0.00  0.00    -0.302 N 
+ATOM      5  H   TYR A  1       25.223 -13.991   5.832  0.00  0.00    +0.149 HD
+ATOM      6  O   UNK A  0       27.423 -13.912   3.568  0.00  0.00    -0.276 OA
+ENDBRANCH   1   4
+BRANCH   1   7
+ATOM      7  C   TYR A  1       24.110 -12.965   3.030  0.00  0.00    +0.326 C 
+ATOM      8  O   TYR A  1       24.108 -12.872   1.813  0.00  0.00    -0.249 OA
+BRANCH   7   9
+ATOM      9  OXT TYR A  1       23.797 -11.906   3.818  0.00  0.00    -0.479 OA
+ATOM     10  HXT TYR A  1       24.581 -11.358   4.016  0.00  0.00    +0.295 HD
+ENDBRANCH   7   9
+ENDBRANCH   1   7
+BRANCH   1  11
+ATOM     11  CB  TYR A  1       23.396 -15.042   4.314  0.00  0.00    +0.069 C 
+BRANCH  11  12
+ATOM     12  CG  TYR A  1       23.538 -16.543   4.164  0.00  0.00    -0.045 A 
+ATOM     13  CD2 TYR A  1       22.474 -17.395   4.493  0.00  0.00    +0.007 A 
+ATOM     14  CE2 TYR A  1       22.600 -18.779   4.346  0.00  0.00    +0.045 A 
+ATOM     15  CZ  TYR A  1       23.787 -19.317   3.868  0.00  0.00    +0.117 A 
+ATOM     16  CE1 TYR A  1       24.860 -18.495   3.547  0.00  0.00    +0.045 A 
+ATOM     17  CD1 TYR A  1       24.737 -17.111   3.703  0.00  0.00    +0.007 A 
+BRANCH  15  18
+ATOM     18  OH  TYR A  1       23.864 -20.671   3.726  0.00  0.00    -0.507 OA
+ATOM     19  HH  TYR A  1       24.581 -20.876   3.104  0.00  0.00    +0.292 HD
+ENDBRANCH  15  18
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 6
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -4.0      2.034      5.979
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  TYR A  1       25.775 -18.026   3.474  0.00  0.00    +0.186 C 
+ENDROOT
+BRANCH   1   4
+ATOM      2  C   UNK A  0       22.064 -18.332   4.347  0.00  0.00    +0.109 C 
+ATOM      3  C   UNK A  0       23.389 -18.741   3.749  0.00  0.00    +0.211 C 
+ATOM      4  N   TYR A  1       24.396 -17.822   3.953  0.00  0.00    -0.302 N 
+ATOM      5  H   TYR A  1       24.133 -16.867   4.178  0.00  0.00    +0.149 HD
+ATOM      6  O   UNK A  0       23.562 -19.821   3.219  0.00  0.00    -0.276 OA
+ENDBRANCH   1   4
+BRANCH   1   7
+ATOM      7  C   TYR A  1       26.490 -19.184   4.199  0.00  0.00    +0.326 C 
+ATOM      8  O   TYR A  1       27.382 -19.040   5.021  0.00  0.00    -0.249 OA
+BRANCH   7   9
+ATOM      9  OXT TYR A  1       26.133 -20.415   3.756  0.00  0.00    -0.479 OA
+ATOM     10  HXT TYR A  1       26.027 -21.048   4.493  0.00  0.00    +0.295 HD
+ENDBRANCH   7   9
+ENDBRANCH   1   7
+BRANCH   1  11
+ATOM     11  CB  TYR A  1       26.621 -16.739   3.506  0.00  0.00    +0.069 C 
+BRANCH  11  12
+ATOM     12  CG  TYR A  1       25.854 -15.445   3.326  0.00  0.00    -0.045 A 
+ATOM     13  CD2 TYR A  1       26.348 -14.436   2.487  0.00  0.00    +0.007 A 
+ATOM     14  CE2 TYR A  1       25.637 -13.246   2.312  0.00  0.00    +0.045 A 
+ATOM     15  CZ  TYR A  1       24.429 -13.060   2.972  0.00  0.00    +0.117 A 
+ATOM     16  CE1 TYR A  1       23.925 -14.039   3.818  0.00  0.00    +0.045 A 
+ATOM     17  CD1 TYR A  1       24.641 -15.227   4.000  0.00  0.00    +0.007 A 
+BRANCH  15  18
+ATOM     18  OH  TYR A  1       23.760 -11.890   2.763  0.00  0.00    -0.507 OA
+ATOM     19  HH  TYR A  1       23.048 -11.822   3.419  0.00  0.00    +0.292 HD
+ENDBRANCH  15  18
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 6
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -3.0      2.593      6.413
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  TYR A  1       25.523 -19.635   3.957  0.00  0.00    +0.186 C 
+ENDROOT
+BRANCH   1   4
+ATOM      2  C   UNK A  0       21.832 -19.636   4.959  0.00  0.00    +0.109 C 
+ATOM      3  C   UNK A  0       23.141 -20.214   4.478  0.00  0.00    +0.211 C 
+ATOM      4  N   TYR A  1       24.156 -19.286   4.384  0.00  0.00    -0.302 N 
+ATOM      5  H   TYR A  1       23.901 -18.305   4.327  0.00  0.00    +0.149 HD
+ATOM      6  O   UNK A  0       23.298 -21.404   4.282  0.00  0.00    -0.276 OA
+ENDBRANCH   1   4
+BRANCH   1   7
+ATOM      7  C   TYR A  1       26.463 -19.917   5.146  0.00  0.00    +0.326 C 
+ATOM      8  O   TYR A  1       26.088 -20.173   6.279  0.00  0.00    -0.249 OA
+BRANCH   7   9
+ATOM      9  OXT TYR A  1       27.778 -19.736   4.863  0.00  0.00    -0.479 OA
+ATOM     10  HXT TYR A  1       28.336 -20.412   5.292  0.00  0.00    +0.295 HD
+ENDBRANCH   7   9
+ENDBRANCH   1   7
+BRANCH   1  11
+ATOM     11  CB  TYR A  1       26.136 -18.600   2.994  0.00  0.00    +0.069 C 
+BRANCH  11  12
+ATOM     12  CG  TYR A  1       25.969 -17.149   3.397  0.00  0.00    -0.045 A 
+ATOM     13  CD2 TYR A  1       27.091 -16.333   3.599  0.00  0.00    +0.007 A 
+ATOM     14  CE2 TYR A  1       26.939 -14.992   3.962  0.00  0.00    +0.045 A 
+ATOM     15  CZ  TYR A  1       25.666 -14.461   4.121  0.00  0.00    +0.117 A 
+ATOM     16  CE1 TYR A  1       24.539 -15.251   3.939  0.00  0.00    +0.045 A 
+ATOM     17  CD1 TYR A  1       24.692 -16.596   3.584  0.00  0.00    +0.007 A 
+BRANCH  15  18
+ATOM     18  OH  TYR A  1       25.562 -13.144   4.461  0.00  0.00    -0.507 OA
+ATOM     19  HH  TYR A  1       24.936 -13.066   5.200  0.00  0.00    +0.292 HD
+ENDBRANCH  15  18
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 6
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -2.6      3.635      6.050
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  TYR A  1       22.559 -19.461   4.668  0.00  0.00    +0.186 C 
+ENDROOT
+BRANCH   1   4
+ATOM      2  C   UNK A  0       22.813 -15.646   4.575  0.00  0.00    +0.109 C 
+ATOM      3  C   UNK A  0       23.238 -17.073   4.326  0.00  0.00    +0.211 C 
+ATOM      4  N   TYR A  1       22.354 -18.009   4.819  0.00  0.00    -0.302 N 
+ATOM      5  H   TYR A  1       21.704 -17.717   5.543  0.00  0.00    +0.149 HD
+ATOM      6  O   UNK A  0       24.222 -17.358   3.672  0.00  0.00    -0.276 OA
+ENDBRANCH   1   4
+BRANCH   1   7
+ATOM      7  C   TYR A  1       21.286 -20.196   4.203  0.00  0.00    +0.326 C 
+ATOM      8  O   TYR A  1       20.368 -19.671   3.592  0.00  0.00    -0.249 OA
+BRANCH   7   9
+ATOM      9  OXT TYR A  1       21.199 -21.478   4.639  0.00  0.00    -0.479 OA
+ATOM     10  HXT TYR A  1       20.811 -21.529   5.534  0.00  0.00    +0.295 HD
+ENDBRANCH   7   9
+ENDBRANCH   1   7
+BRANCH   1  11
+ATOM     11  CB  TYR A  1       23.155 -20.120   5.927  0.00  0.00    +0.069 C 
+BRANCH  11  12
+ATOM     12  CG  TYR A  1       24.662 -20.279   5.932  0.00  0.00    -0.045 A 
+ATOM     13  CD2 TYR A  1       25.421 -19.905   4.813  0.00  0.00    +0.007 A 
+ATOM     14  CE2 TYR A  1       26.811 -20.043   4.820  0.00  0.00    +0.045 A 
+ATOM     15  CZ  TYR A  1       27.449 -20.550   5.943  0.00  0.00    +0.117 A 
+ATOM     16  CE1 TYR A  1       26.719 -20.939   7.059  0.00  0.00    +0.045 A 
+ATOM     17  CD1 TYR A  1       25.327 -20.810   7.049  0.00  0.00    +0.007 A 
+BRANCH  15  18
+ATOM     18  OH  TYR A  1       28.809 -20.655   5.913  0.00  0.00    -0.507 OA
+ATOM     19  HH  TYR A  1       29.152 -20.462   6.801  0.00  0.00    +0.292 HD
+ENDBRANCH  15  18
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 6
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -2.1      3.405      5.439
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  TYR A  1       21.920 -18.667   4.111  0.00  0.00    +0.186 C 
+ENDROOT
+BRANCH   1   4
+ATOM      2  C   UNK A  0       23.182 -15.141   4.890  0.00  0.00    +0.109 C 
+ATOM      3  C   UNK A  0       23.222 -16.535   4.310  0.00  0.00    +0.211 C 
+ATOM      4  N   TYR A  1       22.102 -17.286   4.596  0.00  0.00    -0.302 N 
+ATOM      5  H   TYR A  1       21.525 -17.003   5.381  0.00  0.00    +0.149 HD
+ATOM      6  O   UNK A  0       24.121 -16.917   3.587  0.00  0.00    -0.276 OA
+ENDBRANCH   1   4
+BRANCH   1   7
+ATOM      7  C   TYR A  1       20.568 -18.874   3.400  0.00  0.00    +0.326 C 
+ATOM      8  O   TYR A  1       20.031 -18.047   2.679  0.00  0.00    -0.249 OA
+BRANCH   7   9
+ATOM      9  OXT TYR A  1       19.937 -20.026   3.740  0.00  0.00    -0.479 OA
+ATOM     10  HXT TYR A  1       19.218 -20.242   3.116  0.00  0.00    +0.295 HD
+ENDBRANCH   7   9
+ENDBRANCH   1   7
+BRANCH   1  11
+ATOM     11  CB  TYR A  1       22.141 -19.725   5.209  0.00  0.00    +0.069 C 
+BRANCH  11  12
+ATOM     12  CG  TYR A  1       23.587 -20.064   5.511  0.00  0.00    -0.045 A 
+ATOM     13  CD2 TYR A  1       23.960 -20.520   6.784  0.00  0.00    +0.007 A 
+ATOM     14  CE2 TYR A  1       25.290 -20.842   7.061  0.00  0.00    +0.045 A 
+ATOM     15  CZ  TYR A  1       26.253 -20.713   6.069  0.00  0.00    +0.117 A 
+ATOM     16  CE1 TYR A  1       25.912 -20.251   4.805  0.00  0.00    +0.045 A 
+ATOM     17  CD1 TYR A  1       24.581 -19.920   4.530  0.00  0.00    +0.007 A 
+BRANCH  15  18
+ATOM     18  OH  TYR A  1       27.538 -21.051   6.378  0.00  0.00    -0.507 OA
+ATOM     19  HH  TYR A  1       27.612 -21.130   7.343  0.00  0.00    +0.292 HD
+ENDBRANCH  15  18
+ENDBRANCH  11  12
+ENDBRANCH   1  11
+TORSDOF 6
+ENDMDL

@@ -1,0 +1,279 @@
+MODEL 1
+REMARK VINA RESULT:      -4.9      0.000      0.000
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  LEU A  1       26.841 -13.431   3.246  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   LEU A  1       27.043 -14.206   2.007  0.00  0.00    -0.318 NA
+ATOM      3  H1  LEU A  1       26.365 -13.990   1.280  0.00  0.00    +0.119 HD
+ATOM      4  H2  LEU A  1       28.007 -14.224   1.688  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   LEU A  1       28.177 -13.099   3.948  0.00  0.00    +0.322 C 
+ATOM      6  O   LEU A  1       28.265 -12.656   5.080  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT LEU A  1       29.275 -13.352   3.192  0.00  0.00    -0.479 OA
+ATOM      8  HXT LEU A  1       29.446 -12.615   2.579  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  LEU A  1       25.935 -14.196   4.227  0.00  0.00    +0.033 C 
+BRANCH   9  11
+ATOM     10  CD1 LEU A  1       24.189 -12.693   3.220  0.00  0.00    +0.007 C 
+ATOM     11  CG  LEU A  1       24.475 -13.703   4.337  0.00  0.00    -0.015 C 
+ATOM     12  CD2 LEU A  1       23.455 -14.841   4.264  0.00  0.00    +0.007 C 
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -4.8      2.120      2.607
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  LEU A  1       27.022 -14.461   3.346  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   LEU A  1       26.781 -14.117   1.931  0.00  0.00    -0.318 NA
+ATOM      3  H1  LEU A  1       26.365 -13.199   1.803  0.00  0.00    +0.119 HD
+ATOM      4  H2  LEU A  1       27.573 -14.307   1.325  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   LEU A  1       27.034 -15.988   3.579  0.00  0.00    +0.322 C 
+ATOM      6  O   LEU A  1       26.187 -16.754   3.153  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT LEU A  1       28.091 -16.426   4.308  0.00  0.00    -0.479 OA
+ATOM      8  HXT LEU A  1       28.914 -16.001   4.007  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  LEU A  1       25.955 -13.822   4.252  0.00  0.00    +0.033 C 
+BRANCH   9  11
+ATOM     10  CD1 LEU A  1       23.588 -14.667   4.313  0.00  0.00    +0.007 C 
+ATOM     11  CG  LEU A  1       24.542 -13.671   3.645  0.00  0.00    -0.015 C 
+ATOM     12  CD2 LEU A  1       23.980 -12.255   3.788  0.00  0.00    +0.007 C 
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -4.7      6.698      7.331
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  LEU A  1       25.344 -20.074   4.766  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   LEU A  1       25.726 -19.889   3.353  0.00  0.00    -0.318 NA
+ATOM      3  H1  LEU A  1       26.608 -20.333   3.111  0.00  0.00    +0.119 HD
+ATOM      4  H2  LEU A  1       24.972 -20.073   2.698  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   LEU A  1       26.576 -20.218   5.687  0.00  0.00    +0.322 C 
+ATOM      6  O   LEU A  1       26.514 -20.448   6.883  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT LEU A  1       27.763 -20.074   5.048  0.00  0.00    -0.479 OA
+ATOM      8  HXT LEU A  1       27.633 -20.068   4.083  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  LEU A  1       24.445 -21.311   4.931  0.00  0.00    +0.033 C 
+BRANCH   9  11
+ATOM     10  CD1 LEU A  1       23.114 -21.216   7.062  0.00  0.00    +0.007 C 
+ATOM     11  CG  LEU A  1       23.045 -21.065   5.538  0.00  0.00    -0.015 C 
+ATOM     12  CD2 LEU A  1       22.478 -19.688   5.190  0.00  0.00    +0.007 C 
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -4.6      1.256      1.934
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  LEU A  1       26.395 -14.423   3.417  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   LEU A  1       26.700 -15.859   3.276  0.00  0.00    -0.318 NA
+ATOM      3  H1  LEU A  1       26.165 -16.316   2.542  0.00  0.00    +0.119 HD
+ATOM      4  H2  LEU A  1       27.694 -16.067   3.262  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   LEU A  1       27.470 -13.679   4.241  0.00  0.00    +0.322 C 
+ATOM      6  O   LEU A  1       28.588 -13.416   3.832  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT LEU A  1       27.062 -13.323   5.485  0.00  0.00    -0.479 OA
+ATOM      8  HXT LEU A  1       27.827 -13.222   6.080  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  LEU A  1       25.022 -14.219   4.081  0.00  0.00    +0.033 C 
+BRANCH   9  11
+ATOM     10  CD1 LEU A  1       23.916 -11.975   4.333  0.00  0.00    +0.007 C 
+ATOM     11  CG  LEU A  1       24.084 -13.189   3.412  0.00  0.00    -0.015 C 
+ATOM     12  CD2 LEU A  1       24.588 -12.722   2.045  0.00  0.00    +0.007 C 
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -4.4      6.786      7.346
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  LEU A  1       24.976 -21.009   5.781  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   LEU A  1       24.252 -21.113   7.062  0.00  0.00    -0.318 NA
+ATOM      3  H1  LEU A  1       23.688 -20.294   7.275  0.00  0.00    +0.119 HD
+ATOM      4  H2  LEU A  1       23.771 -21.998   7.188  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   LEU A  1       26.390 -20.411   5.959  0.00  0.00    +0.322 C 
+ATOM      6  O   LEU A  1       26.949 -20.279   7.035  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT LEU A  1       26.983 -20.040   4.797  0.00  0.00    -0.479 OA
+ATOM      8  HXT LEU A  1       27.537 -19.251   4.932  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  LEU A  1       24.190 -20.148   4.777  0.00  0.00    +0.033 C 
+BRANCH   9  11
+ATOM     10  CD1 LEU A  1       22.277 -18.552   4.437  0.00  0.00    +0.007 C 
+ATOM     11  CG  LEU A  1       22.721 -19.837   5.144  0.00  0.00    -0.015 C 
+ATOM     12  CD2 LEU A  1       21.762 -20.972   4.781  0.00  0.00    +0.007 C 
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -4.3      2.909      3.890
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  LEU A  1       24.583 -13.602   3.992  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   LEU A  1       23.635 -14.729   4.073  0.00  0.00    -0.318 NA
+ATOM      3  H1  LEU A  1       24.052 -15.584   4.432  0.00  0.00    +0.119 HD
+ATOM      4  H2  LEU A  1       22.746 -14.486   4.499  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   LEU A  1       24.024 -12.430   3.155  0.00  0.00    +0.322 C 
+ATOM      6  O   LEU A  1       23.481 -11.447   3.628  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT LEU A  1       24.194 -12.578   1.817  0.00  0.00    -0.479 OA
+ATOM      8  HXT LEU A  1       24.802 -13.315   1.629  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  LEU A  1       25.923 -14.058   3.388  0.00  0.00    +0.033 C 
+BRANCH   9  11
+ATOM     10  CD1 LEU A  1       28.314 -13.328   3.653  0.00  0.00    +0.007 C 
+ATOM     11  CG  LEU A  1       27.143 -14.043   4.336  0.00  0.00    -0.015 C 
+ATOM     12  CD2 LEU A  1       26.849 -13.368   5.676  0.00  0.00    +0.007 C 
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -4.1      2.718      3.894
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  LEU A  1       24.519 -13.132   2.483  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   LEU A  1       24.153 -11.850   1.852  0.00  0.00    -0.318 NA
+ATOM      3  H1  LEU A  1       23.949 -11.931   0.859  0.00  0.00    +0.119 HD
+ATOM      4  H2  LEU A  1       23.468 -11.316   2.378  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   LEU A  1       24.115 -13.182   3.974  0.00  0.00    +0.322 C 
+ATOM      6  O   LEU A  1       24.191 -12.234   4.737  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT LEU A  1       23.650 -14.390   4.379  0.00  0.00    -0.479 OA
+ATOM      8  HXT LEU A  1       24.388 -14.977   4.619  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  LEU A  1       26.032 -13.387   2.363  0.00  0.00    +0.033 C 
+BRANCH   9  11
+ATOM     10  CD1 LEU A  1       26.895 -15.475   3.464  0.00  0.00    +0.007 C 
+ATOM     11  CG  LEU A  1       26.731 -13.959   3.617  0.00  0.00    -0.015 C 
+ATOM     12  CD2 LEU A  1       28.098 -13.325   3.879  0.00  0.00    +0.007 C 
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -4.0      5.778      6.450
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  LEU A  1       25.397 -20.258   3.863  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   LEU A  1       25.568 -20.992   5.131  0.00  0.00    -0.318 NA
+ATOM      3  H1  LEU A  1       25.526 -20.395   5.953  0.00  0.00    +0.119 HD
+ATOM      4  H2  LEU A  1       25.003 -21.833   5.196  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   LEU A  1       26.124 -18.895   3.877  0.00  0.00    +0.322 C 
+ATOM      6  O   LEU A  1       25.712 -17.892   3.319  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT LEU A  1       27.283 -18.895   4.582  0.00  0.00    -0.479 OA
+ATOM      8  HXT LEU A  1       27.864 -18.172   4.286  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  LEU A  1       23.906 -20.029   3.562  0.00  0.00    +0.033 C 
+BRANCH   9  11
+ATOM     10  CD1 LEU A  1       22.214 -18.456   4.554  0.00  0.00    +0.007 C 
+ATOM     11  CG  LEU A  1       22.995 -19.755   4.780  0.00  0.00    -0.015 C 
+ATOM     12  CD2 LEU A  1       22.013 -20.894   5.058  0.00  0.00    +0.007 C 
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -3.9      7.133      8.039
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  LEU A  1       24.104 -20.023   3.883  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   LEU A  1       24.667 -18.681   3.643  0.00  0.00    -0.318 NA
+ATOM      3  H1  LEU A  1       24.510 -18.340   2.699  0.00  0.00    +0.119 HD
+ATOM      4  H2  LEU A  1       24.448 -18.010   4.373  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   LEU A  1       22.791 -19.966   4.696  0.00  0.00    +0.322 C 
+ATOM      6  O   LEU A  1       22.334 -18.949   5.191  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  OXT LEU A  1       22.163 -21.162   4.815  0.00  0.00    -0.479 OA
+ATOM      8  HXT LEU A  1       22.674 -21.761   5.388  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  CB  LEU A  1       25.115 -20.915   4.625  0.00  0.00    +0.033 C 
+BRANCH   9  11
+ATOM     10  CD1 LEU A  1       24.818 -21.456   7.062  0.00  0.00    +0.007 C 
+ATOM     11  CG  LEU A  1       25.474 -20.492   6.067  0.00  0.00    -0.015 C 
+ATOM     12  CD2 LEU A  1       26.982 -20.452   6.318  0.00  0.00    +0.007 C 
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL

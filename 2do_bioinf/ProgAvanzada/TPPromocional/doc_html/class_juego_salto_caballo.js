@@ -1,0 +1,28 @@
+var class_juego_salto_caballo =
+[
+    [ "JuegoSaltoCaballo", "class_juego_salto_caballo.html#a6d36e4bd00f1dbbdd84e230e6105706d", null ],
+    [ "CargarDatosSegunNivel", "class_juego_salto_caballo.html#aee59e8f1f97a6906da57d0a061bd4ca5", null ],
+    [ "CargarNivel", "class_juego_salto_caballo.html#a0b939a1b367e9fa6a342496a9600d348", null ],
+    [ "IniciarJuego", "class_juego_salto_caballo.html#aaa986e98c58f750140cd3991177df517", null ],
+    [ "ObtenerNivelSuperado", "class_juego_salto_caballo.html#a7873b45a9ef9cd7813c0ef925a9f747f", null ],
+    [ "ObtenerTiempoSuperado", "class_juego_salto_caballo.html#a6a8055942ce719c1523e26f711d4c7da", null ],
+    [ "ProcesarResultados", "class_juego_salto_caballo.html#a1d6c5b9b5eb3087b6d91999334023223", null ],
+    [ "Reiniciar", "class_juego_salto_caballo.html#a1da67076664fff311576b52ef9ec9c7c", null ],
+    [ "SeleccionarNivel", "class_juego_salto_caballo.html#a170a21d4c3ad20b87cc765ea7e764775", null ],
+    [ "SetPuntero", "class_juego_salto_caballo.html#a95ceae5f464932709e2fe8cb463a3d6f", null ],
+    [ "cantColumnas", "class_juego_salto_caballo.html#a1be8657e70938a9fc46752fb9048dc76", null ],
+    [ "cantFilas", "class_juego_salto_caballo.html#aef3617523ef5844536261d9b9bf1fc60", null ],
+    [ "columnaInicial", "class_juego_salto_caballo.html#afdcada12d89a0e3c1b0fd50dfe651e1b", null ],
+    [ "cronometro", "class_juego_salto_caballo.html#a57d8cb34dd85f55d0219e4fcc56df7ba", null ],
+    [ "dibujoTablero", "class_juego_salto_caballo.html#adf286a20965eaf90b0cf98ba9c4153ae", null ],
+    [ "filaInicial", "class_juego_salto_caballo.html#ae7988736b1bda0a519c13bf4577a66a8", null ],
+    [ "graficador", "class_juego_salto_caballo.html#a59a2265ffd17303f4e6e2036d7ceebd3", null ],
+    [ "nivel", "class_juego_salto_caballo.html#a1515008016ce33082038d14d6c61aedb", null ],
+    [ "nivelInicial", "class_juego_salto_caballo.html#af7c7de45868fcb136444a84d04a43eac", null ],
+    [ "nivelSuperado", "class_juego_salto_caballo.html#a6ff2248b463bfc3829bf6efae98cba37", null ],
+    [ "resultadoTestCorrecto", "class_juego_salto_caballo.html#a526dc820d0d6f291aa43b385ff028fb7", null ],
+    [ "salir", "class_juego_salto_caballo.html#a5112c8320882733cb6a00944173f6e1b", null ],
+    [ "sol", "class_juego_salto_caballo.html#a20424abb13b34f73e75d5cfd7deecfc3", null ],
+    [ "solver", "class_juego_salto_caballo.html#ab532f12f7f02dadafe1f0fb5b1188820", null ],
+    [ "tiempoUltimoJuego", "class_juego_salto_caballo.html#a3c43b6b081667a8a5c3f08621c1fc097", null ]
+];

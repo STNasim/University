@@ -1,0 +1,13 @@
+trajin 50ns.nc
+
+center :1-281@CA
+image center familiar com :1-281
+
+rms first out rmsdrecep.dat :1-280
+rms first out rmsdlig.dat :281
+rms first out rmsdtotal.dat :1-281
+rms first out rmsdrecepnoex.dat :12-270
+
+atomicfluct out rmsfatomrecep.dat :1-280
+atomicfluct out rmsfatomlig.dat :281
+atomicfluct out rmsfres.dat :1-281 byres

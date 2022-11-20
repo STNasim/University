@@ -1,0 +1,279 @@
+MODEL 1
+REMARK VINA RESULT:      -4.3      0.000      0.000
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  THR A  1       26.296 -13.971   4.317  0.00  0.00    +0.189 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   THR A  1       27.042 -13.274   5.396  0.00  0.00    -0.316 NA
+ATOM      3  H1  THR A  1       26.569 -12.388   5.593  0.00  0.00    +0.119 HD
+ATOM      4  H2  THR A  1       26.972 -13.825   6.252  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   6
+ATOM      5  CG2 THR A  1       23.797 -14.503   4.174  0.00  0.00    +0.040 C 
+ATOM      6  CB  THR A  1       24.860 -13.414   4.221  0.00  0.00    +0.139 C 
+BRANCH   6   7
+ATOM      7  OG1 THR A  1       24.744 -12.605   3.032  0.00  0.00    -0.390 OA
+ATOM      8  HG1 THR A  1       23.939 -12.915   2.570  0.00  0.00    +0.210 HD
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   1   9
+ATOM      9  C   THR A  1       27.073 -13.824   2.998  0.00  0.00    +0.324 C 
+ATOM     10  O   THR A  1       26.697 -14.300   1.936  0.00  0.00    -0.249 OA
+BRANCH   9  11
+ATOM     11  OXT THR A  1       28.284 -13.231   3.135  0.00  0.00    -0.479 OA
+ATOM     12  HXT THR A  1       28.349 -12.422   2.568  0.00  0.00    +0.295 HD
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:      -4.1      1.366      2.260
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  THR A  1       27.303 -13.698   4.252  0.00  0.00    +0.189 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   THR A  1       26.613 -13.339   5.518  0.00  0.00    -0.316 NA
+ATOM      3  H1  THR A  1       25.635 -13.133   5.304  0.00  0.00    +0.119 HD
+ATOM      4  H2  THR A  1       26.600 -14.158   6.128  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   6
+ATOM      5  CG2 THR A  1       24.929 -13.716   3.301  0.00  0.00    +0.040 C 
+ATOM      6  CB  THR A  1       26.393 -13.385   3.046  0.00  0.00    +0.139 C 
+BRANCH   6   7
+ATOM      7  OG1 THR A  1       26.843 -14.140   1.903  0.00  0.00    -0.390 OA
+ATOM      8  HG1 THR A  1       27.817 -14.051   1.885  0.00  0.00    +0.210 HD
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   1   9
+ATOM      9  C   THR A  1       28.645 -12.947   4.185  0.00  0.00    +0.324 C 
+ATOM     10  O   THR A  1       28.945 -12.035   4.941  0.00  0.00    -0.249 OA
+BRANCH   9  11
+ATOM     11  OXT THR A  1       29.419 -13.295   3.128  0.00  0.00    -0.479 OA
+ATOM     12  HXT THR A  1       28.883 -13.743   2.428  0.00  0.00    +0.295 HD
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:      -4.0      2.080      2.317
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  THR A  1       26.672 -13.380   3.137  0.00  0.00    +0.189 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   THR A  1       26.386 -14.221   1.946  0.00  0.00    -0.316 NA
+ATOM      3  H1  THR A  1       26.442 -15.203   2.225  0.00  0.00    +0.119 HD
+ATOM      4  H2  THR A  1       25.419 -14.065   1.659  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   6
+ATOM      5  CG2 THR A  1       24.301 -12.677   3.790  0.00  0.00    +0.040 C 
+ATOM      6  CB  THR A  1       25.524 -13.504   4.160  0.00  0.00    +0.139 C 
+BRANCH   6   7
+ATOM      7  OG1 THR A  1       25.994 -13.078   5.455  0.00  0.00    -0.390 OA
+ATOM      8  HG1 THR A  1       25.695 -12.153   5.562  0.00  0.00    +0.210 HD
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   1   9
+ATOM      9  C   THR A  1       28.032 -13.796   3.725  0.00  0.00    +0.324 C 
+ATOM     10  O   THR A  1       29.022 -13.080   3.706  0.00  0.00    -0.249 OA
+BRANCH   9  11
+ATOM     11  OXT THR A  1       28.077 -15.081   4.153  0.00  0.00    -0.479 OA
+ATOM     12  HXT THR A  1       27.536 -15.201   4.973  0.00  0.00    +0.295 HD
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:      -3.9      1.871      2.004
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  THR A  1       26.110 -13.292   3.193  0.00  0.00    +0.189 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   THR A  1       26.265 -14.160   1.997  0.00  0.00    -0.316 NA
+ATOM      3  H1  THR A  1       26.989 -14.855   2.196  0.00  0.00    +0.119 HD
+ATOM      4  H2  THR A  1       25.401 -14.686   1.859  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   6
+ATOM      5  CG2 THR A  1       24.071 -14.570   4.061  0.00  0.00    +0.040 C 
+ATOM      6  CB  THR A  1       24.625 -13.226   3.609  0.00  0.00    +0.139 C 
+BRANCH   6   7
+ATOM      7  OG1 THR A  1       23.840 -12.755   2.495  0.00  0.00    -0.390 OA
+ATOM      8  HG1 THR A  1       23.364 -11.962   2.813  0.00  0.00    +0.210 HD
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   1   9
+ATOM      9  C   THR A  1       27.012 -13.828   4.318  0.00  0.00    +0.324 C 
+ATOM     10  O   THR A  1       27.703 -14.830   4.209  0.00  0.00    -0.249 OA
+BRANCH   9  11
+ATOM     11  OXT THR A  1       26.878 -13.166   5.494  0.00  0.00    -0.479 OA
+ATOM     12  HXT THR A  1       26.391 -12.314   5.367  0.00  0.00    +0.295 HD
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:      -3.9      1.111      1.268
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  THR A  1       26.011 -14.086   4.152  0.00  0.00    +0.189 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   THR A  1       26.506 -13.253   5.278  0.00  0.00    -0.316 NA
+ATOM      3  H1  THR A  1       27.528 -13.234   5.239  0.00  0.00    +0.119 HD
+ATOM      4  H2  THR A  1       26.202 -12.289   5.132  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   6
+ATOM      5  CG2 THR A  1       24.118 -12.387   4.433  0.00  0.00    +0.040 C 
+ATOM      6  CB  THR A  1       24.551 -13.712   3.820  0.00  0.00    +0.139 C 
+BRANCH   6   7
+ATOM      7  OG1 THR A  1       23.674 -14.751   4.302  0.00  0.00    -0.390 OA
+ATOM      8  HG1 THR A  1       23.928 -14.911   5.233  0.00  0.00    +0.210 HD
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   1   9
+ATOM      9  C   THR A  1       26.951 -13.906   2.948  0.00  0.00    +0.324 C 
+ATOM     10  O   THR A  1       26.686 -14.298   1.820  0.00  0.00    -0.249 OA
+BRANCH   9  11
+ATOM     11  OXT THR A  1       28.163 -13.390   3.267  0.00  0.00    -0.479 OA
+ATOM     12  HXT THR A  1       28.073 -12.476   3.636  0.00  0.00    +0.295 HD
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -3.8      1.271      3.124
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  THR A  1       25.797 -13.228   3.918  0.00  0.00    +0.189 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   THR A  1       25.984 -13.164   5.390  0.00  0.00    -0.316 NA
+ATOM      3  H1  THR A  1       25.940 -14.116   5.761  0.00  0.00    +0.119 HD
+ATOM      4  H2  THR A  1       26.929 -12.830   5.586  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   6
+ATOM      5  CG2 THR A  1       28.304 -13.636   3.618  0.00  0.00    +0.040 C 
+ATOM      6  CB  THR A  1       26.895 -14.105   3.282  0.00  0.00    +0.139 C 
+BRANCH   6   7
+ATOM      7  OG1 THR A  1       26.738 -14.100   1.849  0.00  0.00    -0.390 OA
+ATOM      8  HG1 THR A  1       26.240 -13.286   1.633  0.00  0.00    +0.210 HD
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   1   9
+ATOM      9  C   THR A  1       24.381 -13.750   3.618  0.00  0.00    +0.324 C 
+ATOM     10  O   THR A  1       23.861 -14.676   4.224  0.00  0.00    -0.249 OA
+BRANCH   9  11
+ATOM     11  OXT THR A  1       23.803 -13.182   2.531  0.00  0.00    -0.479 OA
+ATOM     12  HXT THR A  1       23.290 -12.375   2.785  0.00  0.00    +0.295 HD
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -3.7      7.348      7.619
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  THR A  1       24.897 -19.947   4.888  0.00  0.00    +0.189 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   THR A  1       25.934 -20.141   3.842  0.00  0.00    -0.316 NA
+ATOM      3  H1  THR A  1       26.302 -19.224   3.580  0.00  0.00    +0.119 HD
+ATOM      4  H2  THR A  1       26.718 -20.652   4.249  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   6
+ATOM      5  CG2 THR A  1       22.441 -19.235   4.807  0.00  0.00    +0.040 C 
+ATOM      6  CB  THR A  1       23.495 -20.208   4.298  0.00  0.00    +0.139 C 
+BRANCH   6   7
+ATOM      7  OG1 THR A  1       23.082 -21.549   4.631  0.00  0.00    -0.390 OA
+ATOM      8  HG1 THR A  1       22.133 -21.492   4.864  0.00  0.00    +0.210 HD
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   1   9
+ATOM      9  C   THR A  1       25.213 -20.866   6.080  0.00  0.00    +0.324 C 
+ATOM     10  O   THR A  1       24.492 -20.971   7.062  0.00  0.00    -0.249 OA
+BRANCH   9  11
+ATOM     11  OXT THR A  1       26.432 -21.457   6.013  0.00  0.00    -0.479 OA
+ATOM     12  HXT THR A  1       26.830 -21.550   6.914  0.00  0.00    +0.295 HD
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -3.7      6.916      7.476
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  THR A  1       24.397 -20.964   4.771  0.00  0.00    +0.189 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   THR A  1       25.651 -21.111   5.554  0.00  0.00    -0.316 NA
+ATOM      3  H1  THR A  1       25.677 -20.373   6.262  0.00  0.00    +0.119 HD
+ATOM      4  H2  THR A  1       25.614 -21.992   6.069  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   6
+ATOM      5  CG2 THR A  1       23.396 -21.559   7.049  0.00  0.00    +0.040 C 
+ATOM      6  CB  THR A  1       23.190 -20.838   5.724  0.00  0.00    +0.139 C 
+BRANCH   6   7
+ATOM      7  OG1 THR A  1       22.018 -21.380   5.082  0.00  0.00    -0.390 OA
+ATOM      8  HG1 THR A  1       21.249 -20.987   5.541  0.00  0.00    +0.210 HD
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   1   9
+ATOM      9  C   THR A  1       24.534 -19.752   3.834  0.00  0.00    +0.324 C 
+ATOM     10  O   THR A  1       23.594 -19.042   3.507  0.00  0.00    -0.249 OA
+BRANCH   9  11
+ATOM     11  OXT THR A  1       25.768 -19.612   3.291  0.00  0.00    -0.479 OA
+ATOM     12  HXT THR A  1       25.946 -20.324   2.627  0.00  0.00    +0.295 HD
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -3.7      2.195      3.469
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  THR A  1       25.832 -13.882   3.490  0.00  0.00    +0.189 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   THR A  1       26.222 -14.078   2.069  0.00  0.00    -0.316 NA
+ATOM      3  H1  THR A  1       26.898 -14.845   2.024  0.00  0.00    +0.119 HD
+ATOM      4  H2  THR A  1       25.404 -14.394   1.546  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   6
+ATOM      5  CG2 THR A  1       28.352 -13.565   3.794  0.00  0.00    +0.040 C 
+ATOM      6  CB  THR A  1       26.959 -13.155   4.252  0.00  0.00    +0.139 C 
+BRANCH   6   7
+ATOM      7  OG1 THR A  1       26.837 -13.434   5.661  0.00  0.00    -0.390 OA
+ATOM      8  HG1 THR A  1       26.279 -14.235   5.733  0.00  0.00    +0.210 HD
+ENDBRANCH   6   7
+ENDBRANCH   1   6
+BRANCH   1   9
+ATOM      9  C   THR A  1       24.499 -13.116   3.540  0.00  0.00    +0.324 C 
+ATOM     10  O   THR A  1       24.030 -12.645   4.565  0.00  0.00    -0.249 OA
+BRANCH   9  11
+ATOM     11  OXT THR A  1       23.818 -13.119   2.368  0.00  0.00    -0.479 OA
+ATOM     12  HXT THR A  1       24.404 -13.386   1.617  0.00  0.00    +0.295 HD
+ENDBRANCH   9  11
+ENDBRANCH   1   9
+TORSDOF 5
+ENDMDL

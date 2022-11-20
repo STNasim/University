@@ -1,0 +1,31 @@
+REMARK  Name = *****
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  O   LIG    1        1.261   2.111  -0.023  0.00  0.00    -0.254 OA
+ATOM      2  P   LIG    1        0.997   0.810  -0.729  0.00  0.00    +0.346 P 
+ATOM      3  N   LIG    1        0.903  -0.513   0.224  0.00  0.00    -0.218 NA
+ATOM      4  C   LIG    1        0.824  -1.808  -0.442  0.00  0.00    +0.097 C 
+ATOM      5  C   LIG    1        1.992  -1.984  -1.410  0.00  0.00    +0.044 C 
+ATOM      6  C   LIG    1        2.175  -0.828  -2.389  0.00  0.00    +0.171 C 
+ATOM      7  O   LIG    1        2.187   0.441  -1.752  0.00  0.00    -0.305 OA
+ENDROOT
+BRANCH   2   8
+ATOM      8  N   LIG    1       -0.364   0.792  -1.637  0.00  0.00    -0.231 NA
+ATOM      9  H   LIG    1       -0.310   0.087  -2.366  0.00  0.00    +0.133 HD
+BRANCH   8  10
+ATOM     10  C   LIG    1       -0.799   2.030  -2.280  0.00  0.00    +0.107 C 
+BRANCH  10  11
+ATOM     11  C   LIG    1       -2.065   1.798  -3.108  0.00  0.00    +0.124 C 
+ATOM     12 CL   LIG    1       -1.746   0.684  -4.469  0.00  0.00    -0.124 Cl
+ENDBRANCH  10  11
+ENDBRANCH   8  10
+ENDBRANCH   2   8
+BRANCH   3  13
+ATOM     13  C   LIG    1        0.151  -0.462   1.482  0.00  0.00    +0.110 C 
+BRANCH  13  14
+ATOM     14  C   LIG    1       -1.351  -0.727   1.360  0.00  0.00    +0.124 C 
+ATOM     15 CL   LIG    1       -2.133  -0.665   2.961  0.00  0.00    -0.124 Cl
+ENDBRANCH  13  14
+ENDBRANCH   3  13
+TORSDOF 5
