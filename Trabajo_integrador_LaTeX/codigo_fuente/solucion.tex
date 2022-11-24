@@ -1,0 +1,10 @@
+\subseccion{Estrategia}
+Sorprendentemente, existe una estrategia que proporciona una probabilidad de supervivencia de más del 30\%. La clave del éxito es que los presos no tienen que decidir de antemano qué cajones abrir. Cada prisionero puede usar la información obtenida del contenido de cada cajón que ya abrió para decidir cuál abrir a continuación. Otra observación importante es que de esta manera el éxito de un preso no es independiente del éxito de los otros presos, porque todos dependen de la forma en que se distribuyen los números en los cajones\cite{curtin2006locker}.
+
+Para describir la estrategia, no sólo los presos, sino también los cajones, se numeran del 1 al 100; por ejemplo, fila por fila comenzando con el cajón superior izquierdo. La estrategia ahora es la siguiente:
+\begin{enumerate}
+\item Cada preso primero abre el cajón etiquetado con su propio número.
+\item Si este cajón contiene su número, están listos y fueron exitosos.
+\item De lo contrario, el cajón contiene el número de otro preso, y luego abren el cajón etiquetado con este número.
+\item El preso repite los pasos 2 y 3 hasta encontrar su propio número, o falla porque el número no se encuentra en los primeros cincuenta cajones abiertos.
+\end{enumerate}

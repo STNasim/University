@@ -1,0 +1,14 @@
+En la variante en la que cualquier prisionero que encuentre su número queda libre, la probabilidad esperada de supervivencia de un individuo dada una permutación aleatoria es la siguiente:
+\\\\
+Sin estrategia: $\frac{1}{2}$\\
+Con la estrategia original:
+\begin{equation}
+    \begin{split}
+        [1-\ln(2)]\cdot 1+\sum_{k=[n/2]+1}^{N} \frac{1}{k}\left(1-\frac{k}{n}\right)&=1-\ln(2)+\sum_{[n/2]+1}^{N}\frac{1}{k}-\sum_{k=[n/2]+1}^{N}\frac{1}{n} \\
+        &=1-\sum_{n=51}^{100} \frac{1}{n} \\
+        &=1-(H_{100}-H_{50}) \\
+        &\approx 0.31183
+    \end{split}
+\end{equation}
+
+Es de destacar que aunque recibimos los mismos valores esperados, son de distribuciones muy diferentes. Con la segunda estrategia, algunos prisioneros simplemente están destinados a morir o vivir dada una permutación particular, y con la primera estrategia (es decir, sin estrategia), hay "verdaderamente" una probabilidad de 1/2 para cada permutación.

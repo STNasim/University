@@ -1,0 +1,44 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{preambulo/librerias}
+\input{preambulo/modificaciones.tex}
+\title{Problema de los 100 prisioneros}
+\author{Salim Nasim\\FIUNER}
+\date{30/11/22}
+\begin{document}
+\import{codigo_fuente/}{portada}
+%-------------------------------------------
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+\import{codigo_fuente/}{resumen}
+\addcontentsline{toc}{section}{Resumen}
+%-------------------------------------------
+%-------------------------------------------
+\seccion{Problema}
+\import{codigo_fuente/}{problema}
+%-------------------------------------------
+\seccion{Solución}
+\import{codigo_fuente/}{solucion}
+%-------------------------------------------
+\seccion{Ejemplos}
+\import{codigo_fuente/}{ejemplos}
+%-------------------------------------------
+\seccion{Representación de la permutación}
+\import{codigo_fuente/}{permutacion}
+%-------------------------------------------
+\seccion{Probabilidad de éxito}
+\import{codigo_fuente/}{probabilidad}
+%-------------------------------------------
+\seccion{Asintóticos}
+\import{codigo_fuente/}{asintoticos}
+%-------------------------------------------
+\seccion{Variantes}
+\import{codigo_fuente/}{variantes}
+%-------------------------------------------
+%-------------------------------------------
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{bibliografia}
+
+\end{document}

@@ -1,0 +1,24 @@
+En el problema inicial, los 100 prisioneros tienen éxito si el ciclo más largo de la permutación tiene una longitud de 50 como máximo. Su probabilidad de supervivencia es, por tanto, igual a la probabilidad de que una permutación aleatoria de los números del 1 al 100 no contenga ningún ciclo de longitud mayor de 50. Esta probabilidad se determina con la ecuación \ref{eq:prob_exito_general}.
+
+\begin{equation}
+   \begin{pmatrix}
+    100\\ 
+    l
+    \end{pmatrix}
+\cdot(l-1)!\cdot(100-l)!=\frac{100!}{l}
+\label{eq:prob_exito_general}
+\end{equation}
+
+
+La probabilidad de que una permutación aleatoria ( distribuida uniformemente ) no contenga un ciclo de longitud superior a 50 se calcula con la fórmula para eventos únicos y la fórmula para eventos complementarios \ref{eq:prob_exito_comp}
+
+\begin{equation}\label{eq:prob_exito_comp}
+    \begin{split}
+        1-\frac{1}{100!}\left(\frac{100!}{51}+\dots+\frac{100!}{100}\right)&=1-\left(\frac{1}{51}+\dots+\frac{1}{100}\right) \\
+        &=1-\sum_{n=51}^{100} \frac{1}{n} \\
+        &=1-(H_{100}-H_{50}) \\
+        &\approx 0.31183
+    \end{split}
+\end{equation}
+
+dónde $H_n$ es el n-ésimo número armónico. Por lo tanto, utilizando la estrategia de seguimiento del ciclo, los presos sobreviven en un sorprendente 31\% de los casos.

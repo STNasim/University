@@ -1,0 +1,53 @@
+La razón por la cual esta es una estrategia prometedora se ilustra con el siguiente ejemplo usando 8 prisioneros y cajones, donde cada prisionero puede abrir 4 cajones. El director de la prisión ha distribuido los números de los presos en los cajones como se ve en el cuadro \ref{table:ejemplo_exitoso}.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFC7}}l |l|l|l|l|l|l|l|l|}
+\hline
+Número de cajón      & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
+Número de prisionero & 7 & 4 & 6 & 8 & 1 & 3 & 5 & 2 \\ \hline
+\end{tabular}
+\caption{Disposición para aplicar exitosamente la estrategia}
+\label{table:ejemplo_exitoso}
+\end{table}
+
+Los prisioneros ahora actúan de la siguiente manera:
+
+\begin{itemize}
+\item El preso 1 primero abre el cajón 1 y encuentra el número 7. Luego abre el cajón 7 y encuentra el número 5. Luego abre el cajón 5, donde encuentra su propio número y tiene éxito.
+\item El prisionero 2 abre los cajones 2, 4 y 8 en este orden. En el último cajón encuentran su propio número, el 2.
+\item El prisionero 3 abre los cajones 3 y 6, donde encuentra su propio número.
+\item El preso 4 abre los cajones 4, 8 y 2, donde encuentra su propio número. Este es el mismo ciclo que encontró el prisionero 2 y que encontrará el prisionero 8. Cada uno de estos prisioneros encontrará su propio número en el tercer cajón abierto.
+\item Los presos 5 a 8 también encontrarán sus números de manera similar.
+\end{itemize}
+
+En este caso, todos los presos encuentran sus números. Esto es, sin embargo, no siempre es el caso. Por ejemplo, si se dispone como en el cuadro \ref{table:ejemplo_cambiado_5y8},  el pequeño cambio en los números de los cajones de intercambio 5 y 8 haría que el prisionero 1 fallara después de abrir 1, 7, 5 y 2 (y no encontrar su propio número): 
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFC7}}l |l|l|l|l|l|l|l|l|}
+\hline
+Número de cajón      & 1 & 2 & 3 & 4 & 5                        & 6 & 7 & 8                        \\ \hline
+Número de prisionero & 7 & 4 & 6 & 8 & {\color[HTML]{FE0000} 2} & 3 & 5 & {\color[HTML]{FE0000} 1} \\ \hline
+\end{tabular}
+\caption{Disposición cambiando los números en los cajones 5 y 8}
+\label{table:ejemplo_cambiado_5y8}
+\end{table}
+
+Y en el arreglo \ref{table:ejemplo_no_exitoso}, el preso 1 abre los cajones 1, 3, 7 y 4, momento en el que tiene que detenerse sin éxito
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFC7}}l |l|l|l|l|l|l|l|l|}
+\hline
+Número de cajón      & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ \hline
+Número de prisionero & 3 & 1 & 7 & 5 & 8 & 6 & 4 & 2 \\ \hline
+\end{tabular}
+\caption{Disposición tampoco exitosa para los prisioneros}
+\label{table:ejemplo_no_exitoso}
+\end{table}
+
+De hecho, todos los presos excepto 6 (que tiene éxito directamente) fallan.

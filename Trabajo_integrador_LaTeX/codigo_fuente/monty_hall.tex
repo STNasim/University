@@ -1,0 +1,26 @@
+En 2009, \href{https://www.researchgate.net/profile/Adam-Landsberg}{\textbf{Adam S. Landsberg}} propuso la siguiente variante más simple del problema de los 100 prisioneros que se basa en el conocido "problema de Monty Hall" \cite{landsberg2009return}
+
+\textit{``Detrás de tres puertas cerradas se distribuyen aleatoriamente un coche, las llaves del coche y una cabra. Hay dos jugadores: el primer jugador tiene que encontrar el coche, el segundo jugador las llaves del coche. Solo si ambos jugadores tienen éxito, pueden conducir el automóvil a casa. El primer jugador entra en la habitación y puede abrir consecutivamente dos de las tres puertas. Si tienen éxito, las puertas se cierran de nuevo y el segundo jugador entra en la habitación. El segundo jugador también puede abrir dos de las tres puertas, pero no puede comunicarse con el primer jugador de ninguna forma. ¿Cuál es la probabilidad de ganar si ambos jugadores actúan de manera óptima?''}
+
+Si los jugadores seleccionan sus puertas al azar, la probabilidad de ganar es solo 4/9 (alrededor del 44\%). Sin embargo, la estrategia óptima es la siguiente:
+
+\begin{itemize}
+    \item El jugador 1 abre primero la puerta 1. Si el auto está detrás de la puerta, el jugador tiene éxito. Si las llaves estaban detrás de la puerta, el jugador abre la puerta 2; si en cambio la cabra estaba detrás de la puerta, el jugador abre la puerta 3.
+    \item El jugador 2 abre primero la puerta 2. Si las llaves están detrás de la puerta, el jugador tiene éxito. Si la cabra estaba detrás de la puerta, el jugador abre la puerta 3; mientras que si el automóvil estaba detrás de la puerta, el jugador abre la puerta 1.
+\end{itemize}
+
+En las seis distribuciones posibles de coche, llaves y cabra detrás de las tres puertas, los jugadores abren las siguientes puertas (en las cajas verdes, el jugador acertó):
+
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+        & Coche Llaves Cabra                 & Coche Cabra Llaves                           & Llaves Coche Cabra                           & Llaves Cabra Coche                           & Cabra Coche Llaves                           & Cabra Llaves Coche                          \\ \hline
+Jugador & \cellcolor[HTML]{9AFF99}P1 Coche   & \cellcolor[HTML]{9AFF99}P1 Coche             & \cellcolor[HTML]{9AFF99}P1: Llaves P2: Coche & \cellcolor[HTML]{FFCCC9}P1: LLaves P2: Cabra & \cellcolor[HTML]{FFCCC9}P1: Cabra P3: Llaves & \cellcolor[HTML]{9AFF99}P1: Cabra P3: Coche \\ \hline
+Jugador & \cellcolor[HTML]{9AFF99}P2: Llaves & \cellcolor[HTML]{9AFF99}P2: Cabra P3: Llaves & \cellcolor[HTML]{9AFF99}P2: Coche P1: Llaves & \cellcolor[HTML]{FFCCC9}P2: Cabra P3: Coche  & \cellcolor[HTML]{FFCCC9}P2: Coche P1: Cabra  & \cellcolor[HTML]{9AFF99}P2: Llaves          \\ \hline
+\end{tabular}}
+\caption{Situaciones posibles de Monty Hall utilizando la estrategia planteada}
+\label{table:monty_hall}
+\end{table}
+
+El éxito de la estrategia se basa en construir una correlación entre los éxitos y fracasos de los dos jugadores. Aquí, la probabilidad de ganar es 2/3, lo cual es óptimo ya que el primer jugador no puede tener una probabilidad de ganar más alta que esa. En otra variante, tres premios están escondidos detrás de las tres puertas y tres jugadores tienen que encontrar independientemente sus premios asignados con dos intentos. En este caso la probabilidad de ganar también es 2/3 cuando se emplea la estrategia óptima.
