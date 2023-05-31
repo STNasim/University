@@ -110,11 +110,20 @@ Output:
 
 Este comando genera un error de segmentación al intentar cargar todos los archivos, por lo tanto se utiliza  un ciclo for que ejecute el comando una vez por cada archivo:
 
+****Esto no
 for fastq in datos/*.fastq
 do 
   echo $fastq
   STAR --genomeDir index --readFilesIn $fastq --outFileNamePrefix alignments/$(basename $fastq .fastq)_ --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
 done
+*****
+
+STAR --genomeDir index --readFilesIn datos/batch1_1.fastq datos/batch1_2.fastq --outFileNamePrefix alignments/batch1 --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
+STAR --genomeDir index --readFilesIn datos/batch2_1.fastq datos/batch2_2.fastq --outFileNamePrefix alignments/batch2 --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
+STAR --genomeDir index --readFilesIn datos/batch3_1.fastq datos/batch3_2.fastq --outFileNamePrefix alignments/batch3 --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
+STAR --genomeDir index --readFilesIn datos/quimiostato1_1.fastq datos/quimiostato1_2.fastq --outFileNamePrefix alignments/quimiostato1 --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
+STAR --genomeDir index --readFilesIn datos/quimiostato2_1.fastq datos/quimiostato2_2.fastq --outFileNamePrefix alignments/quimiostato2 --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
+STAR --genomeDir index --readFilesIn datos/quimiostato3_1.fastq datos/quimiostato3_2.fastq --outFileNamePrefix alignments/quimiostato3 --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
 
 Output:
 
@@ -129,14 +138,6 @@ May 24 13:14:58 ..... started sorting BAM
 May 24 13:15:02 ..... finished successfully
 datos/batch1_2.fastq
 ...
-
-Utilizando el siguiente comando se obtiene información sobre cuantas lecturas no fueron asignadas, asignadas en la forward o en la reverse:
-grep -v "N_" alignments/ReadsPerGene.out.tab | awk '{unst+=$2;forw+=$3;rev+=$4}END{print unst,forw,rev}'
-
-Output:
-32610 26844 26236
-
-Al ser las dos últimas muy similares se puede asumir que el protocolo utilizado es unstranded.
 
 #HISAT2
 

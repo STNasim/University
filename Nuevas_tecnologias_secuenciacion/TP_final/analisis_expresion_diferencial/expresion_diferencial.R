@@ -6,21 +6,21 @@ p_load(DESeq2,biomaRt,tidyverse,ggplot2,pheatmap,ggrepel)
 
 # Archivos de conteos de entrada - STAR
 
-files <- list.files(path = "../alignments", pattern = "_ReadsPerGene.out.tab")
+files <- list.files(path = "../alignments", pattern = "ReadsPerGene.out.tab")
 data <- NULL
 for(archivo in files){
   data <- read_tsv(paste0("../alignments/",archivo), skip = 4 ,col_names = c("Gene_ID", "Total", "+", "-"), col_types = cols(.default = "c"), show_col_types = FALSE)
-  write_tsv(data[,1:2], file = paste0(str_split(archivo, "_Reads")[[1]][1], "_counts.txt"), col_names = F)    
+  write_tsv(data[,1:2], file = paste0(str_split(archivo, "Reads")[[1]][1], "_counts.txt"), col_names = F)    
 }
 rm(data)
 
 #---- Tabla de muestras ----
 
-muestras <- sapply(str_split(files,"_Reads"),"[",1)
+muestras <- sapply(str_split(files,"Reads"),"[",1)
 
 sampletable <- data.frame(SampleName=muestras,
                           FileName=paste0(muestras, "_counts.txt"),
-                          Condition=c(rep("batch", 6), rep("quimiostato", 6)))
+                          Condition=c(rep("batch", 3), rep("quimiostato", 3)))
 rownames(sampletable) <- gsub("_counts.txt", "", sampletable$FileName)
 
 #---- Importar conteos STAR ----
