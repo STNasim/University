@@ -1,0 +1,27 @@
+STAR version=2.7.10a
+STAR compilation time,server,dir=2022-01-16T16:35:44+00:00 <place not set in Debian package>
+##### Command Line:
+/usr/lib/rna-star/bin/STAR-avx2 --genomeDir index --readFilesIn datos/batch1_1.fastq datos/batch1_2.fastq datos/batch2_1.fastq datos/batch2_2.fastq datos/batch3_1.fastq datos/batch3_2.fastq --outFileNamePrefix alignments/ --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 alignments/
+###### All USER parameters from Command Line:
+genomeDir                     index     ~RE-DEFINED
+readFilesIn                   datos/batch1_1.fastq   datos/batch1_2.fastq   datos/batch2_1.fastq   datos/batch2_2.fastq   datos/batch3_1.fastq   datos/batch3_2.fastq        ~RE-DEFINED
+outFileNamePrefix             alignments/     ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+quantMode                     GeneCounts        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+genomeDir                         index
+readFilesIn                       datos/batch1_1.fastq   datos/batch1_2.fastq   datos/batch2_1.fastq   datos/batch2_2.fastq   datos/batch3_1.fastq   datos/batch3_2.fastq   
+outFileNamePrefix                 alignments/
+outSAMtype                        BAM   SortedByCoordinate   
+quantMode                         GeneCounts   
+
+-------------------------------
+##### Final effective command line:
+/usr/lib/rna-star/bin/STAR-avx2   --genomeDir index   --readFilesIn datos/batch1_1.fastq   datos/batch1_2.fastq   datos/batch2_1.fastq   datos/batch2_2.fastq   datos/batch3_1.fastq   datos/batch3_2.fastq      --outFileNamePrefix alignments/   --outSAMtype BAM   SortedByCoordinate      --quantMode GeneCounts   
+----------------------------------------
+
+Number of fastq files for each mate = 1

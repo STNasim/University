@@ -1,0 +1,19 @@
+### /usr/lib/rna-star/bin/STAR-avx2   --runMode genomeGenerate      --genomeDir index   --genomeFastaFiles datos/sacCer_ChrI.fa      --genomeSAindexNbases 7   --sjdbGTFfile datos/sacCer_genes.gtf   --sjdbOverhang 100
+### GstrandBit 32
+versionGenome	2.7.4a
+genomeType	Full
+genomeFastaFiles	datos/sacCer_ChrI.fa 
+genomeSAindexNbases	7
+genomeChrBinNbits	18
+genomeSAsparseD	1
+genomeTransformType	None
+genomeTransformVCF	-
+sjdbOverhang	100
+sjdbFileChrStartEnd	- 
+sjdbGTFfile	datos/sacCer_genes.gtf
+sjdbGTFchrPrefix	-
+sjdbGTFfeatureExon	exon
+sjdbGTFtagExonParentTranscript	transcript_id
+sjdbGTFtagExonParentGene	gene_id
+sjdbInsertSave	Basic
+genomeFileSizes	263149 1907469

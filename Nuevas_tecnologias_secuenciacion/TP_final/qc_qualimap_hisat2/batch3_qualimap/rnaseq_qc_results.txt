@@ -1,0 +1,55 @@
+RNA-Seq QC report
+-----------------------------------
+
+>>>>>>> Input
+
+    bam file = alignments_hisat2/output_batch3.bam
+    gff file = datos/sacCer_genes.gtf
+    counting algorithm = uniquely-mapped-reads
+    protocol = non-strand-specific
+
+
+>>>>>>> Reads alignment
+
+    reads aligned  = 93,478
+    total alignments = 93,503
+    secondary alignments = 25
+    non-unique alignments = 42
+    aligned to genes  = 66,262
+    ambiguous alignments = 18,403
+    no feature assigned = 8,796
+    not aligned = 72
+    SSP estimation (fwd/rev) = 0.5 / 0.5
+
+
+>>>>>>> Reads genomic origin
+
+    exonic =  66,262 (88.28%)
+    intronic = 340 (0.45%)
+    intergenic = 8,456 (11.27%)
+    overlapping exon = 9,630 (12.83%)
+    rRNA = 0 (0%)
+
+
+>>>>>>> Transcript coverage profile
+
+    5' bias = 0.72
+    3' bias = 0.51
+    5'-3' bias = 1.45
+
+
+>>>>>>> Junction analysis
+
+    reads at junctions = 1,343
+
+    GGTA : 89.95%
+    CTGA : 5.44%
+    TTTT : 1.27%
+    GTTA : 0.52%
+    GGTC : 0.3%
+    GGGA : 0.22%
+    CCCT : 0.15%
+    AGGT : 0.15%
+    GGCA : 0.07%
+    AGTT : 0.07%
+    GCCT : 0.07%

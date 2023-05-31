@@ -1,0 +1,21 @@
+[2023-05-27 13:23:21,375] multiqc                                            [DEBUG  ]  This is MultiQC v1.14
+[2023-05-27 13:23:21,377] multiqc                                            [DEBUG  ]  Command used: /home/nasim/miniconda3/bin/multiqc --data-dir qc_qualimap_STAR qc_qualimap_hisat2 -o qc_qualimap_combinado
+[2023-05-27 13:23:22,649] multiqc                                            [DEBUG  ]  Latest MultiQC version is v1.14
+[2023-05-27 13:23:22,649] multiqc                                            [DEBUG  ]  Working dir : /mnt/g/Mi unidad/Facultad/Nuevas_tecnologias_secuenciacion/TP_final
+[2023-05-27 13:23:22,650] multiqc                                            [DEBUG  ]  Template    : default
+[2023-05-27 13:23:22,650] multiqc                                            [DEBUG  ]  Running Python 3.10.10 (main, Mar 21 2023, 18:45:11) [GCC 11.2.0]
+[2023-05-27 13:23:22,650] multiqc                                            [DEBUG  ]  Analysing modules: custom_content, ccs, ngsderive, purple, conpair, lima, peddy, somalier, methylQA, mosdepth, phantompeakqualtools, qualimap, preseq, hifiasm, quast, qorts, rna_seqc, rockhopper, rsem, rseqc, busco, bustools, goleft_indexcov, gffcompare, disambiguate, supernova, deeptools, sargasso, verifybamid, mirtrace, happy, mirtop, sambamba, gopeaks, homer, hops, macs2, theta2, snpeff, gatk, htseq, bcftools, featureCounts, fgbio, dragen, dragen_fastqc, dedup, pbmarkdup, damageprofiler, biobambam2, jcvi, mtnucratio, picard, vep, sentieon, prokka, qc3C, nanostat, samblaster, samtools, sexdeterrmine, eigenstratdatabasetools, bamtools, jellyfish, vcftools, longranger, stacks, varscan2, snippy, umitools, bbmap, bismark, biscuit, diamond, hicexplorer, hicup, hicpro, salmon, kallisto, slamdunk, star, hisat2, tophat, bowtie2, bowtie1, cellranger, snpsplit, odgi, pangolin, nextclade, humid, kat, leehom, adapterRemoval, bbduk, clipandmerge, cutadapt, flexbar, kaiju, kraken, malt, motus, trimmomatic, sickle, skewer, sortmerna, biobloomtools, fastq_screen, afterqc, fastp, fastqc, filtlong, prinseqplusplus, pychopper, porechop, pycoqc, minionqc, anglerfish, multivcfanalyzer, clusterflow, checkqc, bcl2fastq, bclconvert, interop, ivar, flash, seqyclean, optitype, whatshap
+[2023-05-27 13:23:22,650] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmpjekqtpg0
+[2023-05-27 13:23:22,830] multiqc                                            [INFO   ]  Search path : /mnt/g/Mi unidad/Facultad/Nuevas_tecnologias_secuenciacion/TP_final/qc_qualimap_STAR
+[2023-05-27 13:23:22,830] multiqc                                            [INFO   ]  Search path : /mnt/g/Mi unidad/Facultad/Nuevas_tecnologias_secuenciacion/TP_final/qc_qualimap_hisat2
+[2023-05-27 13:30:15,565] multiqc                                            [DEBUG  ]  Summary of files that were skipped by the search: [skipped_module_specific_max_filesize: 957] // [skipped_no_match: 610] // [skipped_directory_fn_ignore_dirs: 2]
+[2023-05-27 13:30:16,079] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.7.1
+[2023-05-27 13:30:16,081] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.7.1
+[2023-05-27 13:30:16,082] multiqc                                            [DEBUG  ]  No samples found: custom_content
+[2023-05-27 13:30:16,288] multiqc.modules.qualimap.QM_RNASeq                 [DEBUG  ]  Duplicate genome results sample name found! Overwriting: batch3_2
+[2023-05-27 13:30:17,787] multiqc.modules.qualimap.qualimap                  [INFO   ]  Found 18 RNASeq reports
+[2023-05-27 13:30:17,794] multiqc                                            [INFO   ]  Compressing plot data
+[2023-05-27 13:30:17,957] multiqc                                            [INFO   ]  Report      : qc_qualimap_combinado/multiqc_report.html
+[2023-05-27 13:30:17,957] multiqc                                            [INFO   ]  Data        : qc_qualimap_combinado/multiqc_data
+[2023-05-27 13:30:17,958] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmpjekqtpg0/multiqc_data' to 'qc_qualimap_combinado/multiqc_data'
+[2023-05-27 13:30:19,343] multiqc                                            [INFO   ]  MultiQC complete

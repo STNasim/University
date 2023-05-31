@@ -1,0 +1,229 @@
+#VER CANTIDAD DE SECUENCIAS
+
+for fastq in datos/*fastq
+do echo $fastq
+cat $fastq | awk 'BEGIN{i=0}{i++;}END{print i/4}'
+done
+
+Output:
+batch1_1.fastq
+44050
+batch1_2.fastq
+44050
+batch2_1.fastq
+59900
+batch2_2.fastq
+59900
+batch3_1.fastq
+46775
+batch3_2.fastq
+46775
+quimiostato1_1.fastq
+38325
+quimiostato1_2.fastq
+38325
+quimiostato2_1.fastq
+47162
+quimiostato2_2.fastq
+47162
+quimiostato3_1.fastq
+56865
+quimiostato3_2.fastq
+56865
+
+SE VE PAIRED END
+
+#GENERAR LOS REPORTES
+fastqc datos/*.fastq -o reportes_datos_crudos
+multiqc --data-dir reportes_datos_crudos -o reportes_datos_crudos
+
+Apartados que no pasaron:
+Se ve error en Per Base Sequence Content al comienzo por el hexapriming de la generación de la libreria
+Se ve picos ligeramente diferentes en el contenido de %GC
+En la distribución del largo de secuencias se que la gran mayoria de las secuencias tienen un largo mayor a 90pb
+En los niveles de duplicación es esperable encontrar un pico en >10 ya que se está analizando expresión de ARN el cual puede ser secuenciado repetidas veces
+En cuanto a las secuencias sobrerrepresentadas parecer ser algo que ocurré principalmente en las secuencias batch, lo que indicaría una expresión alta de algún gen en particular
+Las secuencias en cuestión son las siguientes dos:
+GAAAGATTGACCTCATTAAACGTTGTTGCTGGTTCTGACTTGAGAAGAAC
+CTAGATTAGAAAGATTGACCTCATTAAACGTTGTTGCTGGTTCTGACTTG
+Las cuales al realizar un blast con la base de datos de "Reference RNA sequences (feseq rna)" devuelve en uno de los resultados la secuencia de una piruvato quinasa, lo cual tiene mucho sentido con el problema en cuestión, ya que la pirvuato quinasa es la encargada de generar el piruvato que es el punto de entrada para la fermentación
+
+#STAR
+
+sudo apt-get install rna-star
+
+Para proceso de mapeo se utilizará STAR ya que es un software "splice-aware" que permite mapear uniones de empalme descritas en la anotación o detectar nuevas.
+Se utiliza el siguiente comando para crear el indice
+
+STAR --runMode genomeGenerate --genomeDir index --genomeFastaFiles datos/sacCer_ChrI.fa --sjdbGTFfile datos/sacCer_genes.gtf --sjdbOverhang 100
+
+Se coloca un valor de overhang de 100 ya que es el tamaño de lectura (101) menos 1.
+
+Output:
+
+STAR version: 2.7.10a   compiled: 2022-01-16T16:35:44+00:00 <place not set in Debian package>
+May 24 13:00:41 ..... started STAR run
+May 24 13:00:41 ... starting to generate Genome files
+May 24 13:00:41 ..... processing annotations GTF
+!!!!! WARNING: --genomeSAindexNbases 14 is too large for the genome size=230208, which may cause seg-fault at the mapping step. Re-run genome generation with recommended --genomeSAindexNbases 7
+May 24 13:00:45 ... starting to sort Suffix Array. This may take a long time...
+May 24 13:00:45 ... sorting Suffix Array chunks and saving them to disk...
+May 24 13:00:45 ... loading chunks from disk, packing SA...
+May 24 13:00:45 ... finished generating suffix array
+May 24 13:00:45 ... generating Suffix Array index
+May 24 13:00:48 ... completed Suffix Array index
+May 24 13:00:48 ..... inserting junctions into the genome indices
+May 24 13:00:54 ... writing Genome to disk ...
+May 24 13:00:54 ... writing Suffix Array to disk ...
+May 24 13:00:54 ... writing SAindex to disk
+May 24 13:01:04 ..... finished successfully
+
+A recomendación del software se reejecuta con 7
+
+STAR --runMode genomeGenerate --genomeDir index --genomeFastaFiles datos/sacCer_ChrI.fa --sjdbGTFfile datos/sacCer_genes.gtf --sjdbOverhang 100 --genomeSAindexNbases 7
+
+Output:
+
+STAR version: 2.7.10a   compiled: 2022-01-16T16:35:44+00:00 <place not set in Debian package>
+May 24 13:03:14 ..... started STAR run
+May 24 13:03:14 ... starting to generate Genome files
+May 24 13:03:14 ..... processing annotations GTF
+May 24 13:03:18 ... starting to sort Suffix Array. This may take a long time...
+May 24 13:03:18 ... sorting Suffix Array chunks and saving them to disk...
+May 24 13:03:18 ... loading chunks from disk, packing SA...
+May 24 13:03:18 ... finished generating suffix array
+May 24 13:03:18 ... generating Suffix Array index
+May 24 13:03:18 ... completed Suffix Array index
+May 24 13:03:18 ..... inserting junctions into the genome indices
+May 24 13:03:18 ... writing Genome to disk ...
+May 24 13:03:18 ... writing Suffix Array to disk ...
+May 24 13:03:18 ... writing SAindex to disk
+May 24 13:03:18 ..... finished successfully
+
+Se procede a mapear
+
+STAR --genomeDir index --readFilesIn datos/*.fastq --outFileNamePrefix alignments/ --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
+
+Output:
+
+/usr/bin/STAR: line 7:  1762 Segmentation fault      "${cmd}" "$@"
+
+Este comando genera un error de segmentación al intentar cargar todos los archivos, por lo tanto se utiliza  un ciclo for que ejecute el comando una vez por cada archivo:
+
+for fastq in datos/*.fastq
+do 
+  echo $fastq
+  STAR --genomeDir index --readFilesIn $fastq --outFileNamePrefix alignments/$(basename $fastq .fastq)_ --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
+done
+
+Output:
+
+datos/batch1_1.fastq
+        /usr/lib/rna-star/bin/STAR-avx2 --genomeDir index --readFilesIn datos/batch1_1.fastq --outFileNamePrefix alignments/batch1_1_ --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
+        STAR version: 2.7.10a   compiled: 2022-01-16T16:35:44+00:00 <place not set in Debian package>
+May 24 13:14:57 ..... started STAR run
+May 24 13:14:57 ..... loading genome
+May 24 13:14:57 ..... started mapping
+May 24 13:14:58 ..... finished mapping
+May 24 13:14:58 ..... started sorting BAM
+May 24 13:15:02 ..... finished successfully
+datos/batch1_2.fastq
+...
+
+Utilizando el siguiente comando se obtiene información sobre cuantas lecturas no fueron asignadas, asignadas en la forward o en la reverse:
+grep -v "N_" alignments/ReadsPerGene.out.tab | awk '{unst+=$2;forw+=$3;rev+=$4}END{print unst,forw,rev}'
+
+Output:
+32610 26844 26236
+
+Al ser las dos últimas muy similares se puede asumir que el protocolo utilizado es unstranded.
+
+#HISAT2
+
+Se utilizará también HISAT2 de manera de validar los resultados obtenidos mediante otro software.
+
+sudo apt-get -y install hisat2
+
+Se construye el indice
+sudo hisat2-build datos/sacCer_ChrI.fa /index_hisat2/index
+
+Se mapea ejecutando las siguientes lineas por separado, una para cada muestra
+
+hisat2 -x index_hisat2/index -1 datos/batch1_1.fastq -2 datos/batch1_2.fastq -S alignments_hisat2/output_batch1.sam
+hisat2 -x index_hisat2/index -1 datos/batch2_1.fastq -2 datos/batch2_2.fastq -S alignments_hisat2/output_batch2.sam
+hisat2 -x index_hisat2/index -1 datos/batch3_1.fastq -2 datos/batch3_2.fastq -S alignments_hisat2/output_batch3.sam
+hisat2 -x index_hisat2/index -1 datos/quimiostato1_1.fastq -2 datos/quimiostato1_2.fastq -S alignments_hisat2/output_quimiostato1.sam
+hisat2 -x index_hisat2/index -1 datos/quimiostato2_1.fastq -2 datos/quimiostato2_2.fastq -S alignments_hisat2/output_quimiostato2.sam
+hisat2 -x index_hisat2/index -1 datos/quimiostato3_1.fastq -2 datos/quimiostato3_2.fastq -S alignments_hisat2/output_quimiostato3.sam
+
+A diferencia de STAR, las salidas estan en archivos .sam y no .bam
+
+#Calidad de mapeo (STAR)
+
+conda install -c bioconda qualimap
+
+Se utiliza un script para automatizar las llamadas "qc_star_script.sh"
+
+#Calidad de mapeo (HISAT2)
+
+sudo apt-get install samtools
+
+Se convierten los alineamientos de .sam a .bam
+for file in alignments_hisat2/*.sam; do samtools view -bS $file > ${file%.sam}.bam; done
+
+Se utiliza un script para automatizar las llamadas "qc_hisat2_script.sh"
+ 
+Command line run, unsetting DISPLAY variable...
+Display:
+Java memory size is set to 1200M
+Launching application...
+
+QualiMap v.2.2.2-dev
+Built on 2016-12-11 14:41
+
+Selected tool: rnaseq
+Initializing regions from datos/sacCer_genes.gtf...
+
+
+Initialized 28005 regions it total
+
+Starting constructing transcripts for RNA-seq stats...
+Finished constructing transcripts
+
+Starting BAM file analysis
+
+
+WARNING! The following chromosomes from reads are not found in annotations:
+chrI
+*
+
+Processed 88067 reads in total
+
+BAM file analysis finished
+Creating plots
+Writing HTML report...
+HTML report created successfully
+
+Command line run, unsetting DISPLAY variable...
+...
+
+El proceso arroja un warning indicando que no se encuentran ciertas anotaciones del cromosoma 1 en el archivo, cosa que al utilizar el alineamiento de STAR no sucedia
+
+#Reporte combinado
+multiqc --data-dir qc_qualimap_STAR qc_qualimap_hisat2 -o qc_qualimap_combinado
+
+#Analisis de reportes
+
+Gráfico de cobertura normalizado y origen genómico similar en ambos casos por estadío
+
+Resultados de STAR muestran diferencias entre batch y quimiostato
+
+#Analisis de expresion diferencial con R
+
+Script
+
+Se analiza quimiostato vs batch
+
+#Conclusiones
+
+El archivo de genes diferenciados general no aporta nada significativo en EnrichR, posiblemente porque no se diferencia en upregulados y downregulados

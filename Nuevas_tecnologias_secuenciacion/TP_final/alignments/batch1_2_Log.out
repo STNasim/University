@@ -1,0 +1,127 @@
+STAR version=2.7.10a
+STAR compilation time,server,dir=2022-01-16T16:35:44+00:00 <place not set in Debian package>
+##### Command Line:
+/usr/lib/rna-star/bin/STAR-avx2 --genomeDir index --readFilesIn datos/batch1_2.fastq --outFileNamePrefix alignments/batch1_2_ --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 alignments/batch1_2_
+###### All USER parameters from Command Line:
+genomeDir                     index     ~RE-DEFINED
+readFilesIn                   datos/batch1_2.fastq        ~RE-DEFINED
+outFileNamePrefix             alignments/batch1_2_     ~RE-DEFINED
+outSAMtype                    BAM   SortedByCoordinate        ~RE-DEFINED
+quantMode                     GeneCounts        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+genomeDir                         index
+readFilesIn                       datos/batch1_2.fastq   
+outFileNamePrefix                 alignments/batch1_2_
+outSAMtype                        BAM   SortedByCoordinate   
+quantMode                         GeneCounts   
+
+-------------------------------
+##### Final effective command line:
+/usr/lib/rna-star/bin/STAR-avx2   --genomeDir index   --readFilesIn datos/batch1_2.fastq      --outFileNamePrefix alignments/batch1_2_   --outSAMtype BAM   SortedByCoordinate      --quantMode GeneCounts   
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+WARNING: --limitBAMsortRAM=0, will use genome size as RAM limit for BAM sorting
+Finished loading and checking parameters
+Reading genome generation parameters:
+### /usr/lib/rna-star/bin/STAR-avx2   --runMode genomeGenerate      --genomeDir index   --genomeFastaFiles datos/sacCer_ChrI.fa      --genomeSAindexNbases 7   --sjdbGTFfile datos/sacCer_genes.gtf   --sjdbOverhang 100
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              datos/sacCer_ChrI.fa        ~RE-DEFINED
+genomeSAindexNbases           7     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   datos/sacCer_genes.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               263149   1907469        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 1
+1	chrI	230208	0
+--sjdbOverhang = 100 taken from the generated genome
+Started loading the genome: Wed May 24 13:15:02 2023
+
+Genome: size given as a parameter = 263149
+SA: size given as a parameter = 1907469
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=7  nSAi=21844
+nGenome=263149;  nSAbyte=1907469
+GstrandBit=32   SA number of indices=462416
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 263149 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 263149 bytes
+SA file size: 1907469 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 1907469 bytes
+Loading SAindex ... done: 95643 bytes
+Finished loading the genome: Wed May 24 13:15:02 2023
+
+Processing splice junctions database sjdbN=5,   pGe.sjdbOverhang=100 
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Thread #0 end of input stream, nextChar=-1
+BAM sorting: 44141 mapped reads
+BAM sorting bins genomic start loci:
+1	0	36197
+2	0	46587
+3	0	52636
+4	0	58220
+5	0	61432
+6	0	62981
+7	0	71736
+8	0	71844
+9	0	71935
+10	0	72055
+11	0	72167
+12	0	72292
+13	0	72397
+14	0	72502
+15	0	72625
+16	0	72785
+17	0	72892
+18	0	72980
+19	0	73064
+20	0	73154
+21	0	75173
+22	0	77246
+23	0	78852
+24	0	86288
+25	0	95044
+26	0	100805
+27	0	107052
+28	0	108416
+29	0	114451
+30	0	125200
+31	0	129599
+32	0	131361
+33	0	132553
+34	0	138190
+35	0	139875
+36	0	140284
+37	0	140774
+38	0	142177
+39	0	142710
+40	0	142889
+41	0	143035
+42	0	145044
+43	0	154099
+44	0	156009
+45	0	165639
+46	0	169458
+47	0	169990
+48	0	184227
+Completed: thread #0
+May 24 13:15:04 ..... started sorting BAM
+Max memory needed for sorting = 229249
+ALL DONE!
