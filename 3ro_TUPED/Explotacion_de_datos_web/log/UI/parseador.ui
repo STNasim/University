@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Parseador</class>
+ <widget class="QDialog" name="Parseador">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>319</width>
+    <height>265</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Parseador</string>
+  </property>
+  <widget class="QLineEdit" name="path_file">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>70</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="select_file">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>70</y>
+     <width>71</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Seleccionar</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="formato_log">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>170</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Apache</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_formato">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>150</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Formato</string>
+   </property>
+   <property name="buddy">
+    <cstring>formato_log</cstring>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bot_parsear">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>170</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Parsear</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>path_file</tabstop>
+  <tabstop>select_file</tabstop>
+  <tabstop>formato_log</tabstop>
+  <tabstop>bot_parsear</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>select_file</sender>
+   <signal>clicked()</signal>
+   <receiver>path_file</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>78</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>135</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>path_file</sender>
+   <signal>editingFinished()</signal>
+   <receiver>formato_log</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>94</x>
+     <y>83</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>93</x>
+     <y>176</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>path_file</sender>
+   <signal>editingFinished()</signal>
+   <receiver>bot_parsear</receiver>
+   <slot>showMenu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>108</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>202</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>path_file</sender>
+   <signal>editingFinished()</signal>
+   <receiver>label_formato</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>63</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>70</x>
+     <y>155</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
