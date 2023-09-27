@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>procesadores_datos &#8212; documentación de ChipyPyR - 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="enriquecedor" href="enriquecedor.html" />
+    <link rel="prev" title="guardador_archivos" href="../manejadores_archivos/guardador_archivos.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="procesadores-datos">
+<h1>procesadores_datos<a class="headerlink" href="#procesadores-datos" title="Enlace permanente a este encabezado">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="enriquecedor.html">enriquecedor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enriquecedor.html#procesadores_datos.enriquecedor.Enriquecedor"><code class="docutils literal notranslate"><span class="pre">Enriquecedor</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="enriquecedor.html#procesadores_datos.enriquecedor.Enriquecedor.obtener_datos_enriquecidos"><code class="docutils literal notranslate"><span class="pre">Enriquecedor.obtener_datos_enriquecidos()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="filtrador_promediador_datos.html">filtrador_promediador_datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="filtrador_promediador_datos.html#procesadores_datos.filtrador_promediador_datos.FiltradorPromediadorDatos"><code class="docutils literal notranslate"><span class="pre">FiltradorPromediadorDatos</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="filtrador_promediador_datos.html#procesadores_datos.filtrador_promediador_datos.FiltradorPromediadorDatos.filtrar_df_por_error_estandar"><code class="docutils literal notranslate"><span class="pre">FiltradorPromediadorDatos.filtrar_df_por_error_estandar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="filtrador_promediador_datos.html#procesadores_datos.filtrador_promediador_datos.FiltradorPromediadorDatos.filtrar_y_juntar_dict_df"><code class="docutils literal notranslate"><span class="pre">FiltradorPromediadorDatos.filtrar_y_juntar_dict_df()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hilo_qt.html">hilo_qt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hilo_qt.html#procesadores_datos.hilo_qt.HiloProcesamiento"><code class="docutils literal notranslate"><span class="pre">HiloProcesamiento</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="hilo_qt.html#procesadores_datos.hilo_qt.HiloProcesamiento.run"><code class="docutils literal notranslate"><span class="pre">HiloProcesamiento.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="hilo_qt.html#procesadores_datos.hilo_qt.HiloProcesamiento.set_parte"><code class="docutils literal notranslate"><span class="pre">HiloProcesamiento.set_parte()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mapeo.html">mapeo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mapeo.html#procesadores_datos.mapeo.FiltradorMapeos"><code class="docutils literal notranslate"><span class="pre">FiltradorMapeos</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mapeo.html#procesadores_datos.mapeo.FiltradorMapeos.quitar_y_obtener_lista_multimappers"><code class="docutils literal notranslate"><span class="pre">FiltradorMapeos.quitar_y_obtener_lista_multimappers()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mapeo.html#procesadores_datos.mapeo.FiltradorMapeos.quitar_y_obtener_lista_no_mappers"><code class="docutils literal notranslate"><span class="pre">FiltradorMapeos.quitar_y_obtener_lista_no_mappers()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mapeo.html#procesadores_datos.mapeo.MapeadorSondas"><code class="docutils literal notranslate"><span class="pre">MapeadorSondas</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mapeo.html#procesadores_datos.mapeo.MapeadorSondas.obtener_sondas_mapeadas"><code class="docutils literal notranslate"><span class="pre">MapeadorSondas.obtener_sondas_mapeadas()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pipeline.html">pipeline</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline"><code class="docutils literal notranslate"><span class="pre">Pipeline</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.calcular_expresion"><code class="docutils literal notranslate"><span class="pre">Pipeline.calcular_expresion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.cargar_muestras"><code class="docutils literal notranslate"><span class="pre">Pipeline.cargar_muestras()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.enriquecer_datos"><code class="docutils literal notranslate"><span class="pre">Pipeline.enriquecer_datos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.generar_reporte_limma"><code class="docutils literal notranslate"><span class="pre">Pipeline.generar_reporte_limma()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.generar_reporte_muestras"><code class="docutils literal notranslate"><span class="pre">Pipeline.generar_reporte_muestras()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.guardar_datos"><code class="docutils literal notranslate"><span class="pre">Pipeline.guardar_datos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.obtener_datos_cada_etapa"><code class="docutils literal notranslate"><span class="pre">Pipeline.obtener_datos_cada_etapa()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.obtener_figuras_reporte_limma"><code class="docutils literal notranslate"><span class="pre">Pipeline.obtener_figuras_reporte_limma()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.obtener_figuras_reporte_muestras"><code class="docutils literal notranslate"><span class="pre">Pipeline.obtener_figuras_reporte_muestras()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.procesar_genes"><code class="docutils literal notranslate"><span class="pre">Pipeline.procesar_genes()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.procesar_muestras"><code class="docutils literal notranslate"><span class="pre">Pipeline.procesar_muestras()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipeline.html#procesadores_datos.pipeline.Pipeline.procesar_sondas"><code class="docutils literal notranslate"><span class="pre">Pipeline.procesar_sondas()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="validadores_datos.html">validadores_datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="validadores_datos.html#procesadores_datos.validadores_datos.ValidadorDatos"><code class="docutils literal notranslate"><span class="pre">ValidadorDatos</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="validadores_datos.html#procesadores_datos.validadores_datos.ValidadorDatos.validar_datos"><code class="docutils literal notranslate"><span class="pre">ValidadorDatos.validar_datos()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="validadores_datos.html#procesadores_datos.validadores_datos.ValidadorDatosGrupos"><code class="docutils literal notranslate"><span class="pre">ValidadorDatosGrupos</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="validadores_datos.html#procesadores_datos.validadores_datos.ValidadorDatosGrupos.validar_datos"><code class="docutils literal notranslate"><span class="pre">ValidadorDatosGrupos.validar_datos()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="validadores_datos.html#procesadores_datos.validadores_datos.ValidadorDatosMuestras"><code class="docutils literal notranslate"><span class="pre">ValidadorDatosMuestras</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="validadores_datos.html#procesadores_datos.validadores_datos.ValidadorDatosMuestras.validar_datos"><code class="docutils literal notranslate"><span class="pre">ValidadorDatosMuestras.validar_datos()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">ChipyPyR</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html#motivacion">Motivación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaz/modules.html">interfaz</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manejadores_archivos/modules.html">manejadores_archivos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">procesadores_datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enriquecedor.html">enriquecedor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filtrador_promediador_datos.html">filtrador_promediador_datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hilo_qt.html">hilo_qt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mapeo.html">mapeo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html">pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validadores_datos.html">validadores_datos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts_R/modules.html">scripts_R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../transformaciones/modules.html">transformaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualizacion/modules.html">visualizacion</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../manejadores_archivos/guardador_archivos.html" title="capítulo anterior">guardador_archivos</a></li>
+      <li>Next: <a href="enriquecedor.html" title="próximo capítulo">enriquecedor</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Nasim A. Salim Taleb.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/procesadores_datos/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

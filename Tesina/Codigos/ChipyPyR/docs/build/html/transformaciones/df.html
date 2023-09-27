@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>df &#8212; documentación de ChipyPyR - 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="lista" href="lista.html" />
+    <link rel="prev" title="transformaciones" href="modules.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-transformaciones.df">
+<span id="df"></span><h1>df<a class="headerlink" href="#module-transformaciones.df" title="Enlace permanente a este encabezado">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="transformaciones.df.anular_valores_mayores_columna">
+<span class="sig-prename descclassname"><span class="pre">transformaciones.df.</span></span><span class="sig-name descname"><span class="pre">anular_valores_mayores_columna</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comienzo_columna</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">umbral</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#transformaciones.df.anular_valores_mayores_columna" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Anula los valores mayores a un umbral de las columnas que empiezan con un string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Dataframe a anular.</p></li>
+<li><p><strong>comienzo_columna</strong> (<em>str</em>) – String con el que empiezan las columnas a anular.</p></li>
+<li><p><strong>umbral</strong> (<em>float</em>) – Umbral a partir del cual se anulan los valores.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dataframe con los valores anulados.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="transformaciones.df.anular_valores_menores_absoluto_columna">
+<span class="sig-prename descclassname"><span class="pre">transformaciones.df.</span></span><span class="sig-name descname"><span class="pre">anular_valores_menores_absoluto_columna</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comienzo_columna</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">umbral</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#transformaciones.df.anular_valores_menores_absoluto_columna" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Anula los valores menores a un umbral de las columnas que empiezan con un string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Dataframe a anular.</p></li>
+<li><p><strong>comienzo_columna</strong> (<em>str</em>) – String con el que empiezan las columnas a anular.</p></li>
+<li><p><strong>umbral</strong> (<em>float</em>) – Umbral a partir del cual se anulan los valores.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dataframe con los valores anulados.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="transformaciones.df.columna2columna">
+<span class="sig-prename descclassname"><span class="pre">transformaciones.df.</span></span><span class="sig-name descname"><span class="pre">columna2columna</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dic_mapeos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columna_desde</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columna_hacia</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#transformaciones.df.columna2columna" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Mapea los valores de una columna a otra columna.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Dataframe a mapear.</p></li>
+<li><p><strong>dic_mapeos</strong> (<em>dict</em>) – Diccionario con los mapeos.</p></li>
+<li><p><strong>columna_desde</strong> (<em>str</em>) – Nombre de la columna desde donde se mapea.</p></li>
+<li><p><strong>columna_hacia</strong> (<em>str</em>) – Nombre de la columna hacia donde se mapea.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dataframe mapeado.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="transformaciones.df.explotar_agrupar_columna_lista">
+<span class="sig-prename descclassname"><span class="pre">transformaciones.df.</span></span><span class="sig-name descname"><span class="pre">explotar_agrupar_columna_lista</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columna</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#transformaciones.df.explotar_agrupar_columna_lista" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Explota una columna que contiene listas y agrupa por esa columna.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Dataframe a explotar y agrupar.</p></li>
+<li><p><strong>columna</strong> (<em>str</em>) – Nombre de la columna a explotar y agrupar.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dataframe agrupado por la columna</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="transformaciones.df.quitar_filas_mayores_columna">
+<span class="sig-prename descclassname"><span class="pre">transformaciones.df.</span></span><span class="sig-name descname"><span class="pre">quitar_filas_mayores_columna</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comienzo_columna</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">umbral</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#transformaciones.df.quitar_filas_mayores_columna" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Quita las filas que tienen todos los valores mayores a un umbral de las columnas que empiezan con un string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Dataframe a quitar filas.</p></li>
+<li><p><strong>comienzo_columna</strong> (<em>str</em>) – String con el que empiezan las columnas a quitar filas.</p></li>
+<li><p><strong>umbral</strong> (<em>float</em>) – Umbral a partir del cual se quitan las filas.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dataframe con las filas quitadas.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="transformaciones.df.quitar_filas_menores_absoluto_columna">
+<span class="sig-prename descclassname"><span class="pre">transformaciones.df.</span></span><span class="sig-name descname"><span class="pre">quitar_filas_menores_absoluto_columna</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comienzo_columna</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">umbral</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#transformaciones.df.quitar_filas_menores_absoluto_columna" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Quita las filas que tienen todos los valores menores a un umbral de las columnas que empiezan con un string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Dataframe a quitar filas.</p></li>
+<li><p><strong>comienzo_columna</strong> (<em>str</em>) – String con el que empiezan las columnas a quitar filas.</p></li>
+<li><p><strong>umbral</strong> (<em>float</em>) – Umbral a partir del cual se quitan las filas.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dataframe con las filas quitadas.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="transformaciones.df.separar_df_grupo">
+<span class="sig-prename descclassname"><span class="pre">transformaciones.df.</span></span><span class="sig-name descname"><span class="pre">separar_df_grupo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lista_grupos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#transformaciones.df.separar_df_grupo" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Separa un dataframe en varios dataframes según los grupos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Dataframe a separar.</p></li>
+<li><p><strong>lista_grupos</strong> (<em>list</em>) – Lista con los nombres de los grupos.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Diccionario con los dataframes separados por grupo.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">ChipyPyR</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html#motivacion">Motivación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaz/modules.html">interfaz</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manejadores_archivos/modules.html">manejadores_archivos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../procesadores_datos/modules.html">procesadores_datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts_R/modules.html">scripts_R</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">transformaciones</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">df</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lista.html">lista</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../visualizacion/modules.html">visualizacion</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">transformaciones</a><ul>
+      <li>Previous: <a href="modules.html" title="capítulo anterior">transformaciones</a></li>
+      <li>Next: <a href="lista.html" title="próximo capítulo">lista</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Nasim A. Salim Taleb.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/transformaciones/df.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>conversores_resultados &#8212; documentación de ChipyPyR - 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="graficador" href="graficador.html" />
+    <link rel="prev" title="visualizacion" href="modules.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-visualizacion.conversores_resultados">
+<span id="conversores-resultados"></span><h1>conversores_resultados<a class="headerlink" href="#module-visualizacion.conversores_resultados" title="Enlace permanente a este encabezado">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="visualizacion.conversores_resultados.ConversorLog2FC">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">visualizacion.conversores_resultados.</span></span><span class="sig-name descname"><span class="pre">ConversorLog2FC</span></span><a class="headerlink" href="#visualizacion.conversores_resultados.ConversorLog2FC" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase que convierte un DataFrame para luego utilizar los resultados para graficar diagramas que utilicen log2FC.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="visualizacion.conversores_resultados.ConversorLog2FC.convertir">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convertir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log2FC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cantidad_por_figura</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#visualizacion.conversores_resultados.ConversorLog2FC.convertir" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Convierte un DataFrame en una lista de DataFrames con valores de log2FC por cada grupo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>datos</strong> (<em>pd.DataFrame</em>) – Dataframe a convertir.</p></li>
+<li><p><strong>p_value</strong> (<em>float</em>) – Valor de p-value para filtrar los datos.</p></li>
+<li><p><strong>log2FC</strong> (<em>float</em>) – Valor de log2FC para filtrar los datos.</p></li>
+<li><p><strong>cantidad_por_figura</strong> (<em>int</em>) – Cantidad de genes por figura.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Lista de dataframes, lista de colores.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[List, List]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="visualizacion.conversores_resultados.ConversorReactome">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">visualizacion.conversores_resultados.</span></span><span class="sig-name descname"><span class="pre">ConversorReactome</span></span><a class="headerlink" href="#visualizacion.conversores_resultados.ConversorReactome" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase que convierte un DataFrame para luego utilizar los resultados para graficar una ventana Reactome.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="visualizacion.conversores_resultados.ConversorReactome.convertir">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convertir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log2FC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grupo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualizacion.conversores_resultados.ConversorReactome.convertir" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Convierte un DataFrame en una lista con genes que pasaron el filtro para el grupo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Dataframe a convertir.</p></li>
+<li><p><strong>p_value</strong> (<em>float</em>) – Valor de p-value para filtrar los datos.</p></li>
+<li><p><strong>log2FC</strong> (<em>float</em>) – Valor de log2FC para filtrar los datos.</p></li>
+<li><p><strong>grupo</strong> (<em>str</em>) – Nombre del grupo, defaults to None.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Lista de dataframes, lista de colores.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[List, List]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="visualizacion.conversores_resultados.ConversorResultados">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">visualizacion.conversores_resultados.</span></span><span class="sig-name descname"><span class="pre">ConversorResultados</span></span><a class="headerlink" href="#visualizacion.conversores_resultados.ConversorResultados" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase que convierte un DataFrame para luego utilizar los resultados para graficar.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="visualizacion.conversores_resultados.ConversorResultados.convertir">
+<span class="sig-name descname"><span class="pre">convertir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tipo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log2FC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grupo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#visualizacion.conversores_resultados.ConversorResultados.convertir" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Convierte un DataFrame de datos según el tipo de conversor, el p_value, el log2FC y el grupo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tipo</strong> (<em>str</em>) – Tipo de conversor.</p></li>
+<li><p><strong>datos</strong> (<em>pd.DataFrame</em>) – Dataframe a convertir.</p></li>
+<li><p><strong>p_value</strong> (<em>float</em><em>, </em><em>optional</em>) – Valor de p-value para filtrar los datos, defaults to None.</p></li>
+<li><p><strong>log2FC</strong> (<em>float</em><em>, </em><em>optional</em>) – Valor de log2FC para filtrar los datos, defaults to None.</p></li>
+<li><p><strong>grupo</strong> (<em>str</em><em>, </em><em>optional</em>) – Nombre del grupo, defaults to None.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Lista de dataframes, lista de colores.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[List, List]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="visualizacion.conversores_resultados.ConversorResultados.obtener_conversores_admitidos">
+<span class="sig-name descname"><span class="pre">obtener_conversores_admitidos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#visualizacion.conversores_resultados.ConversorResultados.obtener_conversores_admitidos" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Devuelve los conversores admitidos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Devuelve<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Lista de conversores admitidos.</p>
+</dd>
+<dt class="field-even">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-even"><p>List</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="visualizacion.conversores_resultados.ConversorVenn">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">visualizacion.conversores_resultados.</span></span><span class="sig-name descname"><span class="pre">ConversorVenn</span></span><a class="headerlink" href="#visualizacion.conversores_resultados.ConversorVenn" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase que convierte un DataFrame para luego utilizar los resultados para graficar un diagrama de Venn.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="visualizacion.conversores_resultados.ConversorVenn.convertir">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convertir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log2FC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#visualizacion.conversores_resultados.ConversorVenn.convertir" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Convierte un DataFrame en una lista de DataFrames con genes que pasaron el filtro por cada grupo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>datos</strong> (<em>pd.DataFrame</em>) – Dataframe a convertir.</p></li>
+<li><p><strong>p_value</strong> (<em>float</em>) – Valor de p-value para filtrar los datos.</p></li>
+<li><p><strong>log2FC</strong> (<em>float</em>) – Valor de log2FC para filtrar los datos.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Lista de dataframes, lista de colores.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[List, List]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="visualizacion.conversores_resultados.ConversorVolcan">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">visualizacion.conversores_resultados.</span></span><span class="sig-name descname"><span class="pre">ConversorVolcan</span></span><a class="headerlink" href="#visualizacion.conversores_resultados.ConversorVolcan" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase que convierte un DataFrame para luego utilizar los resultados para graficar un diagrama de Volcán.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="visualizacion.conversores_resultados.ConversorVolcan.convertir">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convertir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log2FC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grupo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#visualizacion.conversores_resultados.ConversorVolcan.convertir" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Convierte un DataFrame en una lista de DataFrames con genes que pasaron el filtro por cada grupo y una lista de colores.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Dataframe a convertir.</p></li>
+<li><p><strong>p_value</strong> (<em>float</em>) – Valor de p-value para filtrar los datos.</p></li>
+<li><p><strong>log2FC</strong> (<em>float</em>) – Valor de log2FC para filtrar los datos.</p></li>
+<li><p><strong>grupo</strong> (<em>str</em>) – Nombre del grupo.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Lista de dataframes, lista de colores.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[List, List]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">ChipyPyR</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html#motivacion">Motivación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaz/modules.html">interfaz</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manejadores_archivos/modules.html">manejadores_archivos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../procesadores_datos/modules.html">procesadores_datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts_R/modules.html">scripts_R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../transformaciones/modules.html">transformaciones</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">visualizacion</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">conversores_resultados</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficador.html">graficador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html">graficos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paginas_web.html">paginas_web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reportes.html">reportes</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">visualizacion</a><ul>
+      <li>Previous: <a href="modules.html" title="capítulo anterior">visualizacion</a></li>
+      <li>Next: <a href="graficador.html" title="próximo capítulo">graficador</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Nasim A. Salim Taleb.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/visualizacion/conversores_resultados.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

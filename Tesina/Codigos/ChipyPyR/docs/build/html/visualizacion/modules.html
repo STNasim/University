@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>visualizacion &#8212; documentación de ChipyPyR - 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="conversores_resultados" href="conversores_resultados.html" />
+    <link rel="prev" title="lista" href="../transformaciones/lista.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="visualizacion">
+<h1>visualizacion<a class="headerlink" href="#visualizacion" title="Enlace permanente a este encabezado">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="conversores_resultados.html">conversores_resultados</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorLog2FC"><code class="docutils literal notranslate"><span class="pre">ConversorLog2FC</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorLog2FC.convertir"><code class="docutils literal notranslate"><span class="pre">ConversorLog2FC.convertir()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorReactome"><code class="docutils literal notranslate"><span class="pre">ConversorReactome</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorReactome.convertir"><code class="docutils literal notranslate"><span class="pre">ConversorReactome.convertir()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorResultados"><code class="docutils literal notranslate"><span class="pre">ConversorResultados</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorResultados.convertir"><code class="docutils literal notranslate"><span class="pre">ConversorResultados.convertir()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorResultados.obtener_conversores_admitidos"><code class="docutils literal notranslate"><span class="pre">ConversorResultados.obtener_conversores_admitidos()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorVenn"><code class="docutils literal notranslate"><span class="pre">ConversorVenn</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorVenn.convertir"><code class="docutils literal notranslate"><span class="pre">ConversorVenn.convertir()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorVolcan"><code class="docutils literal notranslate"><span class="pre">ConversorVolcan</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorVolcan.convertir"><code class="docutils literal notranslate"><span class="pre">ConversorVolcan.convertir()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="graficador.html">graficador</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="graficador.html#visualizacion.graficador.Graficador"><code class="docutils literal notranslate"><span class="pre">Graficador</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="graficador.html#visualizacion.graficador.Graficador.obtener_figura"><code class="docutils literal notranslate"><span class="pre">Graficador.obtener_figura()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="graficador.html#visualizacion.graficador.Graficador.obtener_graficos_permitidos"><code class="docutils literal notranslate"><span class="pre">Graficador.obtener_graficos_permitidos()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="graficos.html">graficos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html#visualizacion.graficos.FabricaGraficos"><code class="docutils literal notranslate"><span class="pre">FabricaGraficos</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="graficos.html#visualizacion.graficos.FabricaGraficos.crear_grafico"><code class="docutils literal notranslate"><span class="pre">FabricaGraficos.crear_grafico()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="graficos.html#visualizacion.graficos.FabricaGraficos.obtener_graficos_admitidos"><code class="docutils literal notranslate"><span class="pre">FabricaGraficos.obtener_graficos_admitidos()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoBarra"><code class="docutils literal notranslate"><span class="pre">GraficoBarra</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoBase"><code class="docutils literal notranslate"><span class="pre">GraficoBase</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoBase.obtener_ax"><code class="docutils literal notranslate"><span class="pre">GraficoBase.obtener_ax()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoBase.obtener_figura"><code class="docutils literal notranslate"><span class="pre">GraficoBase.obtener_figura()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoBoxplot"><code class="docutils literal notranslate"><span class="pre">GraficoBoxplot</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoHeatmap"><code class="docutils literal notranslate"><span class="pre">GraficoHeatmap</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoHistograma"><code class="docutils literal notranslate"><span class="pre">GraficoHistograma</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoKDE"><code class="docutils literal notranslate"><span class="pre">GraficoKDE</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoPCA"><code class="docutils literal notranslate"><span class="pre">GraficoPCA</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoQQ"><code class="docutils literal notranslate"><span class="pre">GraficoQQ</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoVenn"><code class="docutils literal notranslate"><span class="pre">GraficoVenn</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html#visualizacion.graficos.GraficoVolcan"><code class="docutils literal notranslate"><span class="pre">GraficoVolcan</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="paginas_web.html">paginas_web</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="paginas_web.html#visualizacion.paginas_web.FabricaPaginas"><code class="docutils literal notranslate"><span class="pre">FabricaPaginas</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="paginas_web.html#visualizacion.paginas_web.FabricaPaginas.crear_pagina"><code class="docutils literal notranslate"><span class="pre">FabricaPaginas.crear_pagina()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="paginas_web.html#visualizacion.paginas_web.FabricaPaginas.obtener_paginas_admitidas"><code class="docutils literal notranslate"><span class="pre">FabricaPaginas.obtener_paginas_admitidas()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="paginas_web.html#visualizacion.paginas_web.PaginaBase"><code class="docutils literal notranslate"><span class="pre">PaginaBase</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="paginas_web.html#visualizacion.paginas_web.PaginaBase.obtener_vista"><code class="docutils literal notranslate"><span class="pre">PaginaBase.obtener_vista()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="paginas_web.html#visualizacion.paginas_web.PaginaExpressionAtlas"><code class="docutils literal notranslate"><span class="pre">PaginaExpressionAtlas</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="paginas_web.html#visualizacion.paginas_web.PaginaReactome"><code class="docutils literal notranslate"><span class="pre">PaginaReactome</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="reportes.html">reportes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="reportes.html#visualizacion.reportes.FabricaReportes"><code class="docutils literal notranslate"><span class="pre">FabricaReportes</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reportes.html#visualizacion.reportes.FabricaReportes.crear_reporte"><code class="docutils literal notranslate"><span class="pre">FabricaReportes.crear_reporte()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reportes.html#visualizacion.reportes.ReporteBase"><code class="docutils literal notranslate"><span class="pre">ReporteBase</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="reportes.html#visualizacion.reportes.ReporteBase.obtener_lista_figuras"><code class="docutils literal notranslate"><span class="pre">ReporteBase.obtener_lista_figuras()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="reportes.html#visualizacion.reportes.ReporteLimma"><code class="docutils literal notranslate"><span class="pre">ReporteLimma</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="reportes.html#visualizacion.reportes.ReporteSondas"><code class="docutils literal notranslate"><span class="pre">ReporteSondas</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">ChipyPyR</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html#motivacion">Motivación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaz/modules.html">interfaz</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manejadores_archivos/modules.html">manejadores_archivos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../procesadores_datos/modules.html">procesadores_datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts_R/modules.html">scripts_R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../transformaciones/modules.html">transformaciones</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">visualizacion</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="conversores_resultados.html">conversores_resultados</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficador.html">graficador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html">graficos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paginas_web.html">paginas_web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reportes.html">reportes</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../transformaciones/lista.html" title="capítulo anterior">lista</a></li>
+      <li>Next: <a href="conversores_resultados.html" title="próximo capítulo">conversores_resultados</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Nasim A. Salim Taleb.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/visualizacion/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>graficador &#8212; documentación de ChipyPyR - 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="graficos" href="graficos.html" />
+    <link rel="prev" title="conversores_resultados" href="conversores_resultados.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-visualizacion.graficador">
+<span id="graficador"></span><h1>graficador<a class="headerlink" href="#module-visualizacion.graficador" title="Enlace permanente a este encabezado">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="visualizacion.graficador.Graficador">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">visualizacion.graficador.</span></span><span class="sig-name descname"><span class="pre">Graficador</span></span><a class="headerlink" href="#visualizacion.graficador.Graficador" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase que se encarga de crear las figuras a partir de los datos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>__conversor</strong> (<a class="reference internal" href="conversores_resultados.html#visualizacion.conversores_resultados.ConversorResultados" title="visualizacion.conversores_resultados.ConversorResultados"><em>ConversorResultados</em></a>) – Conversor de datos.</p></li>
+<li><p><strong>__fabrica_graficos</strong> (<a class="reference internal" href="graficos.html#visualizacion.graficos.FabricaGraficos" title="visualizacion.graficos.FabricaGraficos"><em>FabricaGraficos</em></a>) – Fabrica de graficos.</p></li>
+<li><p><strong>__fabrica_paginas</strong> (<a class="reference internal" href="paginas_web.html#visualizacion.paginas_web.FabricaPaginas" title="visualizacion.paginas_web.FabricaPaginas"><em>FabricaPaginas</em></a>) – Fabrica de paginas.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="visualizacion.graficador.Graficador.obtener_figura">
+<span class="sig-name descname"><span class="pre">obtener_figura</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tipo_grafico</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log2FC</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grupo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualizacion.graficador.Graficador.obtener_figura" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Devuelve la figura correspondiente al tipo de grafico, los datos, el p_value, el log2FC y el grupo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tipo_grafico</strong> (<em>str</em>) – Tipo de grafico.</p></li>
+<li><p><strong>datos</strong> (<em>pd.DataFrame</em>) – Datos a graficar.</p></li>
+<li><p><strong>p_value</strong> (<em>float</em>) – Valor de p_value para filtrar los datos.</p></li>
+<li><p><strong>log2FC</strong> (<em>float</em>) – Valor de log2FC para filtrar los datos.</p></li>
+<li><p><strong>grupo</strong> (<em>str</em>) – Nombre del grupo.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Figura.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Figure</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="visualizacion.graficador.Graficador.obtener_graficos_permitidos">
+<span class="sig-name descname"><span class="pre">obtener_graficos_permitidos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#visualizacion.graficador.Graficador.obtener_graficos_permitidos" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Devuelve los graficos permitidos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Devuelve<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Set de graficos permitidos.</p>
+</dd>
+<dt class="field-even">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-even"><p>Set</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">ChipyPyR</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html#motivacion">Motivación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaz/modules.html">interfaz</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manejadores_archivos/modules.html">manejadores_archivos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../procesadores_datos/modules.html">procesadores_datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts_R/modules.html">scripts_R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../transformaciones/modules.html">transformaciones</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">visualizacion</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="conversores_resultados.html">conversores_resultados</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">graficador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html">graficos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="paginas_web.html">paginas_web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reportes.html">reportes</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">visualizacion</a><ul>
+      <li>Previous: <a href="conversores_resultados.html" title="capítulo anterior">conversores_resultados</a></li>
+      <li>Next: <a href="graficos.html" title="próximo capítulo">graficos</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Nasim A. Salim Taleb.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/visualizacion/graficador.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

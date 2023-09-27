@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>filtrador_promediador_datos &#8212; documentación de ChipyPyR - 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="hilo_qt" href="hilo_qt.html" />
+    <link rel="prev" title="enriquecedor" href="enriquecedor.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-procesadores_datos.filtrador_promediador_datos">
+<span id="filtrador-promediador-datos"></span><h1>filtrador_promediador_datos<a class="headerlink" href="#module-procesadores_datos.filtrador_promediador_datos" title="Enlace permanente a este encabezado">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="procesadores_datos.filtrador_promediador_datos.FiltradorPromediadorDatos">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">procesadores_datos.filtrador_promediador_datos.</span></span><span class="sig-name descname"><span class="pre">FiltradorPromediadorDatos</span></span><a class="headerlink" href="#procesadores_datos.filtrador_promediador_datos.FiltradorPromediadorDatos" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase que filtra los datos de los genes por error estándar.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="procesadores_datos.filtrador_promediador_datos.FiltradorPromediadorDatos.filtrar_df_por_error_estandar">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">filtrar_df_por_error_estandar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valor_filtro</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agregar_info_adicional</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">DataFrame</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">DataFrame</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#procesadores_datos.filtrador_promediador_datos.FiltradorPromediadorDatos.filtrar_df_por_error_estandar" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Filtra los datos de los genes por error estándar.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – DataFrame con los datos de los genes.</p></li>
+<li><p><strong>valor_filtro</strong> (<em>float</em>) – Valor del error estándar para filtrar los datos.</p></li>
+<li><p><strong>agregar_info_adicional</strong> (<em>bool</em><em>, </em><em>optional</em>) – Indica si se agregan columnas adicionales al DataFrame de los datos que no pasaron el filtro, defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame con los datos que pasaron el filtro, DataFrame con los datos que no pasaron el filtro.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[pd.DataFrame, pd.DataFrame]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="procesadores_datos.filtrador_promediador_datos.FiltradorPromediadorDatos.filtrar_y_juntar_dict_df">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">filtrar_y_juntar_dict_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos_por_grupo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">DataFrame</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#procesadores_datos.filtrador_promediador_datos.FiltradorPromediadorDatos.filtrar_y_juntar_dict_df" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Filtra los datos de los genes por error estándar y los junta en un solo DataFrame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>datos_por_grupo</strong> (<em>dict</em>) – Diccionario con los datos de los genes agrupados por grupo.</p></li>
+<li><p><strong>error</strong> (<em>float</em>) – Valor del error estándar para filtrar los datos.</p></li>
+<li><p><strong>id</strong> (<em>str</em>) – Nombre de la columna que contiene el identificador de los genes.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame con los datos que pasaron el filtro, lista con los grupos, diccionario con los datos que no pasaron el filtro.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Tuple[pd.DataFrame, List, Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">ChipyPyR</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html#motivacion">Motivación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaz/modules.html">interfaz</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manejadores_archivos/modules.html">manejadores_archivos</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">procesadores_datos</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="enriquecedor.html">enriquecedor</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">filtrador_promediador_datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hilo_qt.html">hilo_qt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mapeo.html">mapeo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pipeline.html">pipeline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validadores_datos.html">validadores_datos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts_R/modules.html">scripts_R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../transformaciones/modules.html">transformaciones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../visualizacion/modules.html">visualizacion</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">procesadores_datos</a><ul>
+      <li>Previous: <a href="enriquecedor.html" title="capítulo anterior">enriquecedor</a></li>
+      <li>Next: <a href="hilo_qt.html" title="próximo capítulo">hilo_qt</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Nasim A. Salim Taleb.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/procesadores_datos/filtrador_promediador_datos.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

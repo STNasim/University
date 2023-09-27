@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>paginas_web &#8212; documentación de ChipyPyR - 1.0</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="reportes" href="reportes.html" />
+    <link rel="prev" title="graficos" href="graficos.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-visualizacion.paginas_web">
+<span id="paginas-web"></span><h1>paginas_web<a class="headerlink" href="#module-visualizacion.paginas_web" title="Enlace permanente a este encabezado">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="visualizacion.paginas_web.FabricaPaginas">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">visualizacion.paginas_web.</span></span><span class="sig-name descname"><span class="pre">FabricaPaginas</span></span><a class="headerlink" href="#visualizacion.paginas_web.FabricaPaginas" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase que se encarga de crear las paginas web.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="visualizacion.paginas_web.FabricaPaginas.crear_pagina">
+<span class="sig-name descname"><span class="pre">crear_pagina</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nombre_pagina</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#visualizacion.paginas_web.PaginaBase" title="visualizacion.paginas_web.PaginaBase"><span class="pre">PaginaBase</span></a></span></span><a class="headerlink" href="#visualizacion.paginas_web.FabricaPaginas.crear_pagina" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Crea una pagina web.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nombre_pagina</strong> (<em>str</em>) – Nombre de la pagina.</p></li>
+<li><p><strong>datos</strong> (<em>list</em>) – Datos a mostrar en la pagina.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pagina web.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#visualizacion.paginas_web.PaginaBase" title="visualizacion.paginas_web.PaginaBase">PaginaBase</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="visualizacion.paginas_web.FabricaPaginas.obtener_paginas_admitidas">
+<span class="sig-name descname"><span class="pre">obtener_paginas_admitidas</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#visualizacion.paginas_web.FabricaPaginas.obtener_paginas_admitidas" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Devuelve las paginas admitidas.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Devuelve<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Paginas admitidas.</p>
+</dd>
+<dt class="field-even">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="visualizacion.paginas_web.PaginaBase">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">visualizacion.paginas_web.</span></span><span class="sig-name descname"><span class="pre">PaginaBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualizacion.paginas_web.PaginaBase" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Clase abstracta que representa una pagina web.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="visualizacion.paginas_web.PaginaBase.obtener_vista">
+<span class="sig-name descname"><span class="pre">obtener_vista</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">QWebEngineView</span></span></span><a class="headerlink" href="#visualizacion.paginas_web.PaginaBase.obtener_vista" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Devuelve la vista de la pagina.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Devuelve<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Vista de la pagina.</p>
+</dd>
+<dt class="field-even">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-even"><p>QWebEngineView</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="visualizacion.paginas_web.PaginaExpressionAtlas">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">visualizacion.paginas_web.</span></span><span class="sig-name descname"><span class="pre">PaginaExpressionAtlas</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualizacion.paginas_web.PaginaExpressionAtlas" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#visualizacion.paginas_web.PaginaBase" title="visualizacion.paginas_web.PaginaBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">PaginaBase</span></code></a></p>
+<p>Clase que representa una pagina de Expression Atlas.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="visualizacion.paginas_web.PaginaReactome">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">visualizacion.paginas_web.</span></span><span class="sig-name descname"><span class="pre">PaginaReactome</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">datos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#visualizacion.paginas_web.PaginaReactome" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#visualizacion.paginas_web.PaginaBase" title="visualizacion.paginas_web.PaginaBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">PaginaBase</span></code></a></p>
+<p>Clase que representa una pagina de Reactome.</p>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">ChipyPyR</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro.html#motivacion">Motivación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaz/modules.html">interfaz</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manejadores_archivos/modules.html">manejadores_archivos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../procesadores_datos/modules.html">procesadores_datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scripts_R/modules.html">scripts_R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../transformaciones/modules.html">transformaciones</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">visualizacion</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="conversores_resultados.html">conversores_resultados</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficador.html">graficador</a></li>
+<li class="toctree-l2"><a class="reference internal" href="graficos.html">graficos</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">paginas_web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reportes.html">reportes</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">visualizacion</a><ul>
+      <li>Previous: <a href="graficos.html" title="capítulo anterior">graficos</a></li>
+      <li>Next: <a href="reportes.html" title="próximo capítulo">reportes</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Nasim A. Salim Taleb.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="../_sources/visualizacion/paginas_web.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
